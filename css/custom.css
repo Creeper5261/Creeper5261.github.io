@@ -1164,7 +1164,7 @@ button {
 }
 
 /* 标题增强 */
-#site-name::before {
+.site-name::before {
   opacity: 0;
   background-color: rgb(48, 223, 246) !important;
   border-radius: 8px;
@@ -1190,11 +1190,11 @@ button {
   line-height: 34px; /*如果有溢出或者垂直不居中的现象微调一下这个参数*/
   font-size: 18px; /*根据个人喜好*/
 }
-#site-name:hover::before {
+.site-name:hover::before {
   opacity: 1;
   scale: 1.03;
 }
-#site-name {
+.site-name {
   position: relative;
   font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
 }
