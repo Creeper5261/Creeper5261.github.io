@@ -70,6 +70,8 @@
   width: fit-content !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
+  /* 自己补充的，不知道为啥跟着大佬达不到想要的效果，必须手动调一下位置*/
+  top: 12%;
 }
 /* 子菜单横向展示 */
 #nav .menus_items .menus_item:hover .menus_item_child {
@@ -79,7 +81,16 @@
 .menus_items .menus_item:nth-child(5) .menus_item_child {
   left: -40px;
 }
-
+/* 自己补充的，不知道为啥跟着大佬达不到想要的效果，必须手动调一下位置*/
+#nav-right {
+  position: absolute;
+  right: 1%;
+  top: 12%;
+}
+#name-container {
+  position: absolute;
+  top: 15%;
+}
 
 
 /*黑夜霓虹灯*/
