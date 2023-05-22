@@ -334,19 +334,21 @@ if (localStorage.getItem("reset_2") == undefined) {
   }
   if (localStorage.getItem("light") == "true") {
     clearInterval(clk);
-    clk = setInterval(changeLightColor, 1200);
+    // 我这边用changLightColor不行，只能用changeColor
+    clk = setInterval(changeColor, 1200);
   }
   function setLight() {
     if (document.getElementById("lightSet").checked) {
       clearInterval(clk);
-      clk = setInterval(changeLightColor, 1200);
+      clk = setInterval(changeColor, 1200);
       localStorage.setItem("light", "true");
     } else {
       clearInterval(clk);
       localStorage.setItem("light", "false");
       // 恢复默认
-      if (document.getElementById("site-name"))
-        document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";
+      // 依旧的，我的site-name是class 不是 id
+    //   if (document.getElementById("site-name"))
+    //     document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";
       if (document.getElementById("site-title"))
         document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";
       if (document.getElementById("site-subtitle"))
@@ -356,6 +358,7 @@ if (localStorage.getItem("reset_2") == undefined) {
       try {
         document.getElementsByClassName("author-info__name")[0].style.textShadow = "";
         document.getElementsByClassName("author-info__description")[0].style.textShadow = "";
+        document.getElementsByClassName("site-name")[0].style.textShadow = "";
       } catch {
   
       }
