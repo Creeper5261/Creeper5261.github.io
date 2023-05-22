@@ -1305,3 +1305,18 @@ center#name-container {
   padding: 4px;
   border-radius: 4px;
 }
+
+
+
+/*有些没圆角的我设一下圆角*/
+.article-sort-item-img {
+  border-radius: 12px
+}
+
+.pagination-post {
+  border-radius: 15px
+}
+
+.relatedPosts-list div{
+  border-radius: 15px
+}
