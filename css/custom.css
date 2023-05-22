@@ -118,20 +118,8 @@
 
 
 /* 背景宇宙星光  */
-#universe{
-  display: block;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */
-  z-index: -1;
+#universe {
+  display: 
 }
 
 /* 侧边栏个人信息卡片动态渐变色 */
@@ -1321,6 +1309,570 @@ center#name-container {
   border-radius: 15px
 }
 
-.blog-slider__img {
-  border-radius: 15px
+
+
+/*美化*/
+
+/* root伪类指定全局颜色(照抄) */
+:root {
+  --blue-custom: #5ea6e5;
+  --loading-color: rgba(207, 246, 247, 0.92);
+  --border-color: #c9c9c9;
+  --color-red: rgb(241, 71, 71);
+  --color-orange: rgb(241, 162, 71);
+  --color-yellow: rgb(241, 238, 71);
+  --color-purple: rgb(179, 71, 241);
+  --color-blue: rgb(102, 204, 255);
+  --color-gray: rgb(226, 226, 226);
+  --color-green: rgb(57, 197, 187);
+  --color-whitegray: rgb(241, 241, 241);
+  --color-pink: rgb(237, 112, 155);
+  --color-black: rgb(0, 0, 0);
+  --color-darkblue: rgb(97, 100, 159);
+  --color-heoblue: rgb(66, 90, 239);
+  --btn-bg: var(--theme-color);
+  --scrollbar-color: var(--theme-color);
+  --border-style: 1px solid rgba(169, 169, 169, 0.7);
+  /* 菜单栏悬浮带透明度的颜色 初始为rgba(73, 205, 245, 0.7) 已由js设置*/
+  /* 代码框行数背景色 */
+  --hlnumber-bg: #282c34;
+  /* 代码框顶部背景色 */
+  --hltools-bg: #1c1c1c;
+  /* 代码框背景色 */
+  --hl-bg: #282c34;
+}
+
+/* 字体引入（这里需要根据你自己想要待选的字体进行引入） */
+@font-face {
+  font-family: YSHST;
+  src: url(https://picbed.godboy.cc/img/nyaruko.webp);
+  font-display: swap;
+}
+
+
+/* winbox样式(这块照抄即可) */
+.winbox {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.wb-body {
+  background-color: #e5f1f5;
+}
+
+.wb-full {
+  display: none;
+}
+
+.wb-min {
+  background-position: center;
+}
+
+[data-theme="dark"] .wb-body,
+[data-theme="dark"] #changeBgBox {
+  background: #333 !important;
+}
+
+.bgbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pimgbox,
+.imgbox,
+.box {
+  height: 100px;
+  width: 166px;
+  margin: 10px;
+  border-radius: 10px !important;
+  background-size: cover;
+}
+
+.pimgbox,
+.imgbox {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imgbox:hover,
+.pimgbox:hover,
+.box:hover {
+  border: 3px solid var(--text-bg-hover);
+}
+
+.pimgbox {
+  height: 240px;
+}
+
+.imgbox {
+  height: 95px;
+}
+
+@media screen and (max-width: 768px) {
+  /* 背景 */
+  .pimgbox,
+  .imgbox,
+  .box {
+    height: 73px;
+    width: 135px;
+  }
+  .pimgbox {
+    height: 205px;
+  }
+
+  /* 2.0新增内容 */
+  .wb-min {
+    display: none;
+  }
+  #changeBgBox .wb-body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* 主题色适配覆盖区域 */
+.category-lists ul li:before {
+  border: 0.215em solid var(--theme-color);
+}
+a:hover {
+  color: var(--theme-color);
+}
+blockquote {
+  border-left: 3px solid var(--theme-color);
+}
+#article-container .highlight-tools .copy-button:hover {
+  color: var(--theme-color);
+}
+.error404 #error-wrap .error-content .error-img img {
+  background-color: var(--theme-color);
+}
+.article-sort-title:before {
+  border: 5px solid var(--theme-color);
+}
+.article-sort-item:before {
+  order: 3px solid var(--theme-color);
+}
+.article-sort-item.year:hover:before {
+  border-color: var(--theme-color);
+}
+.article-sort-item-title:hover {
+  color: var(--theme-color);
+}
+.category-lists .category-list a:hover {
+  color: var(--theme-color);
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-title:hover {
+  color: var(--theme-color);
+}
+#recent-posts
+  > .recent-post-item
+  > .recent-post-info
+  > .article-meta-wrap
+  a:hover {
+  color: var(--theme-color);
+}
+.tag-cloud-list a:hover {
+  color: var(--theme-color) !important;
+}
+#aside-content .card-tag-cloud a:hover {
+  color: var(--theme-color) !important;
+}
+#aside-content .aside-list > .aside-list-item .content > .comment:hover {
+  color: var(--theme-color);
+}
+#aside-content #card-toc .toc-content .toc-link:hover {
+  color: var(--theme-color);
+  scale: 1.03;
+}
+*::selection {
+  background: var(--theme-color);
+}
+#aside-content #card-toc .toc-content .toc-link.active {
+  background: var(--theme-color);
+  border-radius: 8px;
+}
+#aside-content #card-toc .toc-content .toc-link.active:hover {
+  color: #fefefe;
+}
+.site-data > a:hover div {
+  color: var(--theme-color) !important;
+}
+
+#post-comment .comment-head #comment-switch .first-comment {
+  color: var(--theme-color);
+}
+#post-comment .comment-head #comment-switch .switch-btn {
+  background-color: var(--theme-color);
+}
+#page-header.nav-fixed #nav #toggle-menu:hover {
+  color: var(--theme-color);
+}
+#post-info #post-meta a:hover {
+  color: var(--theme-color);
+}
+#pagination .page-number.current {
+  background: var(--theme-color);
+}
+#article-container h1:hover:before,
+#article-container h2:hover:before,
+#article-container h3:hover:before,
+#article-container h4:hover:before,
+#article-container h5:hover:before,
+#article-container h6:hover:before {
+  color: var(--theme-color);
+}
+#article-container li::marker {
+  color: var(--theme-color);
+}
+#post .tag_share .post-meta__tags {
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
+}
+#post .tag_share .post-meta__tags:hover {
+  background: var(--theme-color);
+}
+#post .post-copyright .post-copyright-meta {
+  color: var(--theme-color);
+}
+#post .post-copyright-cc-info {
+  color: var(--theme-color);
+}
+#waline-wrap {
+  --waline-theme-color: var(--theme-color);
+}
+.hide-inline > .hide-button,
+.hide-block > .hide-button {
+  background: var(--theme-color);
+}
+#article-container .tabs > .nav-tabs > .tab.active button {
+  border-top: 2px solid var(--theme-color);
+}
+#article-container .timeline {
+  border-left: 2px solid var(--timeline-color, var(--theme-color));
+}
+#article-container .timeline .timeline-item:hover .item-circle:before {
+  border-color: var(--timeline-color, var(--theme-color));
+}
+#article-container
+  .timeline
+  .timeline-item.headline
+  .timeline-item-title
+  .item-circle:before {
+  border: 4px solid var(--timeline-color, var(--theme-color));
+}
+.search-dialog .search-nav {
+  color: var(--theme-color);
+}
+.search-dialog .search-nav .search-close-button:hover {
+  color: var(--theme-color);
+}
+#local-search .search-dialog .local-search-box input {
+  border: 2px solid var(--theme-color);
+}
+#local-search .search-dialog .local-search__hit-item:before {
+  border: 3px solid var(--theme-color);
+}
+#local-search .search-dialog .local-search__hit-item a:hover {
+  color: var(--theme-color);
+}
+#nav *::after {
+  background-color: var(--theme-color) !important;
+}
+
+.article-sort {
+  border-left: 2px solid var(--theme-color);
+}
+
+.article-sort-title:after {
+  background: var(--theme-color);
+}
+
+.article-sort-item:before {
+  border: 3px solid var(--theme-color);
+}
+
+
+
+/* 背景图片链接输入框placeholder*/
+input#pic-link::-webkit-input-placeholder {
+  color: rgb(150, 150, 150);
+}
+
+input#pic-link {
+  width: 82%;
+  border-radius: 30px;
+  border: 1px solid var(--theme-color);
+  padding: 5px 10px 5px 10px;
+  line-height: 2;
+  outline: 1px solid var(--theme-color);
+}
+
+
+/* 开关按钮 */
+.settings input[type="checkbox"] {
+  width: 37px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #000000;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none;
+  transform: translateY(5px);
+}
+.settings input[type="checkbox"]:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.settings input[type="checkbox"]:checked {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+.settings input[type="checkbox"]:checked:before {
+  left: 19px;
+  background-color: white !important;
+}
+.settings input[type="checkbox"] {
+  transition: border background-color box-shadow;
+}
+.settings input[type="checkbox"]:before {
+  transition: left 0.2s;
+}
+.settings input[type="checkbox"]:checked {
+  background-color: var(--theme-color);
+}
+.settings input[type="checkbox"]:checked:before {
+  transition: left 0.2s;
+}
+.settings input[type="checkbox"]:checked:hover {
+  opacity: 0.8;
+}
+.settings input[type="checkbox"]:active {
+  background-color: #666666 !important;
+  border-color: #666666 !important;
+}
+.settings input[type="checkbox"]:active::before {
+  background-color: white !important;
+}
+.content-text {
+  margin-right: 5px;
+}
+
+
+/* 透明度和模糊半径滑块 */
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  margin: 0 auto;
+  outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: var(--theme-color);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.range {
+  position: relative;
+  width: 300px;
+  margin: 20px 0px 32px 10px;
+}
+.rang_width {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: var(--theme-color);
+  height: 5px;
+  border-radius: 2px 0 0 2px;
+}
+
+
+/* 首页文章卡片 */
+#recent-posts > .recent-post-item {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 25px;
+  border: var(--border-style);
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 18px;
+  border: var(--border-style);
+}
+
+/* 文章页、归档页、普通页面 */
+div#post,
+div#page,
+div#archive {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border: var(--border-style);
+  border-radius: 20px;
+}
+
+/* 导航栏颜色 */
+#page-header.nav-fixed #nav {
+  background: linear-gradient(60deg, #ffd7e4 0, #c8f1ff 93%);
+  opacity: 0.95;
+  backdrop-filter: var(--backdrop-filter);
+}
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+  background: var(--trans-dark);
+}
+
+
+/* 调节字体显示栏目 */
+#swfs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.swf {
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  /* 字体选择框边界由js指定 */
+  /* border: 2px solid var(--border-color); */
+  border-radius: 10px !important;
+  margin: 10px;
+}
+
+.swf:hover {
+  text-decoration: none !important;
+  background: var(--text-bg-hover);
+}
+
+/* 主题色选择按钮 */
+input[name="colors"] {
+  margin-right: 15px;
+  min-width: 1rem;
+  height: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+}
+#red {
+  border: 3px solid var(--color-red);
+}
+#orange {
+  border: 3px solid var(--color-orange);
+}
+#yellow {
+  border: 3px solid var(--color-yellow);
+}
+#green {
+  border: 3px solid var(--color-green);
+}
+#blue {
+  border: 3px solid var(--color-blue);
+}
+#purple {
+  border: 3px solid var(--color-purple);
+}
+#pink {
+  border: 3px solid var(--color-pink);
+}
+#heoblue {
+  border: 3px solid var(--color-heoblue);
+}
+#darkblue {
+  border: 3px solid var(--color-darkblue);
+}
+#black {
+  border: 3px solid var(--color-black);
+}
+#blackgray {
+  border: 3px solid var(--color-blackgray);
+}
+#purple:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-purple);
+  background-color: var(--color-purple);
+}
+#red:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-red);
+  background-color: var(--color-red);
+}
+#orange:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-orange);
+  background-color: var(--color-orange);
+}
+#yellow:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-yellow);
+  background-color: var(--color-yellow);
+}
+#green:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-green);
+  background-color: var(--color-green);
+}
+#blue:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-blue);
+  background-color: var(--color-blue);
+}
+#pink:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-pink);
+  background-color: var(--color-pink);
+}
+#heoblue:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-heoblue);
+  background-color: var(--color-heoblue);
+}
+#darkblue:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-darkblue);
+  background-color: var(--color-darkblue);
+}
+#black:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-black);
+  background-color: var(--color-black);
+}
+#blackgray:checked {
+  box-shadow: 0 0 0 2px #fff inset;
+  border-radius: 50%;
+  border: 3px solid var(--color-blackgray);
+  background-color: var(--color-blackgray);
 }
