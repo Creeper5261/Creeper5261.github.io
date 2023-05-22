@@ -1320,3 +1320,7 @@ center#name-container {
 .relatedPosts-list div{
   border-radius: 15px
 }
+
+.blog-slider__img {
+  border-radius: 15px
+}
