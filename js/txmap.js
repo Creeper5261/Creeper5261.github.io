@@ -72,7 +72,7 @@ function showWelcome() {
         return;
     }
 
-    let dist = getDistance(125.28845,43.83327, window.ipLoacation.result.location.lng, window.ipLoacation.result.location.lat); //这里换成自己的经纬度
+    let dist = getDistance(116.290663,40.158009, window.ipLoacation.result.location.lng, window.ipLoacation.result.location.lat); // 站长当前坐标：北京邮电大学沙河校区
     let pos = window.ipLoacation.result.ad_info.nation;
     let ip = window.ipLoacation.result.ip || "未知";
     let posdesc;
@@ -107,7 +107,7 @@ function showWelcome() {
             ip = window.ipLoacation.result.ip || "未知";
             switch (window.ipLoacation.result.ad_info.province) {
                 case "北京市":
-                    posdesc = "北——京——欢迎你~~~";
+                    posdesc = "北——京——欢迎你~~~ 你和站长在同一个城市，等风穿过沙河也算打过招呼。";
                     break;
                 case "天津市":
                     posdesc = "讲段相声吧。";
@@ -127,7 +127,7 @@ function showWelcome() {
                 case "吉林省":
                     switch (window.ipLoacation.result.ad_info.city) {
                         case "长春市":
-                            posdesc = "哇，和站长在一个城市呢 ~ 有时间一起吃个饭？";
+                            posdesc = "很喜欢南湖边的风，冬天也要记得裹紧一点。";
                             break;
                         default:
                             posdesc = "状元阁就是东北烧烤之王。";

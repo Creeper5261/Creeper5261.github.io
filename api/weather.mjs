@@ -1,7 +1,9 @@
+import { getClientIp, getTencentLocation } from './location.mjs'
+
 const QWEATHER_NOW_ENDPOINT = 'https://devapi.qweather.com/v7/weather/now'
 const DEFAULT_LOCATION = {
-  name: '长春',
-  coordinates: '125.28845,43.83327'
+  name: '北邮沙河',
+  coordinates: '116.290663,40.158009'
 }
 
 function json(data, status = 200) {
@@ -30,6 +32,39 @@ export function normalizeWeather(payload, location = DEFAULT_LOCATION.name) {
     updateTime: payload.updateTime || '',
     location
   }
+}
+
+function locationFromTencentResult(result) {
+  const location = result?.location
+  if (!location || typeof location.lng !== 'number' || typeof location.lat !== 'number') {
+    return null
+  }
+
+  const adInfo = result.ad_info || {}
+  const name = [adInfo.city, adInfo.district].filter(Boolean).join(' ') || adInfo.province || adInfo.nation || DEFAULT_LOCATION.name
+
+  return {
+    name,
+    coordinates: `${location.lng},${location.lat}`
+  }
+}
+
+export async function resolveWeatherLocation({
+  env = process.env,
+  fetchImpl = fetch,
+  request
+} = {}) {
+  if (!request) return DEFAULT_LOCATION
+
+  const locationResult = await getTencentLocation({
+    env,
+    fetchImpl,
+    ip: getClientIp(request)
+  })
+
+  if (!locationResult.ok) return DEFAULT_LOCATION
+
+  return locationFromTencentResult(locationResult.data.result) || DEFAULT_LOCATION
 }
 
 export async function getWeather({
@@ -66,8 +101,12 @@ export async function getWeather({
   }
 }
 
-export async function handleWeatherRequest(_request, options = {}) {
-  const result = await getWeather(options)
+export async function handleWeatherRequest(request, options = {}) {
+  const location = options.location || await resolveWeatherLocation({
+    ...options,
+    request
+  })
+  const result = await getWeather({ ...options, location })
 
   if (!result.ok) {
     return json({ error: result.reason }, result.status)
