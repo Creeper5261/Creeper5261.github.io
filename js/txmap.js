@@ -36,6 +36,14 @@ function loadWelcomeLocation() {
         });
 }
 
+function startWelcomeLocation() {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadWelcomeLocation, { once: true });
+    } else {
+        loadWelcomeLocation();
+    }
+}
+
 function getWelcomeTimeText() {
     let date = new Date();
     if (date.getHours() >= 5 && date.getHours() < 11) return "<span>上午好</span>，一日之计在于晨！";
@@ -271,6 +279,6 @@ function showWelcome() {
         renderWelcomeFallback("定位信息解析失败，先欢迎回家。");
     }
 }
-window.addEventListener('load', loadWelcomeLocation);
+startWelcomeLocation();
 // 如果使用了pjax在加上下面这行代码
 document.addEventListener('pjax:complete', loadWelcomeLocation);
