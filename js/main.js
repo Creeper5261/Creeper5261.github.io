@@ -9,13 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
       return width
     }
 
-    if (init) {
-      const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
-      const menusWidth = document.querySelector('#menus > .menus_items')?.scrollWidth || 0
-      const navRightWidth = document.getElementById('nav-right')?.offsetWidth || 0
-      headerContentWidth = blogInfoWidth + menusWidth + navRightWidth
-      $nav = document.getElementById('nav')
-    }
+    $nav = $nav || document.getElementById('nav')
+
+    const blogInfo = document.querySelector('#blog-info > a')
+    const menus = document.querySelector('#menus > .menus_items')
+    const navRight = document.getElementById('nav-right')
+    const blogInfoWidth = blogInfo ? getAllWidth(blogInfo.children) : 0
+    const menusWidth = menus?.scrollWidth || 0
+    const navRightWidth = navRight?.offsetWidth || 0
+    headerContentWidth = blogInfoWidth + menusWidth + navRightWidth
 
     let hideMenuIndex = ''
     if (window.innerWidth <= 768) hideMenuIndex = true
@@ -769,6 +771,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const unRefreshFn = function () {
+    window.addEventListener('load', () => { adjustMenu(false) })
+
     window.addEventListener('resize', () => {
       adjustMenu(false)
       btf.isHidden(document.getElementById('toggle-menu')) && mobileSidebarOpen && sidebarFn.close()
