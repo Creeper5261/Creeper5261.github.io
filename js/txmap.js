@@ -1,16 +1,52 @@
+window.DAT_PUBLIC_SERVICES = window.DAT_PUBLIC_SERVICES || {};
+function getPublicServices() {
+    return window.DAT_PUBLIC_SERVICES || {};
+}
+
+function hasTencentMapKey() {
+    return !!getPublicServices().tencentMapKey;
+}
+
+function getWelcomeTimeText() {
+    let date = new Date();
+    if (date.getHours() >= 5 && date.getHours() < 11) return "<span>上午好</span>，一日之计在于晨！";
+    if (date.getHours() >= 11 && date.getHours() < 13) return "<span>中午好</span>，该摸鱼吃午饭了。";
+    if (date.getHours() >= 13 && date.getHours() < 15) return "<span>下午好</span>，懒懒地睡个午觉吧！";
+    if (date.getHours() >= 15 && date.getHours() < 16) return "<span>三点几啦</span>，一起饮茶呀！";
+    if (date.getHours() >= 16 && date.getHours() < 19) return "<span>夕阳无限好！</span>";
+    if (date.getHours() >= 19 && date.getHours() < 24) return "<span>晚上好</span>，夜生活嗨起来！";
+    return "夜深了，早点休息，少熬夜。";
+}
+
+function renderWelcomeFallback(reason) {
+    const target = document.getElementById("welcome-info");
+    if (!target || target.textContent.trim()) return;
+    target.innerHTML = `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;${getWelcomeTimeText()}${reason || "欢迎回家，今天也要开心一点。"}</b>`;
+}
+
+function hasTencentLocationData() {
+    return !!(window.ipLoacation && window.ipLoacation.result && window.ipLoacation.result.location && window.ipLoacation.result.ad_info);
+}
+
 //get请求
-$.ajax({
-    type: 'get',
-    url: 'https://apis.map.qq.com/ws/location/v1/ip',
-    data: {
-        key: '2GNBZ-5ZRWQ-SQX5M-BPRJB-IHGN2-7XFAI',
-        output: 'jsonp',
-    },
-    dataType: 'jsonp',
-    success: function (res) {
-        ipLoacation = res;
-    }
-})
+if (hasTencentMapKey() && window.jQuery) {
+    $.ajax({
+        type: 'get',
+        url: 'https://apis.map.qq.com/ws/location/v1/ip',
+        data: {
+            key: window.DAT_PUBLIC_SERVICES && window.DAT_PUBLIC_SERVICES.tencentMapKey || '',
+            output: 'jsonp',
+        },
+        dataType: 'jsonp',
+        success: function (res) {
+            window.ipLoacation = res;
+            showWelcome();
+        },
+        error: function () {
+            renderWelcomeFallback("定位服务暂时没有回应，先欢迎回家。");
+        }
+    })
+}
 function getDistance(e1, n1, e2, n2) {
     const R = 6371
     const { sin, cos, asin, PI, hypot } = Math
@@ -28,13 +64,19 @@ function getDistance(e1, n1, e2, n2) {
 }
 
 function showWelcome() {
+    if (!document.getElementById("welcome-info")) return;
 
-    let dist = getDistance(125.28845,43.83327, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
-    let pos = ipLoacation.result.ad_info.nation;
-    let ip;
+    if (!hasTencentLocationData()) {
+        renderWelcomeFallback(hasTencentMapKey() ? "定位服务还在路上，先欢迎回家。" : "定位服务待配置，先欢迎回家。");
+        return;
+    }
+
+    let dist = getDistance(125.28845,43.83327, window.ipLoacation.result.location.lng, window.ipLoacation.result.location.lat); //这里换成自己的经纬度
+    let pos = window.ipLoacation.result.ad_info.nation;
+    let ip = window.ipLoacation.result.ip || "未知";
     let posdesc;
     //根据国家、省份、城市信息自定义欢迎语
-    switch (ipLoacation.result.ad_info.nation) {
+    switch (window.ipLoacation.result.ad_info.nation) {
         case "日本":
             posdesc = "よろしく，一起去看樱花吗";
             break;
@@ -60,9 +102,9 @@ function showWelcome() {
             posdesc = "拾起一片枫叶赠予你";
             break;
         case "中国":
-            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city + " " + ipLoacation.result.ad_info.district;
-            ip = ipLoacation.result.ip;
-            switch (ipLoacation.result.ad_info.province) {
+            pos = window.ipLoacation.result.ad_info.province + " " + window.ipLoacation.result.ad_info.city + " " + window.ipLoacation.result.ad_info.district;
+            ip = window.ipLoacation.result.ip || "未知";
+            switch (window.ipLoacation.result.ad_info.province) {
                 case "北京市":
                     posdesc = "北——京——欢迎你~~~";
                     break;
@@ -82,7 +124,7 @@ function showWelcome() {
                     posdesc = "我想吃烤鸡架！";
                     break;
                 case "吉林省":
-                    switch (ipLoacation.result.ad_info.city) {
+                    switch (window.ipLoacation.result.ad_info.city) {
                         case "长春市":
                             posdesc = "哇，和站长在一个城市呢 ~ 有时间一起吃个饭？";
                             break;
@@ -98,7 +140,7 @@ function showWelcome() {
                     posdesc = "众所周知，中国只有两个城市。";
                     break;
                 case "江苏省":
-                    switch (ipLoacation.result.ad_info.city) {
+                    switch (window.ipLoacation.result.ad_info.city) {
                         case "南京市":
                             posdesc = "这是我挺想去的城市啦。";
                             break;
@@ -114,7 +156,7 @@ function showWelcome() {
                     posdesc = "东风渐绿西湖柳，雁已还人未南归。";
                     break;
                 case "河南省":
-                    switch (ipLoacation.result.ad_info.city) {
+                    switch (window.ipLoacation.result.ad_info.city) {
                         case "郑州市":
                             posdesc = "豫州之域，天地之中。";
                             break;
@@ -209,22 +251,14 @@ function showWelcome() {
     }
 
     //根据本地时间切换欢迎语
-    let timeChange;
-    let date = new Date();
-    if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>上午好</span>，一日之计在于晨！";
-    else if (date.getHours() >= 11 && date.getHours() < 13) timeChange = "<span>中午好</span>，该摸鱼吃午饭了。";
-    else if (date.getHours() >= 13 && date.getHours() < 15) timeChange = "<span>下午好</span>，懒懒地睡个午觉吧！";
-    else if (date.getHours() >= 15 && date.getHours() < 16) timeChange = "<span>三点几啦</span>，一起饮茶呀！";
-    else if (date.getHours() >= 16 && date.getHours() < 19) timeChange = "<span>夕阳无限好！</span>";
-    else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>，夜生活嗨起来！";
-    else timeChange = "夜深了，早点休息，少熬夜。";
+    let timeChange = getWelcomeTimeText();
 
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
             `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴，${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--theme-color)">${ip}</span>， ${posdesc}</b>`;
     } catch (err) {
-        // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
+        renderWelcomeFallback("定位信息解析失败，先欢迎回家。");
     }
 }
 window.onload = showWelcome;

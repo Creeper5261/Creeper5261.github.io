@@ -4,7 +4,7 @@ var img = new Image();
 //银杏叶
 // img.src = "https://img.cdn.nesxc.com/upload/wordpress/202202251325420webp";
 //雪花
-img.src = "https://picbed.godboy.cc/img/雪花.webp"
+img.src = "https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/雪花.webp"
 
 function Sakura(x, y, s, r, fn) {
     this.x = x;

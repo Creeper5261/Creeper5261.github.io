@@ -47,7 +47,7 @@
   /* 为载入的字体取名字(随意) */
   font-family: 'YSHST';	
   /* 字体文件地址(相对或者绝对路径都可以) */
-  src: url(https://picbed.godboy.cc/font/优设好身体.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/font/优设好身体.woff2);
   /* 定义加粗样式(加粗多少) */
   font-weight: normal;
   /* 定义字体样式(斜体/非斜体) */
@@ -1357,7 +1357,7 @@ center#name-container {
 /* 字体引入（这里需要根据你自己想要待选的字体进行引入） */
 @font-face {
   font-family: YSHST;
-  src: url(https://picbed.godboy.cc/img/nyaruko.webp);
+  src: url(https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/nyaruko.webp);
   font-display: swap;
 }
 
