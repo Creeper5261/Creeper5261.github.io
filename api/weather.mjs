@@ -1,9 +1,15 @@
-import { getClientIp, getTencentLocation } from './location.mjs'
+import {
+  DEFAULT_SITE_LOCATION,
+  correctProxyLocationResult,
+  getBrowserTimeZone,
+  getClientIp,
+  getTencentLocation
+} from './location.mjs'
 
 const QWEATHER_NOW_ENDPOINT = 'https://devapi.qweather.com/v7/weather/now'
 const DEFAULT_LOCATION = {
-  name: '北邮沙河',
-  coordinates: '116.290663,40.158009'
+  name: DEFAULT_SITE_LOCATION.name,
+  coordinates: DEFAULT_SITE_LOCATION.coordinates
 }
 
 function json(data, status = 200) {
@@ -11,7 +17,7 @@ function json(data, status = 200) {
     status,
     headers: {
       'content-type': 'application/json; charset=utf-8',
-      'cache-control': status === 200 ? 'public, max-age=600, s-maxage=600' : 'no-store'
+      'cache-control': 'no-store'
     }
   })
 }
@@ -64,7 +70,11 @@ export async function resolveWeatherLocation({
 
   if (!locationResult.ok) return DEFAULT_LOCATION
 
-  return locationFromTencentResult(locationResult.data.result) || DEFAULT_LOCATION
+  const originalLocation = locationResult.data.result
+  const correctedLocation = correctProxyLocationResult(originalLocation, getBrowserTimeZone(request))
+  if (correctedLocation !== originalLocation) return DEFAULT_LOCATION
+
+  return locationFromTencentResult(correctedLocation) || DEFAULT_LOCATION
 }
 
 export async function getWeather({

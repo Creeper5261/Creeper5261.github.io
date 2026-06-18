@@ -1,8 +1,17 @@
 let welcomeLocationPromise;
 
+function getBrowserTimezoneQuery() {
+    try {
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        return timeZone ? `?tz=${encodeURIComponent(timeZone)}` : '';
+    } catch (err) {
+        return '';
+    }
+}
+
 function requestLocationData() {
     if (!welcomeLocationPromise) {
-        welcomeLocationPromise = fetch('/api/location', {
+        welcomeLocationPromise = fetch(`/api/location${getBrowserTimezoneQuery()}`, {
             headers: { accept: 'application/json' },
             cache: 'no-store'
         }).then(function (response) {

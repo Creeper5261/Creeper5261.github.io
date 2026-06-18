@@ -1,4 +1,20 @@
 const TENCENT_LOCATION_ENDPOINT = 'https://apis.map.qq.com/ws/location/v1/ip'
+export const DEFAULT_SITE_LOCATION = {
+  name: '北京',
+  coordinates: '116.290663,40.158009',
+  result: {
+    ip: '',
+    location: { lat: 40.158009, lng: 116.290663 },
+    ad_info: { nation: '中国', province: '北京市', city: '北京市', district: '昌平区' }
+  }
+}
+
+const CHINA_BROWSER_TIMEZONES = new Set([
+  'Asia/Shanghai',
+  'Asia/Chongqing',
+  'Asia/Harbin',
+  'Asia/Urumqi'
+])
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -23,6 +39,27 @@ export function getClientIp(request) {
 
 function readTencentKey(env = process.env) {
   return env.PUBLIC_TENCENT_MAP_KEY || env.TENCENT_MAP_KEY || ''
+}
+
+export function getBrowserTimeZone(request) {
+  try {
+    return new URL(request.url).searchParams.get('tz') || ''
+  } catch {
+    return ''
+  }
+}
+
+function isChinaBrowserTimeZone(timeZone) {
+  return CHINA_BROWSER_TIMEZONES.has(timeZone)
+}
+
+export function correctProxyLocationResult(result, timeZone = '') {
+  const nation = result?.ad_info?.nation || ''
+  if (nation !== '中国' && isChinaBrowserTimeZone(timeZone)) {
+    return structuredClone(DEFAULT_SITE_LOCATION.result)
+  }
+
+  return result
 }
 
 export async function getTencentLocation({
@@ -67,7 +104,9 @@ export async function handleLocationRequest(request, options = {}) {
     return json({ error: result.reason }, result.status)
   }
 
-  return json(result.data)
+  return json({
+    result: correctProxyLocationResult(result.data.result, getBrowserTimeZone(request))
+  })
 }
 
 export function GET(request) {

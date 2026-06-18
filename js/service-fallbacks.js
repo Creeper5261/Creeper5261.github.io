@@ -39,6 +39,15 @@
         return !!element && element.textContent.replace(/\s+/g, '').length > 0;
     }
 
+    function getBrowserTimezoneQuery() {
+        try {
+            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            return timeZone ? `?tz=${encodeURIComponent(timeZone)}` : '';
+        } catch (err) {
+            return '';
+        }
+    }
+
     function fillWelcome() {
         const target = document.querySelector('#welcome-info');
         if (!target || hasRealText(target)) return;
@@ -86,7 +95,7 @@
         const target = document.querySelector('#hexo_electric_clock');
         if (!card || !target || hasRenderedClock(target)) return;
 
-        fetch('/api/weather', { headers: { accept: 'application/json' } })
+        fetch(`/api/weather${getBrowserTimezoneQuery()}`, { headers: { accept: 'application/json' }, cache: 'no-store' })
             .then((response) => {
                 if (!response.ok) throw new Error('weather_api_unavailable');
                 return response.json();
