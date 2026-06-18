@@ -116,7 +116,7 @@ function showWelcome() {
             ip = window.ipLoacation.result.ip || "未知";
             switch (window.ipLoacation.result.ad_info.province) {
                 case "北京市":
-                    posdesc = "北——京——欢迎你~~~ 你和站长在同一个城市，等风穿过沙河也算打过招呼。";
+                    posdesc = "北——京——欢迎你~~~";
                     break;
                 case "天津市":
                     posdesc = "讲段相声吧。";

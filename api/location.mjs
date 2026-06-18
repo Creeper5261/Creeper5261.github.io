@@ -53,10 +53,17 @@ function isChinaBrowserTimeZone(timeZone) {
   return CHINA_BROWSER_TIMEZONES.has(timeZone)
 }
 
-export function correctProxyLocationResult(result, timeZone = '') {
+export function correctProxyLocationResult(result, timeZone = '', fallbackIp = '') {
   const nation = result?.ad_info?.nation || ''
   if (nation !== '中国' && isChinaBrowserTimeZone(timeZone)) {
-    return structuredClone(DEFAULT_SITE_LOCATION.result)
+    return {
+      ...structuredClone(DEFAULT_SITE_LOCATION.result),
+      ip: result?.ip || fallbackIp || DEFAULT_SITE_LOCATION.result.ip
+    }
+  }
+
+  if (result && !result.ip && fallbackIp) {
+    return { ...result, ip: fallbackIp }
   }
 
   return result
@@ -95,9 +102,10 @@ export async function getTencentLocation({
 }
 
 export async function handleLocationRequest(request, options = {}) {
+  const clientIp = getClientIp(request)
   const result = await getTencentLocation({
     ...options,
-    ip: getClientIp(request)
+    ip: clientIp
   })
 
   if (!result.ok) {
@@ -105,7 +113,7 @@ export async function handleLocationRequest(request, options = {}) {
   }
 
   return json({
-    result: correctProxyLocationResult(result.data.result, getBrowserTimeZone(request))
+    result: correctProxyLocationResult(result.data.result, getBrowserTimeZone(request), clientIp)
   })
 }
 
