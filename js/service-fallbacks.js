@@ -21,6 +21,8 @@
             .${fallbackClass} .dat-fallback-note{font-size:.92em;opacity:.82}
             .dat-clock-fallback{min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center}
             .dat-clock-time{font-size:2rem;font-weight:700;color:var(--theme-color);line-height:1.2}
+            .dat-clock-weather{margin-top:4px;font-weight:700}
+            .dat-clock-meta{font-size:.82em;opacity:.78}
         `;
         document.head.appendChild(style);
     }
@@ -56,21 +58,44 @@
         });
     }
 
-    function fillClock() {
+    function renderClock(target, note, weather) {
+        const now = new Date();
+        const time = now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+        const weatherHtml = weather
+            ? `<div class="dat-clock-weather">${weather.location} ${weather.text} ${weather.temp}°C</div><div class="dat-clock-meta">湿度 ${weather.humidity || '--'}% · ${weather.windDir || '微风'}</div>`
+            : `<div class="dat-fallback-note">${note}</div>`;
+
+        target.innerHTML = `<div class="${fallbackClass} dat-clock-fallback"><div class="dat-clock-time">${time}</div>${weatherHtml}</div>`;
+    }
+
+    function hasRenderedClock(target) {
+        return !!target && (target.children.length > 1 || (hasRealText(target) && !hasSpinner(target)));
+    }
+
+    function fillClockFallback() {
         const card = document.querySelector('.card-clock');
         const target = document.querySelector('#hexo_electric_clock');
         if (!card || !target) return;
 
-        const hasRenderedClock = target.children.length > 1 || (hasRealText(target) && !hasSpinner(target));
-        if (hasRenderedClock) return;
+        if (hasRenderedClock(target)) return;
+        renderClock(target, '天气服务暂时不可用');
+    }
 
-        const now = new Date();
-        const time = now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
-        const note = (services.qweatherKey && (services.gaudMapKey || services.baiduMapAk))
-            ? '天气时钟脚本暂时不可用'
-            : '天气服务待配置';
+    function loadWeatherClock() {
+        const card = document.querySelector('.card-clock');
+        const target = document.querySelector('#hexo_electric_clock');
+        if (!card || !target || hasRenderedClock(target)) return;
 
-        target.innerHTML = `<div class="${fallbackClass} dat-clock-fallback"><div class="dat-clock-time">${time}</div><div class="dat-fallback-note">${note}</div></div>`;
+        fetch('/api/weather', { headers: { accept: 'application/json' } })
+            .then((response) => {
+                if (!response.ok) throw new Error('weather_api_unavailable');
+                return response.json();
+            })
+            .then((payload) => {
+                if (!payload.weather) throw new Error('weather_payload_empty');
+                renderClock(target, '', payload.weather);
+            })
+            .catch(() => fillClockFallback());
     }
 
     function fillTwikoo() {
@@ -104,7 +129,8 @@
         ensureStyle();
         setTimeout(fillWelcome, 3000);
         setTimeout(fillCounters, 8000);
-        setTimeout(fillClock, 8000);
+        setTimeout(loadWeatherClock, 2500);
+        setTimeout(fillClockFallback, 8000);
         setTimeout(fillTwikoo, 10000);
         setTimeout(fillGitCalendar, 10000);
     }

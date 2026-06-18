@@ -1,10 +1,30 @@
-window.DAT_PUBLIC_SERVICES = window.DAT_PUBLIC_SERVICES || {};
-function getPublicServices() {
-    return window.DAT_PUBLIC_SERVICES || {};
+let welcomeLocationPromise;
+
+function requestLocationData() {
+    if (!welcomeLocationPromise) {
+        welcomeLocationPromise = fetch('/api/location', {
+            headers: { accept: 'application/json' },
+            cache: 'no-store'
+        }).then(function (response) {
+            if (!response.ok) throw new Error('location_api_unavailable');
+            return response.json();
+        });
+    }
+
+    return welcomeLocationPromise;
 }
 
-function hasTencentMapKey() {
-    return !!getPublicServices().tencentMapKey;
+function loadWelcomeLocation() {
+    if (!document.getElementById("welcome-info")) return;
+
+    requestLocationData()
+        .then(function (res) {
+            window.ipLoacation = res;
+            showWelcome();
+        })
+        .catch(function () {
+            renderWelcomeFallback("定位服务暂时没有回应，先欢迎回家。");
+        });
 }
 
 function getWelcomeTimeText() {
@@ -28,25 +48,6 @@ function hasTencentLocationData() {
     return !!(window.ipLoacation && window.ipLoacation.result && window.ipLoacation.result.location && window.ipLoacation.result.ad_info);
 }
 
-//get请求
-if (hasTencentMapKey() && window.jQuery) {
-    $.ajax({
-        type: 'get',
-        url: 'https://apis.map.qq.com/ws/location/v1/ip',
-        data: {
-            key: window.DAT_PUBLIC_SERVICES && window.DAT_PUBLIC_SERVICES.tencentMapKey || '',
-            output: 'jsonp',
-        },
-        dataType: 'jsonp',
-        success: function (res) {
-            window.ipLoacation = res;
-            showWelcome();
-        },
-        error: function () {
-            renderWelcomeFallback("定位服务暂时没有回应，先欢迎回家。");
-        }
-    })
-}
 function getDistance(e1, n1, e2, n2) {
     const R = 6371
     const { sin, cos, asin, PI, hypot } = Math
@@ -67,7 +68,7 @@ function showWelcome() {
     if (!document.getElementById("welcome-info")) return;
 
     if (!hasTencentLocationData()) {
-        renderWelcomeFallback(hasTencentMapKey() ? "定位服务还在路上，先欢迎回家。" : "定位服务待配置，先欢迎回家。");
+        renderWelcomeFallback("定位服务还在路上，先欢迎回家。");
         return;
     }
 
@@ -261,6 +262,6 @@ function showWelcome() {
         renderWelcomeFallback("定位信息解析失败，先欢迎回家。");
     }
 }
-window.onload = showWelcome;
+window.addEventListener('load', loadWelcomeLocation);
 // 如果使用了pjax在加上下面这行代码
-document.addEventListener('pjax:complete', showWelcome);
+document.addEventListener('pjax:complete', loadWelcomeLocation);
