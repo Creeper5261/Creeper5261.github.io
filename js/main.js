@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (init) {
       const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
-      const menusWidth = getAllWidth(document.getElementById('menus').children)
-      headerContentWidth = blogInfoWidth + menusWidth
+      const menusWidth = document.querySelector('#menus > .menus_items')?.scrollWidth || 0
+      const navRightWidth = document.getElementById('nav-right')?.offsetWidth || 0
+      headerContentWidth = blogInfoWidth + menusWidth + navRightWidth
       $nav = document.getElementById('nav')
     }
 
