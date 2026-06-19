@@ -3,6 +3,11 @@ import crypto from 'node:crypto'
 const SITE_PV_KEY = 'stats:site:pv'
 const SITE_UV_KEY = 'stats:site:uv'
 const PAGE_KEY_PREFIX = 'stats:page:'
+const STORAGE_ENV_PAIRS = [
+  ['KV_REST_API_URL', 'KV_REST_API_TOKEN'],
+  ['UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN'],
+  ['UPSTASH_REDIS_REST_KV_REST_API_URL', 'UPSTASH_REDIS_REST_KV_REST_API_TOKEN']
+]
 
 function json(data, status = 200) {
   return new Response(JSON.stringify(data), {
@@ -26,10 +31,16 @@ function getClientIp(request) {
 }
 
 function readStorageConfig(env = process.env) {
-  return {
-    url: env.KV_REST_API_URL || env.UPSTASH_REDIS_REST_URL || '',
-    token: env.KV_REST_API_TOKEN || env.UPSTASH_REDIS_REST_TOKEN || ''
+  for (const [urlKey, tokenKey] of STORAGE_ENV_PAIRS) {
+    if (env[urlKey] && env[tokenKey]) {
+      return {
+        url: env[urlKey],
+        token: env[tokenKey]
+      }
+    }
   }
+
+  return { url: '', token: '' }
 }
 
 function readHashSalt(env = process.env) {
