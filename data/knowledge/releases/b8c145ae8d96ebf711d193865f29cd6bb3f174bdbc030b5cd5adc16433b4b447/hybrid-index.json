@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "readerVersion": 2,
+  "strategy": "hybrid-index",
+  "locators": {
+    "objects": {
+      "strategy": "content-addressed",
+      "catalog": "catalog/manifest.json",
+      "base": "site-data"
+    },
+    "listings": {
+      "strategy": "sorted-range-shards",
+      "manifest": "catalog/manifest.json",
+      "base": "release"
+    },
+    "relationships": {
+      "strategy": "adjacency-range-shards",
+      "manifest": "relationships/manifest.json",
+      "base": "release"
+    },
+    "timelines": {
+      "strategy": "monthly-time-buckets",
+      "manifest": "timeline-buckets/manifest.json",
+      "base": "release"
+    },
+    "assets": {
+      "strategy": "content-addressed-reverse-map",
+      "manifest": "asset-manifest.json",
+      "reverseMap": "asset-map.json",
+      "base": "release"
+    },
+    "pulses": {
+      "strategy": "latest-with-private-history",
+      "publication": "pulses.json",
+      "base": "release"
+    },
+    "search": {
+      "strategy": "compatibility-document-source",
+      "file": "search-source.json",
+      "base": "release",
+      "enhanced": false
+    }
+  },
+  "compatibility": {
+    "preferredEntryPoint": "hybrid-index.json",
+    "legacyFiles": [
+      "content-records.json",
+      "content-index.json",
+      "relationship-graph.json",
+      "timelines.json"
+    ]
+  }
+}

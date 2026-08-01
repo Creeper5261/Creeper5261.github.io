@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "strategy": "sorted-range-shards",
+  "maxShardBytes": 131072,
+  "byId": [
+    {
+      "file": "catalog/by-id/ids-0000.json",
+      "hash": "95da4914133e5c0f20a5fed1738f6f55ccaaa42fbd7a6c781b7d1eaf8cf4dc8e",
+      "bytes": 546,
+      "firstId": "site.examples.contract-introduction",
+      "lastId": "site.examples.contract-introduction",
+      "count": 1
+    }
+  ],
+  "byKind": {
+    "note": [
+      {
+        "file": "catalog/by-kind/note-0000.json",
+        "hash": "e10538db193255d23d1d1a8f46f07fd99fa78958bb33bd511ed77b4dfad34dc3",
+        "bytes": 801,
+        "kind": "note",
+        "count": 1,
+        "firstId": "site.examples.contract-introduction",
+        "lastId": "site.examples.contract-introduction"
+      }
+    ]
+  }
+}
