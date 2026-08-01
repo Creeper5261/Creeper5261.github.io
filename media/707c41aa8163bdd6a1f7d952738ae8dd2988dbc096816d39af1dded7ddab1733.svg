@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Content contract flow</title>
+  <desc id="desc">Content and assets pass through validation into generated site data.</desc>
+  <rect width="640" height="240" rx="24" fill="#111827"/>
+  <g fill="#e5e7eb" font-family="system-ui, sans-serif" font-size="22" text-anchor="middle">
+    <rect x="32" y="76" width="156" height="88" rx="16" fill="#2563eb"/>
+    <text x="110" y="128">Content</text>
+    <rect x="242" y="76" width="156" height="88" rx="16" fill="#7c3aed"/>
+    <text x="320" y="128">Validate</text>
+    <rect x="452" y="76" width="156" height="88" rx="16" fill="#059669"/>
+    <text x="530" y="128">Generated</text>
+  </g>
+  <g stroke="#d1d5db" stroke-width="8" stroke-linecap="round">
+    <path d="M196 120h34"/>
+    <path d="M406 120h34"/>
+  </g>
+</svg>
