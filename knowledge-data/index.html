@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="zh-CN" data-astro-cid-i6oequ4r> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex"><title>Knowledge site-data inspector</title><style>:root{color-scheme:light dark;font-family:system-ui,sans-serif}body{max-width:72rem;margin:0 auto;padding:2rem 1rem 4rem;line-height:1.5}h1[data-astro-cid-i6oequ4r]{margin-bottom:.25rem}.summary[data-astro-cid-i6oequ4r]{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:.75rem;margin:1.5rem 0}.card[data-astro-cid-i6oequ4r]{border:1px solid color-mix(in srgb,currentColor 24%,transparent);border-radius:.75rem;padding:1rem}.label[data-astro-cid-i6oequ4r]{display:block;opacity:.7;font-size:.875rem}.value[data-astro-cid-i6oequ4r]{overflow-wrap:anywhere;font-family:ui-monospace,monospace}ul[data-astro-cid-i6oequ4r]{padding-left:1.25rem}a[data-astro-cid-i6oequ4r]{color:inherit}#status[data-astro-cid-i6oequ4r][data-state=error]{color:#c62828}
+</style></head> <body data-root="/data/knowledge" data-astro-cid-i6oequ4r> <main data-astro-cid-i6oequ4r> <h1 data-astro-cid-i6oequ4r>Knowledge site-data inspector</h1> <p data-astro-cid-i6oequ4r>只读检查当前静态发布包；此页面不访问私有内容目录或在线数据库。</p> <p id="status" role="status" data-astro-cid-i6oequ4r>正在读取版本化站点数据…</p> <section class="summary" aria-label="发布摘要" data-astro-cid-i6oequ4r> <div class="card" data-astro-cid-i6oequ4r><span class="label" data-astro-cid-i6oequ4r>Build hash</span><span class="value" id="build-hash" data-astro-cid-i6oequ4r>—</span></div> <div class="card" data-astro-cid-i6oequ4r><span class="label" data-astro-cid-i6oequ4r>Content objects</span><span class="value" id="content-count" data-astro-cid-i6oequ4r>—</span></div> <div class="card" data-astro-cid-i6oequ4r><span class="label" data-astro-cid-i6oequ4r>Pulse snapshots</span><span class="value" id="pulse-count" data-astro-cid-i6oequ4r>—</span></div> </section> <section data-astro-cid-i6oequ4r> <h2 data-astro-cid-i6oequ4r>内容索引</h2> <ul id="content-items" data-astro-cid-i6oequ4r><li data-astro-cid-i6oequ4r>等待数据…</li></ul> </section> <section data-astro-cid-i6oequ4r> <h2 data-astro-cid-i6oequ4r>原始 JSON</h2> <ul data-astro-cid-i6oequ4r> <li data-astro-cid-i6oequ4r><a href="/data/knowledge/release.json" data-astro-cid-i6oequ4r>release.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/content-index.json" data-astro-cid-i6oequ4r>content-index.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/relationship-graph.json" data-astro-cid-i6oequ4r>relationship-graph.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/timelines.json" data-astro-cid-i6oequ4r>timelines.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/search-source.json" data-astro-cid-i6oequ4r>search-source.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/navigation.json" data-astro-cid-i6oequ4r>navigation.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/asset-map.json" data-astro-cid-i6oequ4r>asset-map.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/external-embeds.json" data-astro-cid-i6oequ4r>external-embeds.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/features.json" data-astro-cid-i6oequ4r>features.json</a></li><li data-astro-cid-i6oequ4r><a href="/data/knowledge/pulses.json" data-astro-cid-i6oequ4r>pulses.json</a></li> </ul> </section> <noscript><p data-astro-cid-i6oequ4r>JavaScript 已禁用；仍可通过上方链接直接检查静态 JSON。</p></noscript> </main> <script type="module">
+      const root = document.body.dataset.root
+      const status = document.querySelector('#status')
+      const load = async (file) => {
+        const response = await fetch(`${root}/${file}`)
+        if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`)
+        return response.json()
+      }
+
+      try {
+        const [release, content, pulses] = await Promise.all([
+          load('release.json'),
+          load('content-index.json'),
+          load('pulses.json')
+        ])
+        document.querySelector('#build-hash').textContent = release.buildHash
+        document.querySelector('#content-count').textContent = String(content.items.length)
+        document.querySelector('#pulse-count').textContent = String(pulses.pulses.length)
+        const list = document.querySelector('#content-items')
+        list.replaceChildren(...content.items.map((item) => {
+          const entry = document.createElement('li')
+          entry.textContent = `${item.title} (${item.id})`
+          return entry
+        }))
+        status.textContent = '读取成功。所有数据来自当前静态发布包。'
+      } catch (error) {
+        status.dataset.state = 'error'
+        status.textContent = `读取失败：${error.message}`
+      }
+    </script> </body> </html>
