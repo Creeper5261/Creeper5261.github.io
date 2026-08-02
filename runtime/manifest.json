@@ -1,35 +1,36 @@
 {
   "schemaVersion": 1,
-  "runtimeVersion": "2375bef7e3b5bc2b",
+  "runtimeVersion": "6e547185c0513955",
   "generatedAt": "build-time",
   "entries": [
     {
-      "url": "/runtime/assets/2375bef7e3b5bc2b/local-runtime.js",
-      "file": "runtime/assets/2375bef7e3b5bc2b/local-runtime.js",
-      "bytes": 7624,
-      "sha256": "fa9637edbe476e77f677e013cc2526d461009a523a0def6caebc11f0f46849e0",
-      "integrity": "sha256-+pY37b5Hbnf2d+ATzCUm1GEAmlI6De9srrwR8PRoSeA="
+      "url": "/runtime/assets/6e547185c0513955/local-runtime.js",
+      "file": "runtime/assets/6e547185c0513955/local-runtime.js",
+      "bytes": 7648,
+      "sha256": "3d0f85af2b8dff30aec33c4aec5c3109d6c0d56f6dfbcdb51254a24bddf93e8d",
+      "integrity": "sha256-PQ+FryuN/zCuwzxK7FwxCdbA1W9t+821ElSiS935Po0="
     },
     {
-      "url": "/runtime/assets/2375bef7e3b5bc2b/local-runtime-worker.js",
-      "file": "runtime/assets/2375bef7e3b5bc2b/local-runtime-worker.js",
+      "url": "/runtime/assets/6e547185c0513955/local-runtime-worker.js",
+      "file": "runtime/assets/6e547185c0513955/local-runtime-worker.js",
       "bytes": 1390,
       "sha256": "d5d5816b65c3940b273dfa7be7c982fa4501114bebc880653a77ef6bdb5c1178",
       "integrity": "sha256-1dWBa2XDlAsnPfp758mC+kUBEUvryIBlOnfva9tcEXg="
     },
     {
-      "url": "/local-runtime-sw.2375bef7e3b5bc2b.js",
-      "file": "local-runtime-sw.2375bef7e3b5bc2b.js",
-      "bytes": 1503,
-      "sha256": "bf0d218a2c471a3e6930096faeea6fd07dbcbfecbe5c4b6d15c9248f9c564e81",
-      "integrity": "sha256-vw0hiixHGj5pMAlvrupv0H28v+y+XEttFckkj5xWToE="
+      "url": "/local-runtime-sw.6e547185c0513955.js",
+      "file": "local-runtime-sw.6e547185c0513955.js",
+      "bytes": 1722,
+      "sha256": "a3cf59b5ce111aba7225c007859109cee4a843047f8d42f813507be6617be953",
+      "integrity": "sha256-o89Ztc4RGrpyJcAHhZEJzuSoQwR/jUL4E1B75mF76VM="
     }
   ],
   "precache": [
     "/lab/",
+    "/tools/local-json/",
     "/runtime/manifest.json",
-    "/runtime/assets/2375bef7e3b5bc2b/local-runtime.js",
-    "/runtime/assets/2375bef7e3b5bc2b/local-runtime-worker.js",
-    "/local-runtime-sw.2375bef7e3b5bc2b.js"
+    "/runtime/assets/6e547185c0513955/local-runtime.js",
+    "/runtime/assets/6e547185c0513955/local-runtime-worker.js",
+    "/local-runtime-sw.6e547185c0513955.js"
   ]
 }

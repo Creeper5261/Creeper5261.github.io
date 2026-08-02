@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "site.examples.contract-introduction",
+      "kind": "note",
+      "title": "知识站内容契约示例",
+      "status": "draft",
+      "publishedAt": "2026-08-01",
+      "updatedAt": "2026-08-01",
+      "assetUrls": [
+        "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg"
+      ],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/72/7247c7ebe96d8fb62f5cc5aa08e1016cfa67256a7176f01e80e8edcecfdfa2b5.json",
+        "url": "/data/knowledge/objects/72/7247c7ebe96d8fb62f5cc5aa08e1016cfa67256a7176f01e80e8edcecfdfa2b5.json",
+        "hash": "7247c7ebe96d8fb62f5cc5aa08e1016cfa67256a7176f01e80e8edcecfdfa2b5",
+        "bytes": 1280
+      }
+    }
+  ]
+}

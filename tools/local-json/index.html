@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="zh-CN" data-astro-cid-ctthmpvh> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="description" content="本地 JSON 格式化"><title>本地 JSON 格式化 · 本地工具</title><style>:root{color-scheme:light dark;font-family:system-ui,sans-serif}body{max-width:62rem;margin:0 auto;padding:2rem 1rem 4rem;line-height:1.55}h1[data-astro-cid-ctthmpvh]{margin-bottom:.25rem}.lede[data-astro-cid-ctthmpvh]{color:color-mix(in srgb,currentColor 72%,transparent)}.card[data-astro-cid-ctthmpvh]{border:1px solid color-mix(in srgb,currentColor 24%,transparent);border-radius:.8rem;padding:1rem;margin:1rem 0}.contract[data-astro-cid-ctthmpvh]{display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:.65rem;padding:0;list-style:none}.contract[data-astro-cid-ctthmpvh] li[data-astro-cid-ctthmpvh]{background:color-mix(in srgb,currentColor 8%,transparent);border-radius:.45rem;padding:.55rem .7rem}.label[data-astro-cid-ctthmpvh]{display:block;font-size:.8rem;opacity:.7}textarea[data-astro-cid-ctthmpvh]{box-sizing:border-box;width:100%;min-height:13rem;resize:vertical;font:.92rem ui-monospace,monospace}button[data-astro-cid-ctthmpvh]{border:1px solid color-mix(in srgb,currentColor 32%,transparent);border-radius:.45rem;background:Canvas;color:CanvasText;padding:.45rem .75rem;cursor:pointer}button[data-astro-cid-ctthmpvh]:disabled{cursor:not-allowed;opacity:.55}button[data-astro-cid-ctthmpvh]+button[data-astro-cid-ctthmpvh]{margin-left:.4rem}.dropzone[data-astro-cid-ctthmpvh]{border:1px dashed color-mix(in srgb,currentColor 42%,transparent);border-radius:.55rem;padding:.8rem;text-align:center}.dropzone[data-astro-cid-ctthmpvh][data-active=true]{outline:2px solid Highlight}.status[data-astro-cid-ctthmpvh]{min-height:1.6rem}.error[data-astro-cid-ctthmpvh]{color:#c62828}.muted[data-astro-cid-ctthmpvh]{opacity:.72;font-size:.9rem}progress[data-astro-cid-ctthmpvh]{width:100%}
+</style></head> <body data-runtime-module="/runtime/assets/6e547185c0513955/local-runtime.js" data-worker-module="/runtime/assets/6e547185c0513955/local-runtime-worker.js" data-service-worker="/local-runtime-sw.6e547185c0513955.js" data-max-bytes="2097152" data-astro-cid-ctthmpvh> <main data-astro-cid-ctthmpvh> <p data-astro-cid-ctthmpvh><a href="/" data-astro-cid-ctthmpvh>返回首页</a> · <a href="/lab/" data-astro-cid-ctthmpvh>S3 实验台</a></p> <h1 data-astro-cid-ctthmpvh>本地 JSON 格式化</h1> <p class="lede" data-astro-cid-ctthmpvh>文件和文本始终留在当前浏览器；本工具复用 S3 的 Worker 任务壳，离线时仍可使用。</p> <section class="card" aria-labelledby="contract-title" data-astro-cid-ctthmpvh> <h2 id="contract-title" data-astro-cid-ctthmpvh>工具契约</h2> <ul class="contract" data-astro-cid-ctthmpvh> <li data-astro-cid-ctthmpvh><span class="label" data-astro-cid-ctthmpvh>输入</span>application/json、text/json</li> <li data-astro-cid-ctthmpvh><span class="label" data-astro-cid-ctthmpvh>输出</span>application/json（可下载）</li> <li data-astro-cid-ctthmpvh><span class="label" data-astro-cid-ctthmpvh>隐私</span>仅本地处理，不上传、不经过第三方</li> <li data-astro-cid-ctthmpvh><span class="label" data-astro-cid-ctthmpvh>离线</span>支持（版本化 runtime 缓存）</li> <li data-astro-cid-ctthmpvh><span class="label" data-astro-cid-ctthmpvh>上限</span>2 MB</li> </ul> </section> <section class="card" aria-labelledby="tool-title" data-astro-cid-ctthmpvh> <h2 id="tool-title" data-astro-cid-ctthmpvh>处理 JSON</h2> <div id="dropzone" class="dropzone" tabindex="0" data-astro-cid-ctthmpvh>拖入 JSON 文件，或点击选择<input id="file-input" type="file" accept="application/json,.json,text/json" hidden data-astro-cid-ctthmpvh></div> <label for="json-input" data-astro-cid-ctthmpvh>输入</label> <textarea id="json-input" spellcheck="false" data-astro-cid-ctthmpvh>&#123;"items":["A","B"],"ready":true&#125;</textarea> <p data-astro-cid-ctthmpvh><button id="format" type="button" data-astro-cid-ctthmpvh>格式化</button><button id="fallback" type="button" hidden data-astro-cid-ctthmpvh>改用主线程</button><button id="reset" type="button" hidden data-astro-cid-ctthmpvh>清空并重选</button><button id="download" type="button" disabled data-astro-cid-ctthmpvh>下载结果</button><button id="cancel" type="button" disabled data-astro-cid-ctthmpvh>取消</button></p> <progress id="progress" value="0" max="1" hidden data-astro-cid-ctthmpvh></progress> <p id="status" class="status" role="status" data-astro-cid-ctthmpvh></p> <label for="output" data-astro-cid-ctthmpvh>输出</label> <textarea id="output" readonly aria-live="polite" data-astro-cid-ctthmpvh></textarea> </section> <noscript> <section class="card" data-astro-cid-ctthmpvh> <h2 data-astro-cid-ctthmpvh>无 JavaScript 时</h2> <p data-astro-cid-ctthmpvh>本地工具需要浏览器 Worker 执行；你仍可阅读上面的隐私、输入、输出和离线契约。文件不会被发送到服务器。</p> </section> </noscript> </main> <script type="module">
+      const $ = (selector) => document.querySelector(selector)
+      const status = $('#status')
+      const setStatus = (text, error = false) => { status.textContent = text; status.classList.toggle('error', error) }
+      const downloadText = (text) => { const url = URL.createObjectURL(new Blob([text], { type: 'application/json' })); const link = document.createElement('a'); link.href = url; link.download = 'formatted.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 0) }
+      let runner
+      let controller
+      try {
+        const runtime = await import(document.body.dataset.runtimeModule)
+        runner = runtime.createTaskRunner({ workerUrl: document.body.dataset.workerModule })
+        const sw = await runtime.registerRuntimeServiceWorker(document.body.dataset.serviceWorker, { scope: '/tools/local-json/' })
+        setStatus(`本地任务壳已就绪；离线缓存：${sw.registered ? '已注册' : '不可用'}；未建立网络上传通道。`)
+      } catch (error) {
+        setStatus(`运行时加载失败：${error.message}；仍可阅读本页契约`, true)
+      }
+      const input = $('#json-input')
+      const run = async (forceMainThread = false) => {
+        if (!runner) return
+        controller?.abort()
+        controller = new AbortController()
+        $('#progress').hidden = false
+        $('#cancel').disabled = false
+        $('#fallback').hidden = true
+        $('#reset').hidden = true
+        try {
+          const result = await runner.run('format-json', { input: input.value }, { signal: controller.signal, forceMainThread, onProgress: (value, label) => { $('#progress').value = value; setStatus(label) } })
+          $('#output').value = result.output
+          $('#download').disabled = false
+          setStatus(`完成：${result.bytes} bytes；数据未离开浏览器。`)
+        } catch (error) {
+          if (error.name === 'AbortError') setStatus('已取消，Worker 已停止。')
+          else if (error.code === 'TASK_INPUT_TOO_LARGE') { setStatus(`${error.message}；请选择更小的文件。`, true); $('#reset').hidden = false }
+          else { setStatus(`处理失败：${error.message}；可以主线程重试。`, true); $('#fallback').hidden = false }
+        } finally { $('#cancel').disabled = true; $('#progress').hidden = true }
+      }
+      $('#format').addEventListener('click', () => run())
+      $('#fallback').addEventListener('click', () => run(true))
+      $('#reset').addEventListener('click', () => { input.value = ''; $('#output').value = ''; $('#download').disabled = true; $('#reset').hidden = true; setStatus('已清空，请重新选择文件。'); input.focus() })
+      $('#download').addEventListener('click', () => downloadText($('#output').value))
+      $('#cancel').addEventListener('click', () => controller?.abort())
+      const readFile = async (file) => { input.value = await file.text(); await run() }
+      $('#file-input').addEventListener('change', (event) => { const [file] = event.target.files; if (file) readFile(file) })
+      $('#dropzone').addEventListener('click', () => $('#file-input').click())
+      $('#dropzone').addEventListener('dragover', (event) => { event.preventDefault(); $('#dropzone').dataset.active = 'true' })
+      $('#dropzone').addEventListener('dragleave', () => { delete $('#dropzone').dataset.active })
+      $('#dropzone').addEventListener('drop', (event) => { event.preventDefault(); delete $('#dropzone').dataset.active; const [file] = event.dataTransfer.files; if (file) readFile(file) })
+      $('#dropzone').addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); $('#file-input').click() } })
+    </script> </body> </html>

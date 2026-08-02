@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "site.hybrid-indexing.article",
+    "kind": "article",
+    "title": "混合索引如何让主题关系保持可读",
+    "status": "evergreen",
+    "publishedAt": "2026-08-02",
+    "updatedAt": "2026-08-02",
+    "source": "content/s4/hybrid-indexing-article.json",
+    "body": "混合索引把对象、列表、关系和时间线拆成适合各自访问形态的静态分片；详情页仍由 Astro 预渲染，探索页只读取当前需要的索引。",
+    "relations": [
+      {
+        "type": "explains",
+        "target": "site.hybrid-indexing.entity"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733",
+        "url": "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg",
+        "alt": "混合索引对象与关系的静态派生图",
+        "kind": "image",
+        "authoredPath": "../../assets/examples/content-contract.svg",
+        "sourcePath": "examples/content-contract.svg"
+      }
+    ]
+  }
+}

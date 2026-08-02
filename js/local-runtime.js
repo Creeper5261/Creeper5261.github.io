@@ -173,11 +173,11 @@ export function createTaskRunner({ workerUrl = '/js/local-runtime-worker.js', ma
   }
 }
 
-export async function registerRuntimeServiceWorker(scriptUrl = '/local-runtime-sw.js') {
+export async function registerRuntimeServiceWorker(scriptUrl = '/local-runtime-sw.js', { scope = '/lab/' } = {}) {
   if (typeof navigator === 'undefined' || !navigator.serviceWorker) return { registered: false, reason: 'unsupported' }
   try {
-    await navigator.serviceWorker.register(scriptUrl, { scope: '/lab/' })
-    return { registered: true }
+    await navigator.serviceWorker.register(scriptUrl, { scope })
+    return { registered: true, scope }
   } catch (error) {
     return { registered: false, reason: error.message }
   }

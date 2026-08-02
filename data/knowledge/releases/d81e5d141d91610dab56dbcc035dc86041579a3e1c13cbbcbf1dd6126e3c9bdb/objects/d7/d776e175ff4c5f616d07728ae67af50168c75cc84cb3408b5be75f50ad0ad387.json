@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "tool.local-json",
+    "kind": "tool",
+    "title": "本地 JSON 格式化",
+    "status": "evergreen",
+    "publishedAt": "2026-08-02",
+    "updatedAt": "2026-08-02",
+    "source": "content/s4/local-json-tool.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": "local-json",
+    "privacy": "local-only",
+    "inputKinds": [
+      "application/json",
+      "text/json"
+    ],
+    "outputKinds": [
+      "application/json"
+    ],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

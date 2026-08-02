@@ -11,7 +11,7 @@ self.addEventListener('install', (event) => {
       const versionedCache = await caches.open(cacheName)
       await versionedCache.addAll(manifest.precache)
     } catch {
-      await cache.addAll(['/lab/'])
+      await cache.addAll(['/lab/', '/tools/local-json/'])
     }
     await self.skipWaiting()
   })())
@@ -33,13 +33,15 @@ self.addEventListener('fetch', (event) => {
     if (cached) return cached
     try {
       const response = await fetch(request)
-      if (response.ok && new URL(request.url).pathname.startsWith('/lab')) {
+      const pathname = new URL(request.url).pathname
+      if (response.ok && (pathname.startsWith('/lab') || pathname.startsWith('/tools/local-json'))) {
         const cache = await caches.open(cacheName)
         await cache.put(request, response.clone())
       }
       return response
     } catch {
-      return caches.match('/lab/')
+      const fallback = new URL(request.url).pathname.startsWith('/tools/local-json') ? '/tools/local-json/' : '/lab/'
+      return caches.match(fallback)
     }
   })())
 })
