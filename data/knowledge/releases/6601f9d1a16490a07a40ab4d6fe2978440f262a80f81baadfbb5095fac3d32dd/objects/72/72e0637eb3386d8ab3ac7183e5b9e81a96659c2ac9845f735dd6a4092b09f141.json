@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.43de66f78ff656d8",
+    "kind": "media",
+    "title": "nyaruko.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.43de66f78ff656d8.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/nyaruko.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.8d2f31359d2b36b327f85f2182adbe04d2ff0a7cb633fc8b264d8f54451f8bb3",
+        "url": "/media/8d2f31359d2b36b327f85f2182adbe04d2ff0a7cb633fc8b264d8f54451f8bb3.png",
+        "alt": "nyaruko.png",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/nyaruko.png",
+        "sourcePath": "migrated/img/nyaruko.png"
+      }
+    ]
+  }
+}

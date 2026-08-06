@@ -1,36 +1,50 @@
 {
   "schemaVersion": 1,
-  "runtimeVersion": "6e547185c0513955",
+  "runtimeVersion": "0b22e502a1a55db6",
   "generatedAt": "build-time",
   "entries": [
     {
-      "url": "/runtime/assets/6e547185c0513955/local-runtime.js",
-      "file": "runtime/assets/6e547185c0513955/local-runtime.js",
-      "bytes": 7648,
-      "sha256": "3d0f85af2b8dff30aec33c4aec5c3109d6c0d56f6dfbcdb51254a24bddf93e8d",
-      "integrity": "sha256-PQ+FryuN/zCuwzxK7FwxCdbA1W9t+821ElSiS935Po0="
+      "url": "/runtime/assets/0b22e502a1a55db6/local-runtime.js",
+      "file": "runtime/assets/0b22e502a1a55db6/local-runtime.js",
+      "bytes": 9328,
+      "sha256": "5f982b152ff9b2f17269396ea4c320a41e3d5d8b3ab954d57f279f1b05ba00a3",
+      "integrity": "sha256-X5grFS/5svFyaTlupMMgpB49XYs6uVTVfyefGwW6AKM="
     },
     {
-      "url": "/runtime/assets/6e547185c0513955/local-runtime-worker.js",
-      "file": "runtime/assets/6e547185c0513955/local-runtime-worker.js",
-      "bytes": 1390,
-      "sha256": "d5d5816b65c3940b273dfa7be7c982fa4501114bebc880653a77ef6bdb5c1178",
-      "integrity": "sha256-1dWBa2XDlAsnPfp758mC+kUBEUvryIBlOnfva9tcEXg="
+      "url": "/runtime/assets/0b22e502a1a55db6/local-runtime-worker.js",
+      "file": "runtime/assets/0b22e502a1a55db6/local-runtime-worker.js",
+      "bytes": 2136,
+      "sha256": "1b61d03a159994e11cd145299e4b0c3d93dcf578d529663d7fcf5bc698b90dd5",
+      "integrity": "sha256-G2HQOhWZlOEc0UUpnksMPZPc9XjVKWY9f89bxpi5DdU="
     },
     {
-      "url": "/local-runtime-sw.6e547185c0513955.js",
-      "file": "local-runtime-sw.6e547185c0513955.js",
-      "bytes": 1722,
-      "sha256": "a3cf59b5ce111aba7225c007859109cee4a843047f8d42f813507be6617be953",
-      "integrity": "sha256-o89Ztc4RGrpyJcAHhZEJzuSoQwR/jUL4E1B75mF76VM="
+      "url": "/local-runtime-sw.0b22e502a1a55db6.js",
+      "file": "local-runtime-sw.0b22e502a1a55db6.js",
+      "bytes": 1766,
+      "sha256": "0cdd1b9a65aaefd270675203952bf2b5443987b944db840c365ee49a81690b23",
+      "integrity": "sha256-DN0bmmWq79JwZ1IDlSvytUQ5h7lE24QMNl7kmoFpCyM="
+    },
+    {
+      "url": "/runtime/assets/0b22e502a1a55db6/hash-task.js",
+      "file": "runtime/assets/0b22e502a1a55db6/hash-task.js",
+      "bytes": 335,
+      "sha256": "40f0822c038217864a3a1970c269bf7c8772eb52e143784e08b7186bc56c536d",
+      "integrity": "sha256-QPCCLAOCF4ZKOhlwwmm/fIdy61LhQ3hOCLcYa8VsU20="
+    },
+    {
+      "url": "/runtime/assets/0b22e502a1a55db6/codec-task.js",
+      "file": "runtime/assets/0b22e502a1a55db6/codec-task.js",
+      "bytes": 1800,
+      "sha256": "7758e8c63be659af6bb5bafa0942cdc3048542115948319194333ed9bb5abd65",
+      "integrity": "sha256-d1joxjvmWa9rtbr6CULNwwSFQhFZSDGRlDM+2btavWU="
     }
   ],
   "precache": [
-    "/lab/",
-    "/tools/local-json/",
     "/runtime/manifest.json",
-    "/runtime/assets/6e547185c0513955/local-runtime.js",
-    "/runtime/assets/6e547185c0513955/local-runtime-worker.js",
-    "/local-runtime-sw.6e547185c0513955.js"
+    "/runtime/assets/0b22e502a1a55db6/local-runtime.js",
+    "/runtime/assets/0b22e502a1a55db6/local-runtime-worker.js",
+    "/local-runtime-sw.0b22e502a1a55db6.js",
+    "/runtime/assets/0b22e502a1a55db6/hash-task.js",
+    "/runtime/assets/0b22e502a1a55db6/codec-task.js"
   ]
 }

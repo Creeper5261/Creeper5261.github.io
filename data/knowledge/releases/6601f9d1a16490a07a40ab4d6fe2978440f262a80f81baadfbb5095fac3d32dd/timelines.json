@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "timelines": [
+    {
+      "id": "site.hybrid-indexing.timeline",
+      "kind": "timeline",
+      "title": "混合索引实现时间线",
+      "status": "evergreen",
+      "publishedAt": "2026-08-02",
+      "updatedAt": "2026-08-02",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/d9/d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed.json",
+        "url": "/data/knowledge/objects/d9/d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed.json",
+        "hash": "d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed",
+        "bytes": 1085
+      },
+      "entries": [
+        {
+          "at": "2026-08-01",
+          "title": "完成混合索引基座",
+          "target": {
+            "id": "site.hybrid-indexing.entity",
+            "kind": "entity",
+            "title": "混合索引",
+            "status": "evergreen",
+            "publishedAt": "2026-08-02",
+            "updatedAt": "2026-08-02",
+            "assetUrls": [],
+            "locator": {
+              "strategy": "content-addressed",
+              "base": "site-data",
+              "file": "objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+              "url": "/data/knowledge/objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+              "hash": "fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0",
+              "bytes": 988
+            }
+          }
+        },
+        {
+          "at": "2026-08-02",
+          "title": "加入主题关系探索原型",
+          "target": {
+            "id": "site.hybrid-indexing.article",
+            "kind": "article",
+            "title": "混合索引如何让主题关系保持可读",
+            "status": "evergreen",
+            "publishedAt": "2026-08-02",
+            "updatedAt": "2026-08-02",
+            "assetUrls": [
+              "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg"
+            ],
+            "locator": {
+              "strategy": "content-addressed",
+              "base": "site-data",
+              "file": "objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
+              "url": "/data/knowledge/objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
+              "hash": "e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314",
+              "bytes": 1499
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

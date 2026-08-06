@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.a71e394bd22d7131",
+    "kind": "media",
+    "title": "interlude_maimai.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.a71e394bd22d7131.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/cover/interlude_maimai.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.f34480cb9965575341be051f5c666a1bb7c9b417c23bcf969e03c216c1f5afd7",
+        "url": "/media/f34480cb9965575341be051f5c666a1bb7c9b417c23bcf969e03c216c1f5afd7.png",
+        "alt": "interlude_maimai.png",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/cover/interlude_maimai.png",
+        "sourcePath": "migrated/img/cover/interlude_maimai.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.816efe45554283bf",
+    "kind": "media",
+    "title": "friend_404.gif",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.816efe45554283bf.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/friend_404.gif",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68",
+        "url": "/media/b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68.gif",
+        "alt": "friend_404.gif",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/friend_404.gif",
+        "sourcePath": "migrated/img/friend_404.gif"
+      }
+    ]
+  }
+}

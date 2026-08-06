@@ -343,9 +343,10 @@ document.addEventListener('DOMContentLoaded', function () {
           $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
         }
       } else {
-        if (currentTop === 0) {
-          $header.classList.remove('nav-fixed', 'nav-visible')
-        }
+        // Scroll positions close to the top can remain fractional after wheel,
+        // touchpad, smooth-scroll, or browser restoration. Always restore the
+        // header in this range instead of waiting for an exact zero.
+        $header.classList.remove('nav-fixed', 'nav-visible')
         $rightside.style.cssText = "opacity: ''; transform: ''"
       }
 

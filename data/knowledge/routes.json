@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "site.home",
+      "title": "首页",
+      "route": "/",
+      "kind": "home",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.explain",
+      "title": "可执行解释层",
+      "route": "/explain/",
+      "kind": "explain",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.explore",
+      "title": "主题探索",
+      "route": "/explore/",
+      "kind": "explore",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.explore-map",
+      "title": "探索地图",
+      "route": "/explore/map/",
+      "kind": "explore-map",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.flow",
+      "title": "文字流",
+      "route": "/flow/",
+      "kind": "flow",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.knowledge-data",
+      "title": "site-data 检视器",
+      "route": "/knowledge-data/",
+      "kind": "knowledge-data",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.lab",
+      "title": "本地实验台",
+      "route": "/lab/",
+      "kind": "lab",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.paths",
+      "title": "知识路径",
+      "route": "/paths/",
+      "kind": "paths",
+      "source": "site-routes"
+    },
+    {
+      "id": "site.tools",
+      "title": "工具",
+      "route": "/tools/",
+      "kind": "tools",
+      "source": "site-routes"
+    },
+    {
+      "id": "tool.codec",
+      "title": "编码与摘要",
+      "route": "/tools/codec/",
+      "kind": "tool",
+      "source": "tool-manifest"
+    },
+    {
+      "id": "tool.image-compressor",
+      "title": "图片压缩",
+      "route": "/tools/image-compressor/",
+      "kind": "tool",
+      "source": "tool-manifest"
+    },
+    {
+      "id": "tool.markdown-editor",
+      "title": "Markdown 编辑器",
+      "route": "/tools/markdown/",
+      "kind": "tool",
+      "source": "tool-manifest"
+    },
+    {
+      "id": "site.topics",
+      "title": "主题展厅",
+      "route": "/topics/",
+      "kind": "topics",
+      "source": "site-routes"
+    }
+  ]
+}

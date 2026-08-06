@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.c148926975866e3b",
+    "kind": "media",
+    "title": "QRCode.jpg",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.c148926975866e3b.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/QRCode.jpg",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.bce86ad3c9a4ca3f2bc5f13d27d999dbf59e2da8dbd2939f07f44db064b21bcd",
+        "url": "/media/bce86ad3c9a4ca3f2bc5f13d27d999dbf59e2da8dbd2939f07f44db064b21bcd.jpg",
+        "alt": "QRCode.jpg",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/QRCode.jpg",
+        "sourcePath": "migrated/img/QRCode.jpg"
+      }
+    ]
+  }
+}

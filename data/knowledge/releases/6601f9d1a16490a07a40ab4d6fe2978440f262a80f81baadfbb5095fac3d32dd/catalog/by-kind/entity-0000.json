@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "site.hybrid-indexing.entity",
+      "kind": "entity",
+      "title": "混合索引",
+      "status": "evergreen",
+      "publishedAt": "2026-08-02",
+      "updatedAt": "2026-08-02",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+        "url": "/data/knowledge/objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+        "hash": "fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0",
+        "bytes": 988
+      }
+    }
+  ]
+}

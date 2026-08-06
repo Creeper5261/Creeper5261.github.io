@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.4a29ad41bdc1517a",
+    "kind": "article",
+    "title": "音乐",
+    "status": "archived",
+    "publishedAt": "2023-05-15T10:26:19.000Z",
+    "updatedAt": "2023-05-17T01:07:06.191Z",
+    "source": "content/articles/article.4a29ad41bdc1517a.json",
+    "body": "",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.9e872f3ca23cb0cb"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/music/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

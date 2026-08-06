@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.10892468fba48589",
+    "kind": "media",
+    "title": "train_curve.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.10892468fba48589.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/temp_classify/1dcnns/train_curve.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.67db186efe68dc7375c220213665d27538fece6b8af3afcf0a2885c40b39c77e",
+        "url": "/media/67db186efe68dc7375c220213665d27538fece6b8af3afcf0a2885c40b39c77e.png",
+        "alt": "ClassificationSummary",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/temp_classify/1dcnns/train_curve.png",
+        "sourcePath": "migrated/temp_classify/1dcnns/train_curve.png"
+      }
+    ]
+  }
+}

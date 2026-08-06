@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.a0c807334ceb1bde",
+    "kind": "article",
+    "title": "留言板",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/articles/article.a0c807334ceb1bde.json",
+    "body": "<style>@media screen and (max-width: 600px) {\n  #beforeimg,\n  #afterimg{\n    display: none !important;\n  }\n}\n@media screen and (min-width: 600px) {\n  #article-container img {\n    margin: 0 auto 0rem;\n  }\n  #form-wrap {\n    overflow: hidden;\n    height: 447px;\n    position: relative;\n    top: 0px;\n    transition: all 1s ease-in-out .3s;\n    z-index: 0;\n  }\n  #form-wrap:hover {\n    height: 1050px;\n    top: -200px;\n  }\n  #beforeimg {\n    position: absolute;\n    bottom: 126px;\n    left: 0px;\n    background-repeat: no-repeat;\n    width: 530px;\n    height: 317px;\n    z-index: -100;\n    pointer-events: none;\n  }\n\n  #afterimg {\n    position: absolute;\n    bottom: -2px;\n    left: 0;\n    background-repeat: no-repeat;\n    width: 530px;\n    height: 259px;\n    z-index: 100;\n    pointer-events: none;\n  }\n\n  #envelope {\n    position: relative;\n    overflow: visible;\n    width: 500px;\n    margin: 0px auto;\n    transition: all 1s ease-in-out .3s;\n    padding-top: 200px;\n  }\n\n  #maincontent {\n    width: 530px;\n    margin: 20px auto 0;\n  }\n\n  .formmain {\n    background: white;\n    width: 95%;\n    max-width: 800px;\n    margin: auto auto;\n    border-radius: 5px;\n    border: 1px solid;\n    overflow: hidden;\n    -webkit-box-shadow: 0px 0px 20px 0px #000000;\n    box-shadow: 0px 0px 20px 0px #000000;\n  }\n}\n\n/* 夜间模式 */\n[data-theme='dark']\n.formmain {\n  background: #323232;\n}\n[data-theme='dark']\n.comments {\n  background: #5a5a5a !important;\n}</style><div id=\"maincontent\"><div id=\"form-wrap\"><img class=\"no-lightbox\" id=\"beforeimg\" src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png\"><div id=\"envelope\"><form><div class=\"formmain\" style=\"pointer-events: none;\"><img class=\"headerimg no-lightbox\" src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg\" style=\"width: 100%;overflow: hidden;pointer-events: none;\"><div class=\"comments-main\"><h3 class=\"title3\" style=\"text-decoration: none;color: $theme-color;text-align: center;\">来自DAT的留言:</h3><div class=\"comments\" style=\"text-align: center;border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;\"><div>有什么想问的？</div><div>有什么想说的？</div><div>有什么想吐槽的？</div><div>哪怕是有什么想吃的，都可以告诉我哦~</div></div><div class=\"bottomcontent\" style=\"text-align: center;margin-top: 40px;\"><img class=\"bottomimg no-lightbox\" src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png\" style=\"width: 100%;margin: 5px auto 5px auto;display: block;pointer-events: none;\"></div><p class=\"bottomhr\" style=\"font-size: 12px;text-align: center;color: #999;\">自动书记人偶竭诚为您服务！</p></div></div></form></div><img class=\"no-lightbox\" id=\"afterimg\" src=\"https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png\"></div></div>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.a4425ace2dc89349"
+      },
+      {
+        "type": "references",
+        "target": "external.5806f56d5f84cb55"
+      },
+      {
+        "type": "references",
+        "target": "external.e93790bebe1dc0e5"
+      },
+      {
+        "type": "references",
+        "target": "external.b2f78c8e8ddf7a05"
+      },
+      {
+        "type": "references",
+        "target": "external.3b1980460362be6c"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/comments/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.a29e9133c24ea866",
+    "kind": "media",
+    "title": "coconut.ico",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.a29e9133c24ea866.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/coconut.ico",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.e0d4d43d93e391750bd94b5acffb4e7e144b33e51efda4601e595e3044e1f3f3",
+        "url": "/media/e0d4d43d93e391750bd94b5acffb4e7e144b33e51efda4601e595e3044e1f3f3.ico",
+        "alt": "coconut.ico",
+        "kind": "file",
+        "authoredPath": "../../assets/migrated/img/coconut.ico",
+        "sourcePath": "migrated/img/coconut.ico"
+      }
+    ]
+  }
+}

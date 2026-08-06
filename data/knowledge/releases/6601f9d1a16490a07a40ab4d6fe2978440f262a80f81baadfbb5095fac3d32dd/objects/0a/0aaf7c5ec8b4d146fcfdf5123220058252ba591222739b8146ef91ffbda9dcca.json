@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "tool.image-compressor",
+    "kind": "tool",
+    "title": "图片压缩",
+    "status": "evergreen",
+    "publishedAt": "2026-08-05",
+    "updatedAt": "2026-08-05",
+    "source": "content/s5/image-compressor-tool.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": "image-compressor",
+    "privacy": "local-only",
+    "inputKinds": [
+      "image/jpeg",
+      "image/png",
+      "image/webp"
+    ],
+    "outputKinds": [
+      "image/jpeg",
+      "image/png",
+      "image/webp"
+    ],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

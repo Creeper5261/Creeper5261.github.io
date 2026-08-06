@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "strategy": "monthly-time-buckets",
+  "maxShardBytes": 131072,
+  "buckets": [
+    {
+      "bucket": "2026-08",
+      "shards": [
+        {
+          "file": "timeline-buckets/2026-08-0000.json",
+          "hash": "4af7268bd00a9b9087f7aba6606fc3dc9751d4cd253f24e4bc34152f22b18ac9",
+          "bytes": 1833,
+          "bucket": "2026-08",
+          "count": 2,
+          "firstAt": "2026-08-02",
+          "lastAt": "2026-08-01"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.e35aceab37c76250",
+    "kind": "media",
+    "title": "res.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.e35aceab37c76250.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/temp_classify/1dcnns/res.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.b93346de18dd52fcc6277e8b72e8b62fd83f42bb75e65e30607d5572d1c7a651",
+        "url": "/media/b93346de18dd52fcc6277e8b72e8b62fd83f42bb75e65e30607d5572d1c7a651.png",
+        "alt": "ClassificationSummary",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/temp_classify/1dcnns/res.png",
+        "sourcePath": "migrated/temp_classify/1dcnns/res.png"
+      }
+    ]
+  }
+}
