@@ -379,6 +379,31 @@ body:has(.tool-home) #to_comment {
   width: 100%;
 }
 
+#content-inner.layout.latex-tool-layout {
+  align-items: flex-start;
+  max-width: 1680px;
+}
+
+#content-inner.layout.latex-tool-layout > #page,
+#content-inner.layout.latex-tool-layout > #page > #article-container {
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100% !important;
+}
+
+#content-inner.layout.latex-tool-layout > #page > #aside-content {
+  display: none !important;
+}
+
+.latex-editor-page {
+  position: relative;
+  display: block;
+}
+
+.latex-main-column {
+  min-width: 0;
+}
+
 .latex-editor-actions {
   display: flex;
   flex-wrap: wrap;
@@ -408,6 +433,470 @@ body:has(.tool-home) #to_comment {
   color: var(--font-color);
   font-size: .78rem;
   opacity: .72;
+}
+
+.latex-editor-actions .latex-export-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-left: .35rem;
+  padding-left: .75rem;
+  border-left: 1px solid color-mix(in srgb, var(--font-color) 14%, transparent);
+  opacity: 1;
+}
+
+.latex-export-controls label {
+  color: var(--font-color);
+  font-size: .78rem;
+  white-space: nowrap;
+}
+
+.latex-export-controls select {
+  min-height: 2.15rem;
+  padding: .32rem 1.8rem .32rem .55rem;
+  border: 1px solid var(--text-bg-hover);
+  border-radius: 6px;
+  color: var(--font-color);
+  background: var(--card-bg);
+  font: inherit;
+}
+
+.latex-editor-actions #latex-status {
+  margin-left: auto;
+}
+
+.latex-reference-panel {
+  --latex-reference-width: 720px;
+  position: fixed;
+  z-index: 90;
+  top: 50%;
+  right: max(.75rem, calc((100vw - 1680px) / 2 + .75rem));
+  display: flex;
+  box-sizing: border-box;
+  width: min(var(--latex-reference-width), calc(100vw - 4rem));
+  height: min(760px, calc(100vh - 7rem));
+  min-height: 28rem;
+  flex-direction: column;
+  overflow: visible;
+  border: 1px solid color-mix(in srgb, var(--font-color) 13%, transparent);
+  border-radius: 10px;
+  color: var(--font-color);
+  background: color-mix(in srgb, var(--card-bg) 97%, transparent);
+  box-shadow: 0 12px 30px rgba(26, 35, 52, .14);
+  transform: translateY(-50%);
+  transition: transform .3s cubic-bezier(.22, 1, .36, 1), opacity .2s ease, visibility 0s linear;
+}
+
+.latex-reference-panel[data-open="false"] {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(calc(100% + 4rem), -50%);
+  transition: transform .28s cubic-bezier(.4, 0, 1, 1), opacity .18s ease, visibility 0s linear .28s;
+}
+
+.latex-reference-panel[data-resizing="true"] {
+  transition: none;
+  user-select: none;
+}
+
+.latex-reference-resize {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: -6px;
+  width: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.latex-reference-resize::before {
+  position: absolute;
+  top: 3.8rem;
+  bottom: 1rem;
+  left: 50%;
+  width: 1px;
+  background: color-mix(in srgb, var(--font-color) 18%, transparent);
+  content: '';
+  transform: translateX(-50%);
+  transition: width .14s ease, background .14s ease;
+}
+
+.latex-reference-resize:hover::before,
+.latex-reference-resize:focus-visible::before,
+.latex-reference-panel[data-resizing="true"] .latex-reference-resize::before {
+  width: 3px;
+  background: var(--theme-color);
+}
+
+.latex-reference-toggle {
+  display: grid;
+  width: 2.35rem;
+  height: 3.35rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--font-color) 14%, transparent);
+  color: var(--font-color);
+  background: var(--card-bg);
+  box-shadow: 0 8px 20px rgba(26, 35, 52, .2);
+  cursor: pointer;
+}
+
+.latex-reference-toggle:hover,
+.latex-reference-toggle:focus-visible {
+  color: var(--theme-color);
+}
+
+.latex-reference-toggle svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.latex-reference-toggle.is-collapse {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: -2.35rem;
+  border-right: 0;
+  border-radius: 9px 0 0 9px;
+  transform: translateY(-50%);
+}
+
+.latex-reference-toggle.is-expand {
+  position: fixed;
+  z-index: 91;
+  top: 50%;
+  right: 0;
+  border-right: 0;
+  border-radius: 9px 0 0 9px;
+  transform: translateY(-50%);
+}
+
+.latex-reference-toggle.is-expand[hidden] {
+  display: none;
+}
+
+.latex-reference-heading {
+  padding: 1rem 1rem .7rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--font-color) 10%, transparent);
+}
+
+.latex-reference-heading h2 {
+  margin: 0 0 .65rem;
+  color: var(--text-highlight-color);
+  font-size: 1.15rem;
+}
+
+.latex-reference-heading input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .48rem .65rem;
+  border: 1px solid color-mix(in srgb, var(--font-color) 16%, transparent);
+  border-radius: 6px;
+  outline: 0;
+  color: var(--font-color);
+  background: var(--card-bg);
+  font: inherit;
+}
+
+.latex-reference-heading input:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--theme-color) 14%, transparent);
+}
+
+.latex-reference-filters {
+  display: flex;
+  gap: .3rem;
+  padding: .65rem 1rem;
+  overflow-x: auto;
+  border-bottom: 1px solid color-mix(in srgb, var(--font-color) 9%, transparent);
+}
+
+.latex-reference-filters button {
+  padding: .26rem .48rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--font-color);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+
+.latex-reference-filters button:hover,
+.latex-reference-filters button[aria-pressed="true"] {
+  color: var(--theme-color);
+  background: color-mix(in srgb, var(--theme-color) 11%, transparent);
+}
+
+.latex-reference-groups {
+  min-height: 0;
+  flex: 1;
+  padding: 0 1rem 1rem;
+  overflow: auto;
+}
+
+.latex-reference-group h3 {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  margin: 0;
+  padding: .85rem 0 .45rem;
+  color: var(--text-highlight-color);
+  background: var(--card-bg);
+  font-size: .86rem;
+}
+
+.latex-reference-group > table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: .72rem;
+}
+
+.latex-reference-group > table th,
+.latex-reference-group > table > tbody > tr > td {
+  padding: .48rem .35rem;
+  border: 1px solid color-mix(in srgb, var(--font-color) 12%, transparent);
+  vertical-align: middle;
+}
+
+.latex-reference-group > table th:first-child,
+.latex-reference-group > table > tbody > tr > td:first-child {
+  width: 56%;
+}
+
+.latex-reference-group > table th:last-child,
+.latex-reference-group > table > tbody > tr > td:last-child {
+  width: 44%;
+}
+
+.latex-reference-group > table th {
+  color: color-mix(in srgb, var(--font-color) 65%, transparent);
+  font-weight: 500;
+  text-align: left;
+}
+
+.latex-reference-code {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  border: 0;
+  color: var(--font-color);
+  background: transparent;
+  cursor: copy;
+  text-align: left;
+}
+
+.latex-reference-code:hover,
+.latex-reference-code:focus-visible {
+  color: var(--theme-color);
+}
+
+.latex-reference-code code {
+  overflow-wrap: normal;
+  white-space: pre;
+  font-size: .68rem;
+  line-height: 1.45;
+}
+
+.latex-reference-result {
+  overflow: auto;
+  text-align: center;
+}
+
+.latex-reference-result .katex {
+  font-size: .9rem;
+}
+
+.latex-reference-math.is-display {
+  display: block;
+  overflow-x: auto;
+}
+
+.latex-reference-section,
+.latex-reference-subsection {
+  display: block;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--theme-color) 45%, transparent);
+  color: var(--text-highlight-color);
+  text-align: left;
+}
+
+.latex-reference-subsection {
+  border-bottom: 0;
+  font-size: .86em;
+}
+
+.latex-reference-subsubsection {
+  display: block;
+  color: var(--text-highlight-color);
+  font-size: .78em;
+  text-align: left;
+}
+
+.latex-reference-document {
+  display: grid;
+  gap: .2rem;
+  text-align: center;
+}
+
+.latex-reference-document > span {
+  color: color-mix(in srgb, var(--font-color) 64%, transparent);
+  font-size: .8em;
+}
+
+.latex-reference-document > p {
+  margin: .45rem 0 0;
+  padding-top: .4rem;
+  border-top: 1px solid color-mix(in srgb, var(--font-color) 14%, transparent);
+  text-align: left;
+}
+
+.latex-reference-contents,
+.latex-reference-result ul,
+.latex-reference-result ol {
+  margin: 0;
+  padding-left: 1.1rem;
+  text-align: left;
+}
+
+.latex-reference-contents li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted color-mix(in srgb, var(--font-color) 24%, transparent);
+}
+
+.latex-reference-abstract {
+  display: block;
+  padding: .3rem;
+  border-left: 2px solid var(--theme-color);
+  text-align: left;
+}
+
+.latex-reference-pagebreak {
+  display: block;
+  border-top: 1px dashed color-mix(in srgb, var(--font-color) 32%, transparent);
+  color: color-mix(in srgb, var(--font-color) 58%, transparent);
+  font-size: .78em;
+}
+
+.latex-reference-quote {
+  margin: 0;
+  padding: .35rem .5rem;
+  border-left: 2px solid var(--theme-color);
+  color: color-mix(in srgb, var(--font-color) 78%, transparent);
+  text-align: left;
+}
+
+.latex-reference-alignment {
+  display: grid;
+  gap: .5rem;
+}
+
+.latex-reference-alignment span:last-child {
+  text-align: right;
+}
+
+.latex-reference-result dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .15rem .45rem;
+  margin: 0;
+  text-align: left;
+}
+
+.latex-reference-result dt {
+  font-weight: 700;
+}
+
+.latex-reference-result dd {
+  margin: 0;
+}
+
+.latex-reference-table-figure {
+  margin: 0;
+}
+
+.latex-reference-table-figure figcaption,
+.latex-reference-figure figcaption,
+.latex-reference-two-figures figcaption {
+  margin-top: .3rem;
+  color: color-mix(in srgb, var(--font-color) 68%, transparent);
+  font-size: .78em;
+}
+
+.latex-reference-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.latex-reference-table th,
+.latex-reference-table td {
+  padding: .16rem;
+  border: 1px solid color-mix(in srgb, var(--font-color) 20%, transparent);
+}
+
+.latex-reference-table.is-booktabs th,
+.latex-reference-table.is-booktabs td {
+  border-width: 0 0 1px;
+}
+
+.latex-reference-table.is-booktabs tr:first-child th {
+  border-top: 2px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+
+.latex-reference-table.is-booktabs tr:last-child td {
+  border-bottom: 2px solid currentColor;
+}
+
+.latex-reference-figure,
+.latex-reference-two-figures figure {
+  margin: 0;
+}
+
+.latex-reference-figure > span,
+.latex-reference-two-figures figure > span {
+  display: grid;
+  min-height: 3.2rem;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--font-color) 18%, transparent);
+  background: color-mix(in srgb, var(--theme-color) 7%, var(--card-bg));
+  font-size: 1.35rem;
+}
+
+.latex-reference-two-figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .35rem;
+}
+
+.latex-reference-result a {
+  color: var(--theme-color);
+}
+
+.latex-reference-bibliography {
+  display: block;
+  text-align: left;
+}
+
+.latex-reference-group[hidden],
+[data-reference-entry][hidden] {
+  display: none !important;
 }
 
 .latex-workbench {
@@ -709,6 +1198,61 @@ body:has(.tool-home) #to_comment {
   text-align: center;
 }
 
+.latex-pdf-stage {
+  position: fixed;
+  z-index: -1000;
+  top: 0;
+  left: -100000px;
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  overflow: visible;
+  background: var(--card-bg);
+}
+
+.latex-pdf-stage .latex-preview-document {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  height: auto;
+  padding: 72px 68px 86px;
+  overflow: visible;
+  background: var(--card-bg);
+}
+
+.latex-pdf-stage.is-plain,
+.latex-pdf-stage.is-plain .latex-preview-document {
+  color: #222;
+  background: #fff;
+}
+
+.latex-pdf-stage.is-plain .latex-preview-document {
+  font-family: "Times New Roman", "Songti SC", serif;
+}
+
+.latex-pdf-stage.is-plain .latex-preview-document h1,
+.latex-pdf-stage.is-plain .latex-preview-document h2,
+.latex-pdf-stage.is-plain .latex-preview-document h3,
+.latex-pdf-stage.is-plain .latex-preview-document h4,
+.latex-pdf-stage.is-plain .latex-preview-document h5,
+.latex-pdf-stage.is-plain .latex-preview-document h6 {
+  color: #111;
+}
+
+.latex-pdf-stage.is-plain .latex-preview-document h2 {
+  border-bottom-color: #bbb;
+}
+
+.latex-pdf-stage.is-plain .latex-theorem,
+.latex-pdf-stage.is-plain .latex-lemma,
+.latex-pdf-stage.is-plain .latex-proposition,
+.latex-pdf-stage.is-plain .latex-corollary,
+.latex-pdf-stage.is-plain .latex-definition,
+.latex-pdf-stage.is-plain .latex-proof {
+  border-left-color: #777;
+  background: #f7f7f7;
+}
+
 @media screen and (max-width: 800px) {
   .latex-editor-actions span {
     width: 100%;
@@ -734,6 +1278,34 @@ body:has(.tool-home) #to_comment {
     border-right: 0;
     border-bottom: 1px solid color-mix(in srgb, var(--font-color) 15%, transparent);
     box-shadow: 0 7px 18px rgba(26, 35, 52, .09);
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .latex-reference-panel {
+    right: .75rem;
+    height: min(700px, calc(100vh - 5rem));
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .latex-reference-panel {
+    right: .5rem;
+    width: min(var(--latex-reference-width), calc(100vw - 3rem));
+    min-height: 24rem;
+  }
+
+  .latex-editor-actions .latex-export-controls {
+    width: 100%;
+    margin-left: 0;
+    padding: .55rem 0 0;
+    border-top: 1px solid color-mix(in srgb, var(--font-color) 12%, transparent);
+    border-left: 0;
+  }
+
+  .latex-editor-actions #latex-status {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
