@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "paths": [
+    {
+      "id": "path.collection.site.hybrid-indexing.collection",
+      "title": "混合索引实践集合 · 主题路径",
+      "description": "沿集合成员顺序阅读该主题：从集合进入，逐个浏览成员。",
+      "kind": "collection",
+      "steps": [
+        {
+          "id": "site.hybrid-indexing.collection",
+          "kind": "collection",
+          "title": "混合索引实践集合",
+          "status": "evergreen",
+          "publishedAt": "2026-08-02",
+          "updatedAt": "2026-08-02",
+          "assetUrls": [],
+          "locator": {
+            "strategy": "content-addressed",
+            "base": "site-data",
+            "file": "objects/ae/aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4.json",
+            "url": "/data/knowledge/objects/ae/aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4.json",
+            "hash": "aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4",
+            "bytes": 880
+          }
+        },
+        {
+          "id": "site.hybrid-indexing.article",
+          "kind": "article",
+          "title": "混合索引如何让主题关系保持可读",
+          "status": "evergreen",
+          "publishedAt": "2026-08-02",
+          "updatedAt": "2026-08-02",
+          "assetUrls": [
+            "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg"
+          ],
+          "locator": {
+            "strategy": "content-addressed",
+            "base": "site-data",
+            "file": "objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
+            "url": "/data/knowledge/objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
+            "hash": "e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314",
+            "bytes": 1499
+          }
+        },
+        {
+          "id": "site.hybrid-indexing.entity",
+          "kind": "entity",
+          "title": "混合索引",
+          "status": "evergreen",
+          "publishedAt": "2026-08-02",
+          "updatedAt": "2026-08-02",
+          "assetUrls": [],
+          "locator": {
+            "strategy": "content-addressed",
+            "base": "site-data",
+            "file": "objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+            "url": "/data/knowledge/objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+            "hash": "fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0",
+            "bytes": 988
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "site.hybrid-indexing.collection",
+          "to": "site.hybrid-indexing.article",
+          "type": "contains"
+        },
+        {
+          "from": "site.hybrid-indexing.collection",
+          "to": "site.hybrid-indexing.entity",
+          "type": "contains"
+        }
+      ]
+    },
+    {
+      "id": "path.entity.site.hybrid-indexing.entity.site.hybrid-indexing.article",
+      "title": "混合索引 · 知识路径",
+      "description": "从实体「混合索引」出发，沿关系逐级展开。",
+      "kind": "entity",
+      "steps": [
+        {
+          "id": "site.hybrid-indexing.entity",
+          "kind": "entity",
+          "title": "混合索引",
+          "status": "evergreen",
+          "publishedAt": "2026-08-02",
+          "updatedAt": "2026-08-02",
+          "assetUrls": [],
+          "locator": {
+            "strategy": "content-addressed",
+            "base": "site-data",
+            "file": "objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+            "url": "/data/knowledge/objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
+            "hash": "fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0",
+            "bytes": 988
+          }
+        },
+        {
+          "id": "site.hybrid-indexing.article",
+          "kind": "article",
+          "title": "混合索引如何让主题关系保持可读",
+          "status": "evergreen",
+          "publishedAt": "2026-08-02",
+          "updatedAt": "2026-08-02",
+          "assetUrls": [
+            "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg"
+          ],
+          "locator": {
+            "strategy": "content-addressed",
+            "base": "site-data",
+            "file": "objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
+            "url": "/data/knowledge/objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
+            "hash": "e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314",
+            "bytes": 1499
+          }
+        }
+      ],
+      "edges": [
+        {
+          "from": "site.hybrid-indexing.entity",
+          "to": "site.hybrid-indexing.article",
+          "type": "illustrated-by"
+        }
+      ]
+    }
+  ]
+}

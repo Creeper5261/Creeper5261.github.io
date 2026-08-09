@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "strategy": "sorted-range-shards",
+  "maxShardBytes": 131072,
+  "byId": [
+    {
+      "file": "catalog/by-id/ids-0000.json",
+      "hash": "c4415e3c6c79f0c7554dc1b773b81bcdbba675a78c5b59f7190c9b04cb02b3b5",
+      "bytes": 66425,
+      "firstId": "article.07c63b32081025d9",
+      "lastId": "tool.markdown-editor",
+      "count": 133
+    }
+  ],
+  "byKind": {
+    "article": [
+      {
+        "file": "catalog/by-kind/article-0000.json",
+        "hash": "271b9b0dcf982e18e7dd3520ca68fc4d782a8142cd6abb8245f08c798194f696",
+        "bytes": 16104,
+        "kind": "article",
+        "count": 23,
+        "firstId": "site.hybrid-indexing.article",
+        "lastId": "article.a0c807334ceb1bde"
+      }
+    ],
+    "collection": [
+      {
+        "file": "catalog/by-kind/collection-0000.json",
+        "hash": "fd8a16367a0d8a8ed388d0134c24e243170d8ce063e084c1b8482c772247f54a",
+        "bytes": 710,
+        "kind": "collection",
+        "count": 1,
+        "firstId": "site.hybrid-indexing.collection",
+        "lastId": "site.hybrid-indexing.collection"
+      }
+    ],
+    "entity": [
+      {
+        "file": "catalog/by-kind/entity-0000.json",
+        "hash": "3b4d4a022e142888a964a6b03681d77934af39ffc6cb7c45b9911de63ee45dc2",
+        "bytes": 690,
+        "kind": "entity",
+        "count": 1,
+        "firstId": "site.hybrid-indexing.entity",
+        "lastId": "site.hybrid-indexing.entity"
+      }
+    ],
+    "external-embed": [
+      {
+        "file": "catalog/by-kind/external-embed-0000.json",
+        "hash": "86c0865e8c6eac3bdbff90815eb6c94341beeb70cd1b91ebdb6b05fd1f49aa07",
+        "bytes": 51503,
+        "kind": "external-embed",
+        "count": 75,
+        "firstId": "external.05a24ac9fe93aee8",
+        "lastId": "external.ffa3f469e371f5f9"
+      }
+    ],
+    "media": [
+      {
+        "file": "catalog/by-kind/media-0000.json",
+        "hash": "ba83fbc3e6a1fab73844f6b516ef7fb4f7a519ec6a9112036edff3a76db56f2e",
+        "bytes": 19484,
+        "kind": "media",
+        "count": 27,
+        "firstId": "media.093945eeb2e7c495",
+        "lastId": "media.e93a6633a9bcf163"
+      }
+    ],
+    "note": [
+      {
+        "file": "catalog/by-kind/note-0000.json",
+        "hash": "e10538db193255d23d1d1a8f46f07fd99fa78958bb33bd511ed77b4dfad34dc3",
+        "bytes": 801,
+        "kind": "note",
+        "count": 1,
+        "firstId": "site.examples.contract-introduction",
+        "lastId": "site.examples.contract-introduction"
+      }
+    ],
+    "pulse": [
+      {
+        "file": "catalog/by-kind/pulse-0000.json",
+        "hash": "42ceb0c1fff8c80f38b9e6c51826ca20d82d716d0ec6deb4b666495f7ab33215",
+        "bytes": 706,
+        "kind": "pulse",
+        "count": 1,
+        "firstId": "pulse.github-repositories",
+        "lastId": "pulse.github-repositories"
+      }
+    ],
+    "timeline": [
+      {
+        "file": "catalog/by-kind/timeline-0000.json",
+        "hash": "0d4806c3cf44c557ae9413821d6b093905f7e9fc4e5578ad0c8843be3cd1fdcc",
+        "bytes": 710,
+        "kind": "timeline",
+        "count": 1,
+        "firstId": "site.hybrid-indexing.timeline",
+        "lastId": "site.hybrid-indexing.timeline"
+      }
+    ],
+    "tool": [
+      {
+        "file": "catalog/by-kind/tool-0000.json",
+        "hash": "8282375635c24c2a460d6fd67c52097771a5dec2019d13ee17fe915dfedc98c8",
+        "bytes": 1959,
+        "kind": "tool",
+        "count": 3,
+        "firstId": "tool.codec",
+        "lastId": "tool.markdown-editor"
+      }
+    ]
+  }
+}

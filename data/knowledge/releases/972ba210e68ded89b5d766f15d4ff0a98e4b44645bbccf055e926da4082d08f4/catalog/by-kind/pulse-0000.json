@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "pulse.github-repositories",
+      "kind": "pulse",
+      "title": "GitHub 开源项目热点快照",
+      "status": "evergreen",
+      "publishedAt": "2026-08-02",
+      "updatedAt": "2026-08-02",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/2d/2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95.json",
+        "url": "/data/knowledge/objects/2d/2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95.json",
+        "hash": "2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95",
+        "bytes": 844
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.9d52ba89664d670e",
+    "kind": "media",
+    "title": "favicon.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.9d52ba89664d670e.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/favicon.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.f89e1bc59b25ec8f54e7d3864f56b92bf6ceb6c25eadc1276958f42674bf1c1f",
+        "url": "/media/f89e1bc59b25ec8f54e7d3864f56b92bf6ceb6c25eadc1276958f42674bf1c1f.png",
+        "alt": "favicon.png",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/favicon.png",
+        "sourcePath": "migrated/img/favicon.png"
+      }
+    ]
+  }
+}

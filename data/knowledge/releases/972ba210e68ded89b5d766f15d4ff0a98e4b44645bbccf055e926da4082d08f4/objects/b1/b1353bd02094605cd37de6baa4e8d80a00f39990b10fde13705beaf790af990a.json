@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.85daa21d1d225dba",
+    "kind": "article",
+    "title": "电影",
+    "status": "archived",
+    "publishedAt": "2023-05-15T10:26:19.000Z",
+    "updatedAt": "2023-05-17T01:07:24.390Z",
+    "source": "content/articles/article.85daa21d1d225dba.json",
+    "body": "",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.9e872f3ca23cb0cb"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/movie/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

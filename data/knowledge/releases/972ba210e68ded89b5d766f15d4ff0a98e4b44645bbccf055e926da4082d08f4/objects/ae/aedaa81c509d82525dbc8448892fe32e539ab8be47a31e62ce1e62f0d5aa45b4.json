@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "site.hybrid-indexing.collection",
+    "kind": "collection",
+    "title": "混合索引实践集合",
+    "status": "evergreen",
+    "publishedAt": "2026-08-02",
+    "updatedAt": "2026-08-02",
+    "source": "content/s4/hybrid-indexing-collection.json",
+    "body": null,
+    "relations": [],
+    "members": [
+      "site.hybrid-indexing.article",
+      "site.hybrid-indexing.entity"
+    ],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

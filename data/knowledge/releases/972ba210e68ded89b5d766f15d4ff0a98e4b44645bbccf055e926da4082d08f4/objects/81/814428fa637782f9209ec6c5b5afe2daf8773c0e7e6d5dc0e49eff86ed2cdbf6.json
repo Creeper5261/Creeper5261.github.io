@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.61449c1d937e215e",
+    "kind": "article",
+    "title": "第一篇文章",
+    "status": "archived",
+    "publishedAt": "2023-05-23T02:55:27.792Z",
+    "updatedAt": "2023-10-30T15:34:54.062Z",
+    "source": "content/articles/article.61449c1d937e215e.json",
+    "body": "<h1 id=\"我的第一篇文章\"><a href=\"#我的第一篇文章\" class=\"headerlink\" title=\"我的第一篇文章\"></a>我的第一篇文章</h1><p>哦吼吼<br>嘿嘿嘿</p>\n<div class=\"note info simple\"><p>info 他妈的，太恐怖了，没想到butterfly格式错误竟然会直接报错，太吓人了。我时间轴没打end就给我疯狂报错</p>\n</div>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.ca9dda46a94e499e"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/_posts/2023-5-15-第一篇文章.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

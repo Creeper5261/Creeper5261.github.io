@@ -1,0 +1,1 @@
+import{PDFDocument as o}from"./index.BJ_XbXZb.js";async function n(t){const e=await o.create();for(const c of t){const a=await o.load(c);(await e.copyPages(a,a.getPageIndices())).forEach(r=>e.addPage(r))}return e.save()}export{n as mergePdfBuffers};

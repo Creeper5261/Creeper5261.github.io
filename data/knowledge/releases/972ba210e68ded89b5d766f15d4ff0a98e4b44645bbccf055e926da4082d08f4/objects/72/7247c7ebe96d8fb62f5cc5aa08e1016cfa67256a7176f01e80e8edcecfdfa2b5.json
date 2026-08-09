@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "site.examples.contract-introduction",
+    "kind": "note",
+    "title": "知识站内容契约示例",
+    "status": "draft",
+    "publishedAt": "2026-08-01",
+    "updatedAt": "2026-08-01",
+    "source": "content/examples/contract-introduction.json",
+    "body": "这是 S0 使用的结构化内容示例；旧博客内容暂不迁移。",
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733",
+        "url": "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg",
+        "alt": "内容经过校验后生成站点数据",
+        "kind": "image",
+        "authoredPath": "../../assets/examples/content-contract.svg",
+        "sourcePath": "examples/content-contract.svg"
+      }
+    ]
+  }
+}

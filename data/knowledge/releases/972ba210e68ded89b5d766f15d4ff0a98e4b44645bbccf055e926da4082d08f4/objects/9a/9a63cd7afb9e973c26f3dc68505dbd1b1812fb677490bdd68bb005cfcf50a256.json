@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.4a9bfdf4b1879400",
+    "kind": "article",
+    "title": "美化模块切换壁纸不即时生效的问题",
+    "status": "archived",
+    "publishedAt": "2023-05-23T04:00:32.000Z",
+    "updatedAt": "2023-11-06T12:49:57.249Z",
+    "source": "content/articles/article.4a9bfdf4b1879400.json",
+    "body": "<h1 id=\"element-style-里的内容被划删除线\"><a href=\"#element-style-里的内容被划删除线\" class=\"headerlink\" title=\"element.style{}里的内容被划删除线\"></a>element.style{}里的内容被划删除线</h1><h2 id=\"问题描述\"><a href=\"#问题描述\" class=\"headerlink\" title=\"问题描述\"></a>问题描述</h2><p>昨天把美化模块给装上了，原本还挺开心，一次就点亮了。结果测试的时候发现手机（ &lt; <em>800px</em>）切换壁纸的时候，背景没办法即时生效，要刷新才行。<br>然后打开F12，发现正常情况是这样的<br><img src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/bugs/1.webp\" alt=\"\"><br>但如果切换到手机模式（ <em>width &lt; 800px</em> ） <em>element.style</em>里面的图片链接就会被打上删除线。<br><img src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/bugs/2.webp\" alt=\"\"></p>\n<h2 id=\"问题解决\"><a href=\"#问题解决\" class=\"headerlink\" title=\"问题解决\"></a>问题解决</h2><p>后来发现应该是被其他的 <em>background</em>的 <em>!important</em>给覆盖了，然后打开vscode 全局搜索web_bg。<br>找到了 <em>web-bg.styl</em>下的对应设置部分，发现果然手机部分的 <em>background</em>一堆 <em>!important</em><br><img src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/bugs/3.webp\" alt=\"\"><br>把 <em>!important</em>删了之后，hexo二连打开发现恢复正常了<br><img src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/bugs/4.webp\" alt=\"\"></p>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.2a60f771d67469ba"
+      },
+      {
+        "type": "references",
+        "target": "external.7f1ad8943cfdd130"
+      },
+      {
+        "type": "references",
+        "target": "external.0a8b70af2b4e92c8"
+      },
+      {
+        "type": "references",
+        "target": "external.93bcef729d3708fb"
+      },
+      {
+        "type": "references",
+        "target": "external.380fe641fe9daa9c"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/_posts/美化模块切换壁纸不即使生效的问题.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

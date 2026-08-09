@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.f3c73b6fe6e28283",
+    "kind": "article",
+    "title": "百宝箱",
+    "status": "archived",
+    "publishedAt": "2023-05-18T05:45:19.000Z",
+    "updatedAt": "2023-05-18T06:11:17.569Z",
+    "source": "content/articles/article.f3c73b6fe6e28283.json",
+    "body": "<div class=\"tip info\"><p>常用工具放这里方便下载</p>\n</div>\n<h2 id=\"梯子\"><a href=\"#梯子\" class=\"headerlink\" title=\"梯子\"></a>梯子</h2><div class=\"note simple\"><p>为了愉快的用上newbing和chatgpt，梯子肯定是少不了的（虽然我的网站已经部署了chatgpt，不过newbing还是要用的嘛）</p>\n</div>\n<p><a target=\"_blank\" rel=\"noopener\" href=\"https://ikuuu.eu/\">iKuuu VPN 官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://npm.elemecdn.com/cfw-win64@0.0.4/Clash.for.Windows-0.20.16-ikuuu.zip\">Clash For Windows 安装包</a></p>\n<h2 id=\"浏览器\"><a href=\"#浏览器\" class=\"headerlink\" title=\"浏览器\"></a>浏览器</h2><div class=\"note simple\"><p>为了用上newbing，edge也是少不了的</p>\n</div>\n<p><a target=\"_blank\" rel=\"noopener\" href=\"https://www.microsoft.com/zh-cn/edge/download?form=MA13FJ\">Edge 下载官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://go.microsoft.com/fwlink/?linkid=2109047&amp;Channel=Stable&amp;language=zh-cn&amp;Consent=1&amp;brand=M100\">Edge Windows 7/8/8.1 安装包</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://go.microsoft.com/fwlink/?linkid=2109047&amp;Channel=Stable&amp;language=zh-cn&amp;brand=M100\">Edge Windows 10/11 安装包</a></p>\n<h2 id=\"QQ\"><a href=\"#QQ\" class=\"headerlink\" title=\"QQ\"></a>QQ</h2><div class=\"note simple\"><p>传个实验报告啥的，总得用QQ吧</p>\n</div>\n<p><a target=\"_blank\" rel=\"noopener\" href=\"https://im.qq.com/pcqq\">QQ 官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://dldir1.qq.com/qqfile/qq/PCQQ9.7.8/QQ9.7.8.29019.exe\">QQ 安装包</a></p>\n<h2 id=\"微信\"><a href=\"#微信\" class=\"headerlink\" title=\"微信\"></a>微信</h2><p><del>垃圾微信，要不是用的人多，狗都不用</del>~<br><a target=\"_blank\" rel=\"noopener\" href=\"https://pc.weixin.qq.com/\">微信 官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe\">微信 安装包</a></p>\n<h2 id=\"Google-Play\"><a href=\"#Google-Play\" class=\"headerlink\" title=\"Google Play\"></a>Google Play</h2><p><a target=\"_blank\" rel=\"noopener\" href=\"https://d.apkpure.com/b/APK/com.android.vending?version=latest\">Google Play 安装包</a></p>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.6ed57be559b06a06"
+      },
+      {
+        "type": "references",
+        "target": "external.38ce8f9f7fc11e64"
+      },
+      {
+        "type": "references",
+        "target": "external.588958b21996a7b7"
+      },
+      {
+        "type": "references",
+        "target": "external.c1acf232f588b024"
+      },
+      {
+        "type": "references",
+        "target": "external.1284afbfa08774b7"
+      },
+      {
+        "type": "references",
+        "target": "external.ea0447bcb5e0e3a7"
+      },
+      {
+        "type": "references",
+        "target": "external.c1379d5224da100b"
+      },
+      {
+        "type": "references",
+        "target": "external.5932a896098b76e3"
+      },
+      {
+        "type": "references",
+        "target": "external.edb876b26e41f0d6"
+      },
+      {
+        "type": "references",
+        "target": "external.449bb6970ec0ff0a"
+      },
+      {
+        "type": "references",
+        "target": "external.380fe641fe9daa9c"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/tools/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

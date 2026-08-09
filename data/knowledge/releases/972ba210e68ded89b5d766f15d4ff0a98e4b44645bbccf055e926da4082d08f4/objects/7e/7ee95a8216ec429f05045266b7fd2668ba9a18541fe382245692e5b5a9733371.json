@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.60c8ff520d5e47e5",
+    "kind": "article",
+    "title": "文章加密",
+    "status": "archived",
+    "publishedAt": "2023-05-18T12:32:06.000Z",
+    "updatedAt": "2023-10-30T15:34:31.942Z",
+    "source": "content/articles/article.60c8ff520d5e47e5.json",
+    "body": "<p><strong>开头加入：</strong></p>\n<figure class=\"highlight markdown\"><table><tbody><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">---</span><br><span class=\"line\">title: Hello World</span><br><span class=\"line\">tags:</span><br><span class=\"line\"><span class=\"bullet\">-</span> 作为日记加密</span><br><span class=\"line\">date: 2016-03-30 21:12:21</span><br><span class=\"line\">password: 这里填密码</span><br><span class=\"line\">abstract: 这里藏着站长的小秘密，不许看！</span><br><span class=\"line\">message: 您好, 这里需要密码.</span><br><span class=\"line\">theme: wave</span><br><span class=\"line\">wrong<span class=\"emphasis\">_pass_</span>message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class=\"line\"><span class=\"section\">wrong<span class=\"emphasis\">_hash_</span>message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span></span><br><span class=\"line\"><span class=\"section\">---</span></span><br><span class=\"line\"></span><br></pre></td></tr></tbody></table></figure>\n<p><strong>theme预览</strong><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Default/\">default</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Blink/\">blink</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Blink/\">shrink</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Blink/\">flip</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Up/\">up</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Surge/\">surge</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Wave/\">wave</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://mhexo.github.io/2020/12/23/Theme-Test-Xray/\">xray</a></p>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.7317a3f065511043"
+      },
+      {
+        "type": "references",
+        "target": "external.2434cdf8b4b8c4bf"
+      },
+      {
+        "type": "references",
+        "target": "external.2434cdf8b4b8c4bf"
+      },
+      {
+        "type": "references",
+        "target": "external.2434cdf8b4b8c4bf"
+      },
+      {
+        "type": "references",
+        "target": "external.5aabc10c5e2517f8"
+      },
+      {
+        "type": "references",
+        "target": "external.a77908165d180797"
+      },
+      {
+        "type": "references",
+        "target": "external.a0b25559ddbb6000"
+      },
+      {
+        "type": "references",
+        "target": "external.54e98fd330750a6c"
+      },
+      {
+        "type": "references",
+        "target": "external.d6521e4f2a92924a"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/_posts/文章加密.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

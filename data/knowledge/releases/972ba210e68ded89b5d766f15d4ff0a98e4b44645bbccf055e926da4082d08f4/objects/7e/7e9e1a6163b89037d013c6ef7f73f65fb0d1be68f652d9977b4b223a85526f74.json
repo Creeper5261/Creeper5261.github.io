@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.093945eeb2e7c495",
+    "kind": "media",
+    "title": "interlude_55.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.093945eeb2e7c495.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/cover/interlude_55.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.60ba2e9d906a29fae2f21e84b26d1c76cf35921148b543e1efab2752ebd49ed0",
+        "url": "/media/60ba2e9d906a29fae2f21e84b26d1c76cf35921148b543e1efab2752ebd49ed0.png",
+        "alt": "interlude_55.png",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/cover/interlude_55.png",
+        "sourcePath": "migrated/img/cover/interlude_55.png"
+      }
+    ]
+  }
+}

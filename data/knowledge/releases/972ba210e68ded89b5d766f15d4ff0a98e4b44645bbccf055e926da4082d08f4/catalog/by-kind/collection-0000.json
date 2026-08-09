@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "site.hybrid-indexing.collection",
+      "kind": "collection",
+      "title": "混合索引实践集合",
+      "status": "evergreen",
+      "publishedAt": "2026-08-02",
+      "updatedAt": "2026-08-02",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/ae/aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4.json",
+        "url": "/data/knowledge/objects/ae/aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4.json",
+        "hash": "aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4",
+        "bytes": 880
+      }
+    }
+  ]
+}

@@ -288,6 +288,9 @@ window.addEventListener('load', () => {
   let loadFlag = false
   const $searchMask = document.getElementById('search-mask')
   const $searchDialog = document.querySelector('#local-search .search-dialog')
+  const $searchClose = document.querySelector('#local-search .search-close-button')
+  const $searchButton = document.querySelector('#search-button > .search')
+  if (!input || !statsItem || !$loadingStatus || !$searchMask || !$searchDialog || !$searchClose || !$searchButton) return
 
   // fix safari
   const fixSafariHeight = () => {
@@ -330,11 +333,11 @@ window.addEventListener('load', () => {
   }
 
   const searchClickFn = () => {
-    document.querySelector('#search-button > .search').addEventListener('click', openSearch)
+    $searchButton.addEventListener('click', openSearch)
   }
 
   const searchFnOnce = () => {
-    document.querySelector('#local-search .search-close-button').addEventListener('click', closeSearch)
+    $searchClose.addEventListener('click', closeSearch)
     $searchMask.addEventListener('click', closeSearch)
     if (GLOBAL_CONFIG.localSearch.preload) {
       localSearch.fetchData()

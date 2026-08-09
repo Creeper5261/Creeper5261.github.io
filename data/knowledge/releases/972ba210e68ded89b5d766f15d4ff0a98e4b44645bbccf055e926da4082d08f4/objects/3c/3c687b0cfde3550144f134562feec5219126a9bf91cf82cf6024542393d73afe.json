@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.27b279c11f179ec5",
+    "kind": "media",
+    "title": "j20.jpg",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.27b279c11f179ec5.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/cover/j20.jpg",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.b67aceb78059b94bdfb1757940dedf1bc3ecb76cf4aaa56579677dbf08479057",
+        "url": "/media/b67aceb78059b94bdfb1757940dedf1bc3ecb76cf4aaa56579677dbf08479057.jpg",
+        "alt": "j20.jpg",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/cover/j20.jpg",
+        "sourcePath": "migrated/img/cover/j20.jpg"
+      }
+    ]
+  }
+}
