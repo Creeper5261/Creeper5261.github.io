@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.97e6454e1c0d1ce3",
+    "kind": "media",
+    "title": "test_m.jpg",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.97e6454e1c0d1ce3.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/temp_classify/1dcnns/test_m.jpg",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.04abb3c08e9cb8a44604737620f6c501a78916445ed0eb2d4986cb1a9dbbcf4c",
+        "url": "/media/04abb3c08e9cb8a44604737620f6c501a78916445ed0eb2d4986cb1a9dbbcf4c.jpg",
+        "alt": "ClassificationSummary",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/temp_classify/1dcnns/test_m.jpg",
+        "sourcePath": "migrated/temp_classify/1dcnns/test_m.jpg"
+      }
+    ]
+  }
+}

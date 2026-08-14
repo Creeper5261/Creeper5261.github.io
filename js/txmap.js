@@ -1,3 +1,12 @@
+(function () {
+const runtimeKey = '__datWelcomeLocationRuntime';
+const existingRuntime = window[runtimeKey];
+
+if (existingRuntime) {
+    existingRuntime.load();
+    return;
+}
+
 let welcomeLocationPromise;
 
 function getBrowserTimezoneQuery() {
@@ -279,6 +288,8 @@ function showWelcome() {
         renderWelcomeFallback("定位信息解析失败，先欢迎回家。");
     }
 }
+window[runtimeKey] = { load: loadWelcomeLocation };
 startWelcomeLocation();
 // 如果使用了pjax在加上下面这行代码
 document.addEventListener('pjax:complete', loadWelcomeLocation);
+})();

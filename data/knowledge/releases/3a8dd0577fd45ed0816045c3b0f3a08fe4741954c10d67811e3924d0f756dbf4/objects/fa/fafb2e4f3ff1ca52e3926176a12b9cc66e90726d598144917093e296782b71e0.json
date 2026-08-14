@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "site.hybrid-indexing.entity",
+    "kind": "entity",
+    "title": "混合索引",
+    "status": "evergreen",
+    "publishedAt": "2026-08-02",
+    "updatedAt": "2026-08-02",
+    "source": "content/s4/hybrid-indexing-entity.json",
+    "body": "按资产类型选择内容对象、排序分片、邻接分片、时间桶和反向资产映射。",
+    "relations": [
+      {
+        "type": "illustrated-by",
+        "target": "site.hybrid-indexing.article"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": "architecture",
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

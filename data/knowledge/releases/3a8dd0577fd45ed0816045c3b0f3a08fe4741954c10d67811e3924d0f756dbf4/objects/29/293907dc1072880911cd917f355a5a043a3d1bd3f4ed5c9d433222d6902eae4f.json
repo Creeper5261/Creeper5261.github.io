@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.4b38d10530f0d4a7",
+    "kind": "media",
+    "title": "108152866_p0.png",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.4b38d10530f0d4a7.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/img/cover2/108152866_p0.png",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.a8b4947388c852488fd5fb33a68519d9faf029d6759148db249f830bf7b3c47a",
+        "url": "/media/a8b4947388c852488fd5fb33a68519d9faf029d6759148db249f830bf7b3c47a.png",
+        "alt": "108152866_p0.png",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/img/cover2/108152866_p0.png",
+        "sourcePath": "migrated/img/cover2/108152866_p0.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "strategy": "adjacency-range-shards",
+  "maxShardBytes": 131072,
+  "shards": [
+    {
+      "file": "relationships/shards/adjacency-0000.json",
+      "hash": "25fd9a9ff6ff8324af904c3d5a15c212eeadbfd0621ea3507543c9ace992a7c3",
+      "bytes": 91614,
+      "firstId": "article.07c63b32081025d9",
+      "lastId": "tool.markdown-editor",
+      "count": 133
+    }
+  ]
+}

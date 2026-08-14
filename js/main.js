@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
       return width
     }
 
-    $nav = $nav || document.getElementById('nav')
+    // PJAX replaces #nav with a new element. Never keep the detached node from
+    // the previous page or the replacement navbar will stay at opacity: 0.
+    $nav = document.getElementById('nav')
 
     const blogInfo = document.querySelector('#blog-info > a')
     const menus = document.querySelector('#menus > .menus_items')
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 初始化header
   const initAdjust = () => {
+    $nav = document.getElementById('nav')
     adjustMenu(true)
     $nav.classList.add('show')
   }
@@ -301,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const scrollFn = function () {
     const $rightside = document.getElementById('rightside')
     const innerHeight = window.innerHeight + 56
-    let initTop = 0
+    let initTop = window.scrollY || document.documentElement.scrollTop || 0
     let isChatShow = true
     const $header = document.getElementById('page-header')
     const isChatBtnHide = typeof chatBtnHide === 'function'
@@ -321,8 +324,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return result
     }
 
-    const scrollTask = btf.throttle(() => {
-      const currentTop = window.scrollY || document.documentElement.scrollTop
+    const syncScrollState = currentTop => {
       const isDown = scrollDirection(currentTop)
       if (currentTop > 56) {
         if (isDown) {
@@ -355,11 +357,27 @@ document.addEventListener('DOMContentLoaded', function () {
       if (document.body.scrollHeight <= innerHeight) {
         $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
       }
-    }, 200)
+    }
 
-    window.scrollCollect = scrollTask
+    const scrollTask = btf.throttle(() => {
+      syncScrollState(window.scrollY || document.documentElement.scrollTop || 0)
+    }, 120)
 
-    window.addEventListener('scroll', scrollCollect)
+    const scrollCollect = () => {
+      const currentTop = window.scrollY || document.documentElement.scrollTop || 0
+      // Do not leave the last top-boundary event waiting behind a throttle.
+      // That race used to strand #nav at its off-screen fixed position.
+      if (currentTop <= 56) syncScrollState(currentTop)
+      else scrollTask()
+    }
+
+    if (window.scrollCollect) window.removeEventListener('scroll', window.scrollCollect)
+    window.scrollCollect = scrollCollect
+
+    window.addEventListener('scroll', window.scrollCollect, { passive: true })
+    // PJAX can restore a non-zero scroll position without emitting another
+    // useful scroll event, so reconcile the freshly replaced header now.
+    syncScrollState(initTop)
   }
 
   /**

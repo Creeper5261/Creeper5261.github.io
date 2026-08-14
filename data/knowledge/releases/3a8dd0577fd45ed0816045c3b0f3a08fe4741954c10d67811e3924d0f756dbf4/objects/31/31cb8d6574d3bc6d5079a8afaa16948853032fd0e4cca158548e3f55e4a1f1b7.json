@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "media.752bec56764a61f6",
+    "kind": "media",
+    "title": "test_acc.jpg",
+    "status": "archived",
+    "publishedAt": null,
+    "updatedAt": null,
+    "source": "content/media/media.752bec56764a61f6.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/temp_classify/1dcnns/test_acc.jpg",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": [
+      {
+        "id": "asset.d69c22151f31eac112e3c465a614e3ff56625a9258e71a14573fc082a7d9041f",
+        "url": "/media/d69c22151f31eac112e3c465a614e3ff56625a9258e71a14573fc082a7d9041f.jpg",
+        "alt": "ClassificationSummary",
+        "kind": "image",
+        "authoredPath": "../../assets/migrated/temp_classify/1dcnns/test_acc.jpg",
+        "sourcePath": "migrated/temp_classify/1dcnns/test_acc.jpg"
+      }
+    ]
+  }
+}

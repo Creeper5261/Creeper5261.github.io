@@ -240,14 +240,24 @@
   width: 280px !important;
 }
 
-@media screen and (max-width: 759px) {
-  #content-inner.layout.tool-workspace-layout > #page {
-    flex-direction: column;
+@media screen and (max-width: 900px) {
+  #content-inner.layout.tool-workspace-layout {
+    width: 100%;
+    max-width: none;
+    padding-inline: clamp(.65rem, 3vw, 1rem);
   }
 
-  #content-inner.layout.tool-workspace-layout > #page > #article-container,
-  #content-inner.layout.tool-workspace-layout > #page > #aside-content {
+  #content-inner.layout.tool-workspace-layout > #page {
+    display: block;
     width: 100% !important;
+  }
+
+  #content-inner.layout.tool-workspace-layout > #page > #article-container {
+    width: 100% !important;
+  }
+
+  #content-inner.layout.tool-workspace-layout > #page > #aside-content {
+    display: none;
   }
 }
 
@@ -1290,9 +1300,12 @@ body:has(.tool-home) #to_comment {
 
 @media screen and (max-width: 620px) {
   .latex-reference-panel {
+    top: 4.25rem;
     right: .5rem;
-    width: min(var(--latex-reference-width), calc(100vw - 3rem));
-    min-height: 24rem;
+    bottom: .5rem;
+    width: min(var(--latex-reference-width), calc(100vw - 2.5rem));
+    height: auto;
+    min-height: 0;
   }
 
   .latex-editor-actions .latex-export-controls {
@@ -2074,7 +2087,29 @@ body:has(.tool-home) #to_comment {
 }
 
 @media (max-width: 640px) {
+  .workspace button,
+  .workspace select,
+  .workspace input:not([type="file"]):not([type="range"]):not([type="checkbox"]):not([type="radio"]) {
+    min-height: 42px;
+  }
+
+  #content-inner.layout:has(.tool-home) {
+    padding-inline: .65rem;
+  }
+
+  #content-inner.layout:has(.tool-home) #page {
+    padding: 1rem .85rem;
+    border-radius: 14px;
+  }
+
+  .tool-home-intro {
+    padding: 0 0 1rem;
+  }
+
   .tool-search {
+    gap: .4rem;
+    margin-top: .25rem;
+    padding: .45rem .45rem .45rem .7rem;
     border-radius: 12px;
   }
 
@@ -2082,12 +2117,61 @@ body:has(.tool-home) #to_comment {
     padding-inline: .7rem;
   }
 
+  .tool-list-section {
+    margin-top: .5rem;
+  }
+
+  .tool-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .7rem;
+  }
+
   .tool-item {
     align-items: flex-start;
+    min-height: 0;
+    padding: .85rem .75rem;
   }
 
   .tool-item-link {
     align-items: flex-start;
+  }
+
+  .tool-item-desc {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .workspace-page,
+  .latex-editor-page {
+    width: 100%;
+  }
+
+  .workspace {
+    margin-top: 1rem;
+    padding: .85rem;
+  }
+
+  .workspace-heading h1 {
+    font-size: clamp(1.65rem, 9vw, 2.25rem);
+  }
+
+  .latex-editor-actions,
+  .markdown-editor-actions,
+  .image-tool-actions,
+  .codec-actions,
+  .converter-actions {
+    gap: .45rem;
+  }
+
+  .latex-editor-actions button,
+  .markdown-editor-actions button,
+  .image-tool-actions button,
+  .codec-actions button,
+  .converter-actions button {
+    min-height: 42px;
   }
 
   .markdown-editor-actions span {
@@ -2097,21 +2181,36 @@ body:has(.tool-home) #to_comment {
 
   .markdown-workbench {
     grid-template-columns: 1fr;
+    height: auto;
   }
 
-  .markdown-source-pane {
-    min-height: 20rem;
+  .markdown-source-pane,
+  .markdown-preview-pane {
+    min-height: min(68vh, 34rem);
   }
 
   .image-tool-options {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .image-tool-options input[type="range"] {
-    grid-column: span 2;
+    grid-column: auto;
   }
 
   .image-tool-preview {
     grid-template-columns: 1fr;
+  }
+
+  .codec-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .codec-toolbar select {
+    width: 100%;
+  }
+
+  .converter-modes {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

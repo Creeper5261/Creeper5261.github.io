@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "units": [
+    {
+      "schemaVersion": 1,
+      "id": "explain.agent-tool-call",
+      "title": "Agent 工具调用：声明到结果",
+      "description": "用同一 explain schema 展示一次受约束的 Agent 工具调用回放，不执行任意代码。",
+      "model": {
+        "kind": "agent-tool"
+      },
+      "actions": [
+        {
+          "id": "advance",
+          "type": "advance",
+          "label": "下一步"
+        },
+        {
+          "id": "reset",
+          "type": "reset",
+          "label": "重置"
+        },
+        {
+          "id": "inspect",
+          "type": "inspect",
+          "label": "查看调用"
+        }
+      ],
+      "views": [
+        {
+          "id": "event",
+          "kind": "event",
+          "label": "调用声明"
+        },
+        {
+          "id": "state",
+          "kind": "state",
+          "label": "参数校验"
+        },
+        {
+          "id": "result",
+          "kind": "result",
+          "label": "静态结果"
+        }
+      ],
+      "controls": {
+        "step": "按步骤回放工具调用",
+        "reset": "清除回放状态"
+      },
+      "annotations": [
+        "仅回放已声明动作",
+        "不连接在线模型或任意代码执行器"
+      ],
+      "steps": [
+        {
+          "id": "declare",
+          "title": "声明工具",
+          "text": "调用者选择已登记的工具 ID 与操作名。",
+          "annotation": "工具能力来自静态 manifest。"
+        },
+        {
+          "id": "validate",
+          "title": "校验参数",
+          "text": "运行时检查输入类型与大小，再决定是否允许执行。",
+          "annotation": "无效参数在本地停止。"
+        },
+        {
+          "id": "replay",
+          "title": "回放结果",
+          "text": "展示预先编译的结果说明，失败时仍可阅读静态回退。",
+          "annotation": "本原型不发起在线调用。"
+        }
+      ],
+      "staticFallback": {
+        "summary": "工具调用由声明、参数校验和静态结果回放组成，不执行任意代码。",
+        "steps": [
+          "选择已登记工具",
+          "校验输入契约",
+          "显示可审计的结果说明"
+        ]
+      },
+      "accessibility": {
+        "instructions": "使用 Tab 聚焦控件，按 Enter 或空格回放下一步；结果会在状态区播报。",
+        "liveRegion": "当前工具调用步骤"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "explain.queue-enqueue",
+      "title": "队列入队：从点击到本地状态",
+      "description": "演示一个状态单元如何把动作变成可回放、可清除的本地队列状态。",
+      "model": {
+        "kind": "queue"
+      },
+      "actions": [
+        {
+          "id": "advance",
+          "type": "advance",
+          "label": "下一步"
+        },
+        {
+          "id": "reset",
+          "type": "reset",
+          "label": "重置"
+        },
+        {
+          "id": "inspect",
+          "type": "inspect",
+          "label": "查看状态"
+        }
+      ],
+      "views": [
+        {
+          "id": "event",
+          "kind": "event",
+          "label": "用户动作"
+        },
+        {
+          "id": "state",
+          "kind": "state",
+          "label": "队列状态"
+        },
+        {
+          "id": "result",
+          "kind": "result",
+          "label": "持久化结果"
+        }
+      ],
+      "controls": {
+        "step": "按步骤查看队列变化",
+        "reset": "回到未入队状态"
+      },
+      "annotations": [
+        "动作只在浏览器本地执行",
+        "IndexedDB 不可用时退回内存"
+      ],
+      "steps": [
+        {
+          "id": "capture",
+          "title": "捕获动作",
+          "text": "用户点击入队，任务壳记录 enqueue 动作。",
+          "annotation": "不会上传输入或状态。"
+        },
+        {
+          "id": "transition",
+          "title": "计算转移",
+          "text": "纯状态转移把一个项目追加到队列末尾。",
+          "annotation": "同一状态可被重放。"
+        },
+        {
+          "id": "persist",
+          "title": "保存并反馈",
+          "text": "结果保存到本站 IndexedDB，并通过状态区播报。",
+          "annotation": "清除本站数据不会影响文章。"
+        }
+      ],
+      "staticFallback": {
+        "summary": "队列动作依次经过捕获、状态转移和本地持久化三个阶段。",
+        "steps": [
+          "捕获 enqueue 动作",
+          "追加队列项目",
+          "保存到本站本地存储"
+        ]
+      },
+      "accessibility": {
+        "instructions": "使用 Tab 聚焦按钮，按 Enter 或空格逐步播放；当前步骤会在状态区播报。",
+        "liveRegion": "当前解释步骤"
+      }
+    }
+  ]
+}

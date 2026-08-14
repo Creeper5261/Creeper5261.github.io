@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.6f286a32a5f9a7b9",
+    "kind": "article",
+    "title": "link",
+    "status": "archived",
+    "publishedAt": "2023-05-15T10:27:59.000Z",
+    "updatedAt": "2023-05-18T12:24:34.900Z",
+    "source": "content/articles/article.6f286a32a5f9a7b9.json",
+    "body": "<h2 id=\"1-技术支持\"><a href=\"#1-技术支持\" class=\"headerlink\" title=\"1.技术支持\"></a>1.技术支持</h2><div class=\"flink-desc\">本网站的搭建由以下开源作者提供技术支持</div> <div class=\"flink-list\">\n  <div class=\"flink-list-item\">\n    <a href=\"https://hexo.io/zh-cn/\" title=\"Hexo\" target=\"_blank\">\n      <div class=\"flink-item-icon\">\n        <img class=\"no-lightbox\" src=\"https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg\" onerror=\"this.onerror=null;this.src=&quot;/img/friend_404.gif&quot;\" alt=\"Hexo\">\n      </div>\n      <div class=\"flink-item-name\">Hexo</div> \n      <div class=\"flink-item-desc\" title=\"快速、简单且强大的网志框架\">快速、简单且强大的网志框架</div>\n    </a>\n  </div></div><h2 id=\"2-友情链接\"><a href=\"#2-友情链接\" class=\"headerlink\" title=\"2.友情链接\"></a>2.友情链接</h2><div class=\"flink-desc\">一些好朋友~~</div> <div class=\"flink-list\">\n  <div class=\"flink-list-item\">\n    <a href=\"https://fomal.cc/\" title=\"Fomalhaut🥝\" target=\"_blank\">\n      <div class=\"flink-item-icon\">\n        <img class=\"no-lightbox\" src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/avatar/fomal.webp\" onerror=\"this.onerror=null;this.src=&quot;/img/friend_404.gif&quot;\" alt=\"Fomalhaut🥝\">\n      </div>\n      <div class=\"flink-item-name\">Fomalhaut🥝</div> \n      <div class=\"flink-item-desc\" title=\"Future is now 🍭🍭🍭\">Future is now 🍭🍭🍭</div>\n    </a>\n  </div></div><h2 id=\"Shinki嘿嘿嘿🥰🥰\"><a href=\"#Shinki嘿嘿嘿🥰🥰\" class=\"headerlink\" title=\"Shinki嘿嘿嘿🥰🥰\"></a>Shinki嘿嘿嘿🥰🥰</h2><div class=\"flink-desc\">😍😍😍</div> <div class=\"flink-list\">\n  <div class=\"flink-list-item\">\n    <a href=\"https://shinki0325.github.io/\" title=\"Shinki\" target=\"_blank\">\n      <div class=\"flink-item-icon\">\n        <img class=\"no-lightbox\" src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/avatar/shinki.webp\" onerror=\"this.onerror=null;this.src=&quot;/img/friend_404.gif&quot;\" alt=\"Shinki\">\n      </div>\n      <div class=\"flink-item-name\">Shinki</div> \n      <div class=\"flink-item-desc\" title=\"Nothing is written.\">Nothing is written.</div>\n    </a>\n  </div></div><!-- <button onclick=\"leonus.linkCom(&quot;bf&quot;)\"><i class=\"fa-solid fa-circle-plus\"></i>快速申请</button></div>\n<link rel=\"stylesheet\" href=\"/css/kslink.css\">\n<script src=\"/js/kslink.js\"></script> -->",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.6bc77aa3fddcda17"
+      },
+      {
+        "type": "references",
+        "target": "external.3f4639c8dd5d1e71"
+      },
+      {
+        "type": "references",
+        "target": "external.205f64e47b036b76"
+      },
+      {
+        "type": "references",
+        "target": "external.2a2d69ab2e3fa957"
+      },
+      {
+        "type": "references",
+        "target": "external.c284e28ca7ba27ea"
+      },
+      {
+        "type": "references",
+        "target": "external.a3516771d2cb53e9"
+      },
+      {
+        "type": "references",
+        "target": "external.380fe641fe9daa9c"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/link/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}
