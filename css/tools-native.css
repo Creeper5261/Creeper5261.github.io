@@ -1152,11 +1152,48 @@ body:has(.tool-home) #to_comment {
   width: 100%;
   margin: 1rem 0;
   border-collapse: collapse;
+  background: color-mix(in srgb, var(--card-bg) 92%, transparent);
 }
 
+.latex-preview-document th,
 .latex-preview-document td {
   padding: .38rem .55rem;
   border: 1px solid color-mix(in srgb, var(--font-color) 20%, transparent);
+  vertical-align: top;
+}
+
+.latex-preview-document th {
+  color: var(--text-highlight-color);
+  background: color-mix(in srgb, var(--theme-color) 10%, var(--card-bg));
+  font-weight: 700;
+}
+
+.latex-table-wrap {
+  width: 100%;
+  margin: 1rem 0;
+  overflow-x: auto;
+  border: 1px solid color-mix(in srgb, var(--theme-color) 20%, transparent);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--theme-color) 9%, transparent);
+}
+
+.latex-table-wrap table {
+  min-width: max-content;
+  margin: 0;
+}
+
+.latex-table-booktabs th,
+.latex-table-booktabs td {
+  border-inline: 0;
+}
+
+.latex-table-booktabs tr:first-child th {
+  border-top: 2px solid color-mix(in srgb, var(--theme-color) 62%, var(--font-color));
+  border-bottom: 1px solid color-mix(in srgb, var(--theme-color) 46%, transparent);
+}
+
+.latex-table-booktabs tr:last-child td {
+  border-bottom: 2px solid color-mix(in srgb, var(--theme-color) 62%, var(--font-color));
 }
 
 .latex-environment {
@@ -1185,6 +1222,145 @@ body:has(.tool-home) #to_comment {
 .latex-unknown-command {
   color: color-mix(in srgb, var(--font-color) 58%, transparent);
   font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.latex-command-fallback {
+  display: inline;
+}
+
+.latex-command-fallback:empty::after {
+  content: '';
+}
+
+.latex-roman {
+  font-family: "Noto Serif SC", "Songti SC", "Times New Roman", serif;
+}
+
+.latex-sans {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.latex-size-tiny { font-size: .68em; }
+.latex-size-scriptsize { font-size: .78em; }
+.latex-size-footnotesize { font-size: .86em; }
+.latex-size-small { font-size: .92em; }
+.latex-size-normalsize { font-size: 1em; }
+.latex-size-large { font-size: 1.16em; }
+.latex-size-large-1 { font-size: 1.34em; }
+.latex-size-large-2 { font-size: 1.56em; }
+.latex-size-huge { font-size: 1.4em; }
+.latex-size-huge-1 { font-size: 1.76em; }
+
+.latex-fbox,
+.latex-framebox {
+  display: inline-block;
+  padding: .06em .35em;
+  border: 1px solid color-mix(in srgb, var(--theme-color) 64%, var(--font-color));
+  border-radius: 4px;
+}
+
+.latex-colorbox {
+  padding: .06em .3em;
+  border-radius: 4px;
+  color: #1f2937;
+}
+
+.latex-code-block {
+  margin: 1rem 0;
+  padding: 1rem 1.15rem;
+  overflow: auto;
+  border: 1px solid color-mix(in srgb, var(--theme-color) 36%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--theme-color) 7%, var(--card-bg));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 42%, transparent), 0 8px 20px color-mix(in srgb, var(--theme-color) 8%, transparent);
+  color: var(--font-color);
+  line-height: 1.65;
+}
+
+.latex-code-block code {
+  display: block;
+  padding: 0;
+  background: transparent;
+  white-space: pre;
+}
+
+.latex-details {
+  margin: 1rem 0;
+  overflow: clip;
+  border: 1px solid color-mix(in srgb, var(--theme-color) 34%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--theme-color) 5%, var(--card-bg));
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--theme-color) 8%, transparent);
+}
+
+.latex-details > summary {
+  padding: .72rem 1rem;
+  cursor: pointer;
+  color: var(--text-highlight-color);
+  font-weight: 700;
+  list-style: none;
+}
+
+.latex-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.latex-details > summary::before {
+  display: inline-block;
+  width: 1rem;
+  margin-right: .35rem;
+  color: var(--theme-color);
+  content: '›';
+  transform: rotate(0deg);
+  transition: transform .16s ease;
+}
+
+.latex-details[open] > summary {
+  border-bottom: 1px solid color-mix(in srgb, var(--theme-color) 24%, transparent);
+  background: color-mix(in srgb, var(--theme-color) 8%, transparent);
+}
+
+.latex-details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.latex-details-body {
+  padding: .15rem 1rem .9rem;
+}
+
+.latex-description-list {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: .3rem .8rem;
+  margin: 1rem 0;
+}
+
+.latex-description-list dt {
+  color: var(--text-highlight-color);
+  font-weight: 700;
+}
+
+.latex-description-list dd {
+  margin: 0;
+}
+
+.latex-pagebreak,
+.latex-rule {
+  height: 0;
+  margin: 1.8rem 0;
+  border: 0;
+  border-top: 1px dashed color-mix(in srgb, var(--theme-color) 52%, transparent);
+}
+
+.latex-pagebreak::after {
+  display: block;
+  width: max-content;
+  margin: -.8rem auto 0;
+  padding: 0 .55rem;
+  background: var(--card-bg);
+  color: color-mix(in srgb, var(--font-color) 54%, transparent);
+  content: '分页';
+  font-size: .78rem;
 }
 
 .latex-placeholder,
@@ -1261,6 +1437,24 @@ body:has(.tool-home) #to_comment {
 .latex-pdf-stage.is-plain .latex-proof {
   border-left-color: #777;
   background: #f7f7f7;
+}
+
+.latex-pdf-stage.is-plain .latex-table-wrap,
+.latex-pdf-stage.is-plain .latex-details,
+.latex-pdf-stage.is-plain .latex-code-block {
+  border-color: #b8b8b8;
+  background: #fafafa;
+  box-shadow: none;
+}
+
+.latex-pdf-stage.is-plain .latex-preview-document th,
+.latex-pdf-stage.is-plain .latex-details[open] > summary {
+  color: #111;
+  background: #f1f1f1;
+}
+
+.latex-pdf-stage.is-plain .latex-details > summary::before {
+  color: #555;
 }
 
 @media screen and (max-width: 800px) {
