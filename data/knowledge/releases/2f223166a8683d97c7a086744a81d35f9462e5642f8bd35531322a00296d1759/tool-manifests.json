@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "tools": [
+    {
+      "schemaVersion": 1,
+      "id": "tool.codec",
+      "title": "编码与摘要",
+      "route": "/tools/codec/",
+      "task": "text-transform",
+      "modes": [
+        {
+          "id": "json-format",
+          "label": "JSON 格式化",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "hash-sha256",
+          "label": "SHA-256",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "base64-encode",
+          "label": "Base64 编码",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "base64-decode",
+          "label": "Base64 解码",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "url-encode",
+          "label": "URL 编码",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "url-decode",
+          "label": "URL 解码",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "unicode-escape",
+          "label": "Unicode 转义",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "unicode-restore",
+          "label": "Unicode 还原",
+          "input": "text",
+          "output": "text"
+        },
+        {
+          "id": "mdx-source",
+          "label": "Markdown / MDX",
+          "input": "text",
+          "output": "text"
+        }
+      ],
+      "input": {
+        "kinds": [
+          "text/plain",
+          "application/json",
+          "text/markdown",
+          "text/mdx"
+        ],
+        "maxBytes": 2097152
+      },
+      "output": {
+        "kinds": [
+          "text/plain",
+          "application/json"
+        ],
+        "download": true
+      },
+      "privacy": {
+        "mode": "local-only",
+        "uploads": false,
+        "thirdPartyProcessing": false
+      },
+      "offline": {
+        "supported": true,
+        "requirements": [
+          "versioned-runtime-cache",
+          "browser-storage"
+        ]
+      },
+      "runtime": {
+        "shell": "s3-local-task-runner",
+        "worker": true,
+        "mainThreadFallback": true
+      },
+      "accessibility": {
+        "staticDescription": true,
+        "statusRole": "status",
+        "keyboardDropzone": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "tool.markdown-editor",
+      "title": "Markdown 编辑器",
+      "route": "/tools/markdown/",
+      "task": "markdown-editor",
+      "modes": [
+        "markdown",
+        "mdx-source"
+      ],
+      "input": {
+        "kinds": [
+          "text/markdown",
+          "text/mdx"
+        ],
+        "maxBytes": 2097152
+      },
+      "output": {
+        "kinds": [
+          "text/markdown",
+          "text/mdx"
+        ],
+        "download": true
+      },
+      "privacy": {
+        "mode": "local-only",
+        "uploads": false,
+        "thirdPartyProcessing": false
+      },
+      "offline": {
+        "supported": true,
+        "requirements": [
+          "bundled-vditor",
+          "browser-storage"
+        ]
+      },
+      "runtime": {
+        "shell": "vditor-local-editor",
+        "worker": false,
+        "mainThreadFallback": true
+      },
+      "accessibility": {
+        "staticDescription": true,
+        "statusRole": "status",
+        "keyboardDropzone": false
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "tool.image-compressor",
+      "title": "图片压缩",
+      "route": "/tools/image-compressor/",
+      "task": "image-compress",
+      "input": {
+        "kinds": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "maxBytes": 16777216
+      },
+      "output": {
+        "kinds": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "download": true
+      },
+      "privacy": {
+        "mode": "local-only",
+        "uploads": false,
+        "thirdPartyProcessing": false
+      },
+      "offline": {
+        "supported": true,
+        "requirements": [
+          "bundled-compressorjs",
+          "browser-storage"
+        ]
+      },
+      "runtime": {
+        "shell": "compressorjs-local-adapter",
+        "worker": false,
+        "mainThreadFallback": true
+      },
+      "accessibility": {
+        "staticDescription": true,
+        "statusRole": "status",
+        "keyboardDropzone": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "tool.document-converter",
+      "title": "文档转换",
+      "route": "/tools/converter/",
+      "task": "document-convert",
+      "modes": [
+        {
+          "id": "pdf-to-image",
+          "label": "PDF 转图片",
+          "input": "application/pdf",
+          "output": "image/png"
+        },
+        {
+          "id": "image-to-pdf",
+          "label": "图片转 PDF",
+          "input": "image/*",
+          "output": "application/pdf"
+        },
+        {
+          "id": "pdf-to-word",
+          "label": "PDF 转 Word",
+          "input": "application/pdf",
+          "output": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "id": "word-to-pdf",
+          "label": "Word 转 PDF",
+          "input": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "output": "application/pdf"
+        },
+        {
+          "id": "word-to-image",
+          "label": "Word 转图片",
+          "input": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "output": "image/png"
+        },
+        {
+          "id": "image-to-word",
+          "label": "图片转 Word",
+          "input": "image/*",
+          "output": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "id": "pdf-merge",
+          "label": "PDF 合并",
+          "input": "application/pdf",
+          "output": "application/pdf"
+        }
+      ],
+      "input": {
+        "kinds": [
+          "application/pdf",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "maxBytes": 52428800
+      },
+      "output": {
+        "kinds": [
+          "application/pdf",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "image/png",
+          "application/zip"
+        ],
+        "download": true
+      },
+      "privacy": {
+        "mode": "local-only",
+        "uploads": false,
+        "thirdPartyProcessing": false
+      },
+      "offline": {
+        "supported": true,
+        "requirements": [
+          "bundled-pdfjs",
+          "bundled-mammoth",
+          "bundled-document-writers"
+        ]
+      },
+      "runtime": {
+        "shell": "local-document-converter",
+        "worker": false,
+        "mainThreadFallback": true
+      },
+      "accessibility": {
+        "staticDescription": true,
+        "statusRole": "status",
+        "keyboardDropzone": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "tool.latex-instant",
+      "title": "LaTeX 即时预览",
+      "route": "/tools/latex/",
+      "task": "latex-instant-preview",
+      "modes": [
+        "latex-source",
+        "incremental-html-preview"
+      ],
+      "input": {
+        "kinds": [
+          "application/x-tex",
+          "text/x-tex",
+          "text/plain"
+        ],
+        "maxBytes": 2097152
+      },
+      "output": {
+        "kinds": [
+          "application/x-tex"
+        ],
+        "download": true
+      },
+      "privacy": {
+        "mode": "local-only",
+        "uploads": false,
+        "thirdPartyProcessing": false
+      },
+      "offline": {
+        "supported": true,
+        "requirements": [
+          "bundled-unified-latex",
+          "bundled-katex",
+          "browser-storage"
+        ]
+      },
+      "runtime": {
+        "shell": "incremental-latex-html",
+        "worker": false,
+        "mainThreadFallback": true
+      },
+      "accessibility": {
+        "staticDescription": true,
+        "statusRole": "status",
+        "keyboardDropzone": false
+      }
+    }
+  ]
+}

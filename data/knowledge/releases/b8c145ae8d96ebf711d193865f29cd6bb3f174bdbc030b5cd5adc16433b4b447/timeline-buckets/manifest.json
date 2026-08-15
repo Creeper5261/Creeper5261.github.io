@@ -1,6 +1,0 @@
-{
-  "schemaVersion": 1,
-  "strategy": "monthly-time-buckets",
-  "maxShardBytes": 131072,
-  "buckets": []
-}

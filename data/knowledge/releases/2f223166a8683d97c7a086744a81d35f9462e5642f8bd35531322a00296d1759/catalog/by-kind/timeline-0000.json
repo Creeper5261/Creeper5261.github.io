@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "site.hybrid-indexing.timeline",
+      "kind": "timeline",
+      "title": "混合索引实现时间线",
+      "status": "evergreen",
+      "publishedAt": "2026-08-02",
+      "updatedAt": "2026-08-02",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/d9/d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed.json",
+        "url": "/data/knowledge/objects/d9/d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed.json",
+        "hash": "d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed",
+        "bytes": 1085
+      }
+    }
+  ]
+}

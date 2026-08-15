@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "tool.codec",
+    "kind": "tool",
+    "title": "编码与摘要",
+    "status": "evergreen",
+    "publishedAt": "2026-08-05",
+    "updatedAt": "2026-08-05",
+    "source": "content/s4/local-json-tool.json",
+    "body": null,
+    "relations": [],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": "codec",
+    "privacy": "local-only",
+    "inputKinds": [
+      "application/json",
+      "text/plain",
+      "text/markdown",
+      "text/mdx"
+    ],
+    "outputKinds": [
+      "application/json",
+      "text/plain",
+      "text/markdown"
+    ],
+    "sourceName": null,
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}
