@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "tool.codec",
+      "kind": "tool",
+      "title": "编码与摘要",
+      "status": "evergreen",
+      "publishedAt": "2026-08-05",
+      "updatedAt": "2026-08-05",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/6b/6bf13c77f0f969dd955203966998b752502d40648aaf1d23adf467c6bf0ef06d.json",
+        "url": "/data/knowledge/objects/6b/6bf13c77f0f969dd955203966998b752502d40648aaf1d23adf467c6bf0ef06d.json",
+        "hash": "6bf13c77f0f969dd955203966998b752502d40648aaf1d23adf467c6bf0ef06d",
+        "bytes": 929
+      }
+    },
+    {
+      "id": "tool.image-compressor",
+      "kind": "tool",
+      "title": "图片压缩",
+      "status": "evergreen",
+      "publishedAt": "2026-08-05",
+      "updatedAt": "2026-08-05",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/0a/0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca.json",
+        "url": "/data/knowledge/objects/0a/0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca.json",
+        "hash": "0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca",
+        "bytes": 916
+      }
+    },
+    {
+      "id": "tool.markdown-editor",
+      "kind": "tool",
+      "title": "Markdown 编辑器",
+      "status": "evergreen",
+      "publishedAt": "2026-08-05",
+      "updatedAt": "2026-08-05",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/05/05923ecb4c56bdee81ff8d4d0ff8bb4c944e6beb746676305c5c6bda640ff1ae.json",
+        "url": "/data/knowledge/objects/05/05923ecb4c56bdee81ff8d4d0ff8bb4c944e6beb746676305c5c6bda640ff1ae.json",
+        "hash": "05923ecb4c56bdee81ff8d4d0ff8bb4c944e6beb746676305c5c6bda640ff1ae",
+        "bytes": 876
+      }
+    }
+  ]
+}

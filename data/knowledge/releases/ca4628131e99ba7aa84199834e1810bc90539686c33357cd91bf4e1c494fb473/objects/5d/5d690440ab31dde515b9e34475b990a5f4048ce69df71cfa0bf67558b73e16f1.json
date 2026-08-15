@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.ddc4cf6f256a3ee5",
+    "kind": "article",
+    "title": "分类",
+    "status": "archived",
+    "publishedAt": "2023-05-15T10:26:19.000Z",
+    "updatedAt": "2023-05-17T01:07:40.784Z",
+    "source": "content/articles/article.ddc4cf6f256a3ee5.json",
+    "body": "",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.05a24ac9fe93aee8"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/categories/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

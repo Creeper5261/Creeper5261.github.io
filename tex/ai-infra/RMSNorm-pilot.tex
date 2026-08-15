@@ -1,0 +1,437 @@
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage{../../tex/ai_infra_course}
+\setmonofont{Noto Sans Mono CJK SC}
+
+\title{\Huge RMSNorm：\[.35em]\Large 起一个稳压器的作用}
+
+\begin{document}
+\maketitle
+\section{摘要}
+RMSNorm 的主要作用是稳定 Transformer 中各层输入向量的整体尺度。可以把它类比成电路里的“稳压器”：前面传来的数值可能忽大忽小，而 RMSNorm 会在尽量保留各个分量相对关系的同时，把整体大小调整到一个比较稳定的范围，从而让模型各层的计算更加稳定。
+\section{文本到向量的变化}
+先复习下文本是怎么变成向量的，懂的可以直接跳
+
+先看一个中文句子：
+\begin{center}
+\texttt{乒乓球拍卖完了。}
+\end{center}
+
+如果我们要通过某种方法把这段文字转换成可计算的数学形式，第一步要把它切成一个个小片段，这些小片段叫 \textbf{token}。切分之后每个 token 会到一个词表里查出对应的整数编号。
+
+例如，为了方便理解，我们暂时假设 Tokenizer 把它切成：
+\[
+[\texttt{乒乓球},\texttt{拍卖},\texttt{完},
+ \texttt{了},\texttt{。}]
+\longrightarrow
+[18432,9271,643,352,17].
+\]
+
+<details>
+<summary>Tokenizer、词表与 token ID 是怎么来的？</summary>
+
+原始输入首先只是一个字符串，例如：
+
+\[
+\texttt{"乒乓球拍卖完了。"}
+\]
+
+它会先被送入 \textbf{Tokenizer（分词器）}。Tokenizer 的作用是按照一套固定规则，把字符串切分成若干个 \textbf{token}。
+
+中文在这里有一个很直观的问题：原始字符串本身并没有空格明确告诉我们“词”在哪里结束。
+
+例如：
+
+\[
+\texttt{乒乓球拍卖完了}
+\]
+
+从人类语言的角度，就至少可以出现两种不同的划分：
+
+\[
+[\texttt{乒乓球拍},\texttt{卖},\texttt{完},\texttt{了}]
+\]
+
+可以理解成“乒乓球拍已经卖完了”；而
+
+\[
+[\texttt{乒乓球},\texttt{拍卖},\texttt{完},\texttt{了}]
+\]
+
+又可以理解成“乒乓球的拍卖结束了”。
+
+也就是说，同一串连续的汉字并不存在天然写在字符串里的唯一“词语边界”。
+
+不过，真实语言模型的 Tokenizer 并不是先像人一样理解句子含义，再决定应该按照哪个中文词语切分。它会根据训练语料统计出的词表和合并规则处理字符序列：某种连续片段出现得越稳定，就越可能作为一个 token；同一串汉字也可能因为词表不同而得到不同切分。因此，真实的 token 边界不一定等于我们通常理解的中文分词。
+因此，真实的 token 边界也不一定等于我们通常理解的“中文分词”。
+
+对于英语，最简单的方法就是按照空格划分，但是实际上Tokenizer不关心字符是空格、标点还是具体字母和字，所以“I love you.”,中可能出现“love”的token，也可能出现“ love”的token（含前导空格）。甚至完整单词，比如“unchanged”，也可能因为“changed”的单独出现频率太高而被分为“un”，“changed”。
+所以，token实际上是 Tokenizer 根据自己的词表和切分规则得到的基本符号单位。
+
+Tokenizer 同时拥有一个固定的 \textbf{词表（vocabulary）}。可以把词表简单理解成一张
+
+\[
+\text{token}\longleftrightarrow\text{整数编号}
+\]
+
+的映射表，例如：
+
+\[
+\texttt{乒乓球}\rightarrow18432,\qquad
+\texttt{拍卖}\rightarrow9271,\qquad
+\texttt{。}\rightarrow17.
+\]
+
+因此，分词完成后，每个 token 都会根据词表被替换成对应的整数编号，即 \textbf{token ID}：
+
+\[
+[\texttt{乒乓球},\texttt{拍卖},\texttt{完},
+\texttt{了},\texttt{。}]
+\longrightarrow
+[18432,9271,643,352,17].
+\]
+
+这里的编号只是为了说明数据流而举出的例子，真实编号由具体 Tokenizer 的词表决定。
+
+这些整数本身没有大小或语义上的数值关系，例如编号 \(18432\) 并不意味着它比编号 \(9271\)“更大”或“更重要”，它们本质上只是为了方便寻址的一个索引。
+
+接下来，这些 token ID 会被送入 \textbf{Embedding 表}。Embedding 表可以看作一个很大的矩阵，每个 token ID 对应其中的一行：
+
+\[
+\text{token ID}
+\longrightarrow
+\text{Embedding 表中的对应行}
+\longrightarrow
+\text{浮点向量}.
+\]
+
+因此，从原始文字到模型真正参与计算的数据，完整的数据流是：
+
+\[
+\boxed{
+\text{原始字符串}
+\rightarrow
+\text{Tokenizer 分词}
+\rightarrow
+\text{tokens}
+\rightarrow
+\text{词表查询}
+\rightarrow
+\text{token IDs}
+\rightarrow
+\text{Embedding 查询}
+\rightarrow
+\text{浮点向量}
+}
+\]
+也就是说，Tokenizer 负责把“文字”变成“整数索引”，Embedding 再负责把“整数索引”变成神经网络真正能够计算的浮点向量。
+
+</details>
+
+现在模型手里是一个$1\times5$的向量：1 个句子，5 个 token。每个 token 有对应的编号，再从 Embedding 表里取出对应编号索引的一个向量。为了说明方便，我们这里把向量长度设成 4，那么这句话的 5 个 token 从 Embedding 表中取出的向量可能长得类似于这样：
+
+\begin{array}{c|c|c}
+\text{token} & \text{token ID} & \text{Embedding 向量} \\
+\hline
+\texttt{乒乓球} & 18432 & [\,0.10,\;0.25,\;-0.05,\;0.20\,] \\
+\texttt{拍卖}   & 9271  & [\,-0.30,\;0.15,\;0.40,\;0.05\,] \\
+\texttt{完}     & 643   & [\,0.12,\;-0.18,\;0.22,\;0.31\,] \\
+\texttt{了}     & 352   & [\,0.08,\;0.11,\;-0.14,\;0.27\,] \\
+\texttt{。}     & 17    & [\,-0.06,\;0.09,\;0.03,\;-0.12\,]
+\end{array}
+
+把这 5 个向量按 token 的顺序堆起来，就得到了这个句子的 Embedding 输出：
+
+\begin{bmatrix}
+ 0.10 &  0.25 & -0.05 &  0.20 \\
+-0.30 &  0.15 &  0.40 &  0.05 \\
+ 0.12 & -0.18 &  0.22 &  0.31 \\
+ 0.08 &  0.11 & -0.14 &  0.27 \\
+-0.06 &  0.09 &  0.03 & -0.12
+\end{bmatrix}
+
+
+如果再把 batch 维度算上，那么它的形状就是
+\[
+(B,T,D)=(1,5,4).
+\]
+这里 1 表示一个句子，5 表示 5 个 token，4 表示每个 token 用一个 4 维向量表示。
+
+
+
+
+\section{尺度漂移}
+经过 Embedding 之后，每个 token 都已经变成了一个浮点向量。接下来，这些向量会被送入 Transformer 的一层层计算中，并在计算过程中不断产生新的中间向量。
+
+随着层数加深，这些向量的数值大小可能发生明显变化。例如某一层中，一个 token 的向量可能是
+\[
+x=[1,2,3,4],
+\]
+但另一次训练，它可能变成
+\[
+x'=[10,20,30,40].
+\]
+
+虽然两个向量各个维度之间的比例完全相同，但整体尺度相差了 10 倍。这样的尺度变化如果不断累积，会让后续计算面对很不稳定的数值范围。
+
+所以在向量进入后续计算之前，必须先对它的整体尺度进行控制，使不同层、不同 token 的向量不会因为整体数值过大或过小而给后续计算带来额外困难。
+
+注意力层里还要算\textbf{点积}（两个向量逐项相乘再求和）和\textbf{softmax}（把一组数变成概率）；前馈层里有\textbf{激活函数}（对每个数单独做非线性映射）。如果展示不知道这些什么意思也没关系，只需要明白这些运算对数值大小都很敏感。如果很多层连续把不同尺度的向量往后传，同一个子层一会儿接收 $0.1$ 量级的数，一会儿接收 $100$ 量级的数，训练会变得不可控，低精度计算的风险也会变大。
+
+所以我们需要把每个向量的整体大小控制住，同时保留内部各维度的相对关系。也就是归一化干的事情。
+
+\section{LayerNorm}
+
+LayerNorm 是较早用在 Transformer 里的归一化方法。它对每个 token 的向量分别算两个统计量：均值（平均数）和方差（数值偏离均值的程度）。
+
+还是用 $x=[1,2,3,4]$ 当例子。四个数的均值是
+\[
+\mu=\frac{1+2+3+4}{4}=2.5.
+\]
+每个数减掉均值：
+\[
+x-\mu=[-1.5,-0.5,0.5,1.5].
+\]
+这四个数的方差是
+\[
+\sigma^2=\frac{\sum_{i=1}^{n}{(x_i-\mu)^2}}{n}=\frac{(-1.5)^2+(-0.5)^2+0.5^2+1.5^2}{4}=1.25，
+\sigma\approx1.118.
+\]
+然后再让刚才得到的每个数都除以这个标准差$\sigma$：
+\[
+\frac{x-\mu}{\sigma}
+=
+\left[
+\frac{-1.5}{1.118},
+\frac{-0.5}{1.118},
+\frac{0.5}{1.118},
+\frac{1.5}{1.118}
+\right].
+\]
+
+得到：
+\[
+\frac{x-\mu}{\sigma}
+\approx
+[-1.342,-0.447,0.447,1.342].
+\]
+现在这个新向量有两个特点：
+
+\[
+\text{均值$\mu$}=0,
+\qquad
+\text{方差$\sigma^2$}=1.
+\]
+
+通过这套步骤
+
+\[
+\boxed{
+x
+\longrightarrow
+x-\mu
+\longrightarrow
+\frac{x-\mu}{\sigma}
+}
+\]
+
+第一步减去均值，负责把整个向量“移到 0 附近”；第二步除以标准差，负责把向量的整体尺度调整到一个固定范围。
+这实际上就是标准化，把一组均值、尺度各不相同的数字，转换成一组以 0 为中心、具有统一尺度的数字。
+
+上面其实就是LayerNorm的核心思想了。而LayerNorm完整定义还会加入两个参数来训练和一个偏移防止除0异常。
+
+\[
+\boxed{
+y_i
+=
+\gamma_i
+\frac{x_i-\mu}
+{\sqrt{\sigma^2+\varepsilon}}
++
+\beta_i
+}
+\]
+
+LayerNorm 完整的数据流是
+
+\[
+\boxed{
+x_i
+\longrightarrow
+x_i-\mu
+\longrightarrow
+\frac{x_i-\mu}{\sqrt{\sigma^2+\varepsilon}}
+\longrightarrow
+\gamma_i
+\frac{x_i-\mu}{\sqrt{\sigma^2+\varepsilon}}
++\beta_i
+}
+\]
+
+其中：
+
+\begin{itemize}[leftmargin=2em]
+    \item $\varepsilon$ 是一个很小的正数，用来避免方差为 0 或非常小时出现除零和数值不稳定；
+    \item $\gamma_i$ 是第 $i$ 个维度的可训练缩放参数；
+    \item $\beta_i$ 是第 $i$ 个维度的可训练平移参数。
+\end{itemize}
+
+其中 $\mu$、$\sigma^2$ 都是根据当前 token 的向量现场计算出来的，而 $\gamma$ 和 $\beta$ 则是模型参数，会随着训练不断更新。
+
+例如，如果向量长度为 4，那么 LayerNorm 自己还保存着两组长度为 4 的参数：
+
+\[
+\gamma=[\gamma_1,\gamma_2,\gamma_3,\gamma_4],
+\qquad
+\beta=[\beta_1,\beta_2,\beta_3,\beta_4].
+\]
+
+在 LayerNorm 刚初始化时，通常有
+
+\[
+\gamma=[1,1,1,1],
+\qquad
+\beta=[0,0,0,0].
+\]
+
+因此在训练刚开始时，LayerNorm 的输出基本就是前面算出的标准化结果；之后模型可以通过训练 $\gamma$ 和 $\beta$，重新调整每一个维度的尺度和位置。
+\section{RMSNorm ：只缩放，不居中}
+
+RMSNorm 的想法更简单：Transformer 子层最需要的是稳定的输入尺度，减均值不一定是必需的。所以它不再强制均值为 0，只保留缩放这一步。
+
+不减均值以后，原来围绕均值算的标准差就不适用了(因为不仅分子中的 x−μ 被去掉了，标准差 σ 本身也是通过 x−μ 计算出来的)。RMSNorm 改用\textbf{均方根（root mean square，RMS）}来衡量尺度：
+\[
+\operatorname{RMS}(x)
+=\sqrt{\frac{1}{D}\sum_{i=1}^{D}x_i^2}.
+\]
+平方让正负数都变成正贡献，而取平均得到每个分量平均平方大小，开平方把单位恢复到原来的大小。
+
+直观地理解，也可以认为 RMS 和标准差的形式非常相似，区别主要在于计算“距离”时选择的参考点不同：
+
+\begin{itemize}[leftmargin=2em]
+    \item $\sigma$：以均值 $\mu$ 为参考点，衡量各个分量距离 $\mu$ 的整体大小，即
+    \[
+    \sigma
+    =
+    \sqrt{\frac{1}{D}\sum_{i=1}^{D}(x_i-\mu)^2}.
+    \]
+
+    \item $\operatorname{RMS}(x)$：以 $0$ 为参考点，衡量各个分量距离 $0$ 的整体大小，即
+    \[
+    \operatorname{RMS}(x)
+    =
+    \sqrt{\frac{1}{D}\sum_{i=1}^{D}(x_i-0)^2}
+    =
+    \sqrt{\frac{1}{D}\sum_{i=1}^{D}x_i^2}.
+    \]
+\end{itemize}
+
+所以从公式形式上看，可以直观地把 RMS 理解成：把标准差中作为参考点的均值 $\mu$ 换成 $0$。
+
+对最后一维长度为 $D$ 的向量 $x=[x_1,\ldots,x_D]$，RMSNorm 的完整公式是：
+\[
+\operatorname{RMSNorm}(x)_i
+=w_i\frac{x_i}
+{\sqrt{\frac{1}{D}\sum_{j=1}^{D}x_j^2+\varepsilon}},
+\qquad i=1,\ldots,D.
+\]
+这里 $\varepsilon$ 是很小的正数，依旧是防止全零输入导致除0异常，$w_i$ 是每个分量的可训练缩放系数，让模型在训练中自己决定每个维度的重要程度。所有通道共用同一个 RMS 分母，但各自有独立的 $w_i$。可以看到，RMS不用做平移，所以只有一个可训练参数，没有LayerNorm的偏移参数。
+
+\section{手动算一遍 RMSNorm}
+
+继续用 $x=[1,2,3,4]$。它的 RMS 为
+\[
+\operatorname{RMS}(x)
+=
+\sqrt{\frac{1^2+2^2+3^2+4^2}{4}}
+=
+\sqrt{7.5}
+\approx2.739.
+\]
+
+因此归一化后的结果为
+\[
+\widehat{x}
+=
+\frac{x}{\operatorname{RMS}(x)}
+=
+\frac{[1,2,3,4]}{\sqrt{7.5}}
+\approx
+[0.365,0.730,1.095,1.461].
+\]
+四个坐标仍然保持 $1:2:3:4$ 的比例，整体均方接近 1。
+
+
+\section{两种归一化对比}
+
+忽略参数的影响，令 $\varepsilon=0$，可训练缩放系数都设为 1，看同一个输入 $[1,2,3,4]$ 的结果：
+
+\begin{center}
+\small
+\begin{tabular}{p{2.1cm}p{5.1cm}ccc}
+\toprule
+方法 & 输出 & 输出均值 & 输出 RMS & 居中\\
+\midrule
+原始输入 & $[1,2,3,4]$ & $2.500$ & $2.739$ & 否\\
+LayerNorm & $[-1.342,-0.447,0.447,1.342]$ & $0$ & $1$ & 是\\
+RMSNorm & $[0.365,0.730,1.095,1.461]$ & $0.913$ & $1$ & 否\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+这个表只说明计算上的区别，不说明哪种方法一定更好。LayerNorm 同时控制均值和尺度；RMSNorm 只控制尺度。很多 decoder-only 模型用 RMSNorm 后训练效果没有下降，还省掉了一部分统计计算，所以慢慢流行起来。
+
+\section{RMSNorm 在 Transformer 里的位置}
+
+前面我们一直把 RMSNorm 当成一个单独的归一化操作来看，但在真正的 Transformer 中，它并不是独立存在的，而是夹在各个子层之前，负责先把输入向量的尺度整理稳定，再交给后面的计算模块。
+
+现代 decoder-only Transformer 通常采用 \textbf{pre-norm} 结构。以一层 Transformer 为例，数据流大致是：
+
+\[
+X
+\longrightarrow
+\operatorname{RMSNorm}(X)
+\longrightarrow
+\operatorname{Attention}
+\longrightarrow
+\text{与原来的 }X\text{ 相加}.
+\]
+
+这里“与原来的 $X$ 相加”使用的是 Transformer 中常见的
+\textbf{残差连接（residual connection）}。它的具体作用和原理后面会单独介绍，这里暂时只需要把它理解成：“我保留了一点大肠的味道，这样你才知道你吃的是大肠”。
+
+写成公式就是：
+
+\[
+X_1
+=
+\underbrace{X}_{\text{原始 }X}
++
+\underbrace{
+\operatorname{Attention}
+\bigl(\operatorname{RMSNorm}(X)\bigr)
+}_{\text{经过 RMSNorm 和 Attention 后的新结果}}
+\]
+得到新的表示 $X_1$ 后，还会经过一次类似的过程：
+
+\[
+X_1
+\longrightarrow
+\operatorname{RMSNorm}(X_1)
+\longrightarrow
+\operatorname{MLP}
+\longrightarrow
+\text{与原来的 }X_1\text{ 相加},
+\]
+
+也就是
+
+\[
+X_2
+=
+X_1
++
+\operatorname{MLP}
+\bigl(\operatorname{RMSNorm}(X_1)\bigr).
+\]
+可以看到，只要在进入计算模块前，都会经过RMSNorm，所以无论来的数是小卡拉米还是大罗金仙，都会强行压缩成普通人，以确保每个计算组件的计算尺度都是类似的。
+\end{document}

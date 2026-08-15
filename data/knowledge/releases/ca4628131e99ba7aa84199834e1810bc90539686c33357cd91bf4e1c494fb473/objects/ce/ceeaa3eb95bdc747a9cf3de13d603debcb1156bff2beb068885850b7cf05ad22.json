@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.382aa295f233c6ef",
+    "kind": "article",
+    "title": "Arcaea小故事",
+    "status": "archived",
+    "publishedAt": "2023-05-16T13:58:31.000Z",
+    "updatedAt": "2023-11-06T12:50:33.402Z",
+    "source": "content/articles/article.382aa295f233c6ef.json",
+    "body": "<h1 id=\"ARCAEA的故事\"><a href=\"#ARCAEA的故事\" class=\"headerlink\" title=\"ARCAEA的故事\"></a>ARCAEA的故事</h1><div class=\"note info simple\"><p>info 详细请跳转至记录贴 </p>\n</div>\n<h2 id=\"初遇arc\"><a href=\"#初遇arc\" class=\"headerlink\" title=\"初遇arc\"></a>初遇arc</h2><p>其实2018年就知道arcaea了，当时有个同班喜欢打音游的女孩子天天抱着平板给我安利arcaea。当时arcaea下载害的用特殊手段才行，最后挂了梯子去taptap上下了（现在不行了）。但是因为我当初设备是华为（懂得都懂）吞音、延迟极其严重，最后只能放弃了。<br><img src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/arc/first.webp\" alt=\"\"></p>\n<h2 id=\"邂逅arc\"><a href=\"#邂逅arc\" class=\"headerlink\" title=\"邂逅arc\"></a>邂逅arc</h2><p>后来上了大学，开始打muse dash，玩了两年，水平应该已经算挺不错的了，也算有了点音游功底（动态视力，反应力，手指机能什么的）。9级曲闭着眼睛99%，10级曲极大部分可以轻松98%以上，11级曲大部分95%，少数97%。再后面提升感觉就特别慢了。<br><img src=\"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/arc/MUSE.webp\" alt=\"\"></p>\n<p>这时候开始想去玩其他音游了。然后就想起了arc，入坑用华为的平板（华为，懂得都懂）连续玩了两周，因为有音游基础，所以很快ptt就9以上了。不过后来感觉这平板太烂了，就买卖了也就暂时退坑arc了。</p>\n<h2 id=\"沉迷arc\"><a href=\"#沉迷arc\" class=\"headerlink\" title=\"沉迷arc\"></a>沉迷arc</h2><p>今年不知道咋回事，可能muse dash又瓶颈了吧，又把arc下回来玩了玩。啊，感觉提升好快啊。<br>短短半个月，从9.4左右，涨到了10.38。而且我也不是天天玩，感觉这样按部就班的下去，说不定明年的这个时候摘星也不是不可能呢</p>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.6719405c166c09a1"
+      },
+      {
+        "type": "references",
+        "target": "external.63c32c4aeee1dc01"
+      },
+      {
+        "type": "references",
+        "target": "external.9e872f3ca23cb0cb"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/_posts/Arcaea小故事.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

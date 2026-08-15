@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.07c63b32081025d9",
+    "kind": "article",
+    "title": "关于",
+    "status": "archived",
+    "publishedAt": "2023-05-15T10:26:19.000Z",
+    "updatedAt": "2023-05-17T06:06:40.785Z",
+    "source": "content/articles/article.07c63b32081025d9.json",
+    "body": "<!-- GitCalendar容器 -->\n<div id=\"gitZone\"></div>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.b8d0a597ff7fefcf"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/about/index.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}

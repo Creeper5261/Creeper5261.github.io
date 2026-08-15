@@ -1073,7 +1073,6 @@ body:has(.tool-home) #to_comment {
   font-family: "Noto Serif SC", "Songti SC", "Times New Roman", serif;
   line-height: 1.85;
 }
-
 .latex-preview-block {
   box-sizing: border-box;
   width: min(100%, 52rem);
@@ -1115,6 +1114,26 @@ body:has(.tool-home) #to_comment {
   margin: 1.45rem 0 .55rem;
   font-size: 1.22rem;
 }
+
+.latex-preview-document ul,
+.latex-preview-document ol {
+  margin: .8rem 0 1rem;
+  padding-inline-start: 1.65rem;
+}
+.latex-preview-document li { margin: .35rem 0; }
+.latex-preview-document ul > li::marker { color: var(--theme-color); font-size: 1.05em; }
+.latex-preview-document ol > li::marker { color: var(--theme-color); font-weight: 700; }
+.latex-preview-document h2::before,
+.latex-preview-document h3::before {
+  display: inline-block;
+  width: 1.15em;
+  margin-inline-end: .22em;
+  color: var(--theme-color);
+  content: '✣';
+  font-size: .72em;
+  animation: latex-heading-pinwheel 5s linear infinite;
+}
+@keyframes latex-heading-pinwheel { to { transform: rotate(360deg); } }
 
 .latex-title-block {
   margin: 1rem 0 2.6rem;
@@ -1171,14 +1190,31 @@ body:has(.tool-home) #to_comment {
 .latex-table-wrap {
   width: 100%;
   margin: 1rem 0;
-  overflow-x: auto;
+  overflow: visible;
   border: 1px solid color-mix(in srgb, var(--theme-color) 20%, transparent);
   border-radius: 10px;
   box-shadow: 0 8px 20px color-mix(in srgb, var(--theme-color) 9%, transparent);
 }
 
+.latex-table-wrap > .table-wrap {
+  width: 100%;
+  margin: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: inherit;
+}
+
+/* Recovered LaTeX table fragments retain the theme's nested table wrapper.
+   The outer wrapper owns overflow; the nested wrapper must not reserve its
+   legacy bottom margin or render a second scrollbar track. */
+.latex-table-wrap > .table-wrap > .table-wrap {
+  margin: 0;
+  overflow: visible;
+}
+
 .latex-table-wrap table {
-  min-width: max-content;
+  width: max-content;
+  min-width: 100%;
   margin: 0;
 }
 
@@ -1218,6 +1254,7 @@ body:has(.tool-home) #to_comment {
   overflow-y: hidden;
   text-align: center;
 }
+
 
 .latex-unknown-command {
   color: color-mix(in srgb, var(--font-color) 58%, transparent);

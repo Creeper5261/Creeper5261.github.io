@@ -1888,3 +1888,45 @@ input[name="colors"] {
   border: 3px solid var(--color-blackgray);
   background-color: var(--color-blackgray);
 }
+
+/* Static LaTeX article output: rendered content only, without the editor shell. */
+.latex-document-rendered {
+  margin: 1.5rem 0;
+  padding: clamp(1.25rem, 3vw, 2.75rem);
+  border: 1px solid color-mix(in srgb, var(--theme-color) 24%, transparent);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--card-bg) 94%, transparent);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--font-color) 10%, transparent);
+}
+/* Long rendered LaTeX articles use the available reading width instead of the
+   narrow default post column. Other articles keep the original layout. */
+#post:has(.latex-document-rendered) {
+  width: min(96vw, 1180px);
+  max-width: 1180px;
+}
+#post:has(.latex-document-rendered) #article-container {
+  width: 100%;
+  max-width: none;
+}
+@media (max-width: 900px) {
+  #post:has(.latex-document-rendered) {
+    width: calc(100vw - 1.25rem);
+  }
+}
+.latex-document-rendered .latex-preview-document {
+  color: var(--font-color);
+  font-family: "Noto Serif SC", "Songti SC", "Times New Roman", serif;
+  line-height: 1.85;
+}
+.latex-document-rendered .latex-preview-block { margin: 0 auto 1rem; max-width: 58rem; }
+.latex-document-rendered .latex-preview-block > :first-child { margin-top: 0; }
+.latex-document-rendered .latex-preview-block > :last-child { margin-bottom: 0; }
+.latex-document-rendered h1,
+.latex-document-rendered h2,
+.latex-document-rendered h3,
+.latex-document-rendered h4 { color: var(--text-highlight-color); line-height: 1.35; }
+.latex-document-rendered h2 { margin: 1.9rem 0 .75rem; padding-bottom: .38rem; border-bottom: 1px solid color-mix(in srgb, var(--theme-color) 46%, transparent); }
+.latex-document-rendered p { margin: .7rem 0; }
+.latex-document-rendered table { width: 100%; border-collapse: collapse; }
+.latex-document-rendered th,
+.latex-document-rendered td { padding: .4rem .55rem; border: 1px solid color-mix(in srgb, var(--font-color) 20%, transparent); vertical-align: top; }

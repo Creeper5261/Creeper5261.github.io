@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "asset.04abb3c08e9cb8a44604737620f6c501a78916445ed0eb2d4986cb1a9dbbcf4c",
+      "hash": "04abb3c08e9cb8a44604737620f6c501a78916445ed0eb2d4986cb1a9dbbcf4c",
+      "filename": "04abb3c08e9cb8a44604737620f6c501a78916445ed0eb2d4986cb1a9dbbcf4c.jpg",
+      "url": "/media/04abb3c08e9cb8a44604737620f6c501a78916445ed0eb2d4986cb1a9dbbcf4c.jpg",
+      "bytes": 68687,
+      "extension": ".jpg",
+      "mimeType": "image/jpeg",
+      "width": 2000,
+      "height": 2000,
+      "format": "jpeg",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/temp_classify/1dcnns/test_m.jpg"
+      ],
+      "references": [
+        {
+          "contentId": "article.8c00a73b042c64ee",
+          "source": "content/articles/article.8c00a73b042c64ee.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        },
+        {
+          "contentId": "media.97e6454e1c0d1ce3",
+          "source": "content/media/media.97e6454e1c0d1ce3.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        }
+      ]
+    },
+    {
+      "id": "asset.523d71695eb4023f00d2f79baa65b9eeae415fd836899229b83cd6b53a196771",
+      "hash": "523d71695eb4023f00d2f79baa65b9eeae415fd836899229b83cd6b53a196771",
+      "filename": "523d71695eb4023f00d2f79baa65b9eeae415fd836899229b83cd6b53a196771.png",
+      "url": "/media/523d71695eb4023f00d2f79baa65b9eeae415fd836899229b83cd6b53a196771.png",
+      "bytes": 4252695,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2100,
+      "height": 1177,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover2/108031609_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.aa0545c637b773c4",
+          "source": "content/media/media.aa0545c637b773c4.json",
+          "line": null,
+          "column": null,
+          "alt": "108031609_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.5fef0a44103088809e926704a4cb3dc4655f5657d332495b0226b825d95f3c0f",
+      "hash": "5fef0a44103088809e926704a4cb3dc4655f5657d332495b0226b825d95f3c0f",
+      "filename": "5fef0a44103088809e926704a4cb3dc4655f5657d332495b0226b825d95f3c0f.png",
+      "url": "/media/5fef0a44103088809e926704a4cb3dc4655f5657d332495b0226b825d95f3c0f.png",
+      "bytes": 2804965,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2000,
+      "height": 1121,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover2/108058560_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.4218466f1234c00e",
+          "source": "content/media/media.4218466f1234c00e.json",
+          "line": null,
+          "column": null,
+          "alt": "108058560_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.60299437a2c95b02a17d78da71a276ef55c49ceb7baff1b779b1c926dccaa12e",
+      "hash": "60299437a2c95b02a17d78da71a276ef55c49ceb7baff1b779b1c926dccaa12e",
+      "filename": "60299437a2c95b02a17d78da71a276ef55c49ceb7baff1b779b1c926dccaa12e.png",
+      "url": "/media/60299437a2c95b02a17d78da71a276ef55c49ceb7baff1b779b1c926dccaa12e.png",
+      "bytes": 4047012,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2000,
+      "height": 1338,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/103093203_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.1e4702bddd167ce4",
+          "source": "content/media/media.1e4702bddd167ce4.json",
+          "line": null,
+          "column": null,
+          "alt": "103093203_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.60ba2e9d906a29fae2f21e84b26d1c76cf35921148b543e1efab2752ebd49ed0",
+      "hash": "60ba2e9d906a29fae2f21e84b26d1c76cf35921148b543e1efab2752ebd49ed0",
+      "filename": "60ba2e9d906a29fae2f21e84b26d1c76cf35921148b543e1efab2752ebd49ed0.png",
+      "url": "/media/60ba2e9d906a29fae2f21e84b26d1c76cf35921148b543e1efab2752ebd49ed0.png",
+      "bytes": 3157808,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 1260,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/interlude_55.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.093945eeb2e7c495",
+          "source": "content/media/media.093945eeb2e7c495.json",
+          "line": null,
+          "column": null,
+          "alt": "interlude_55.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.63b243bed823182ec7ce97bae097e3790d4194f155db93c1e41ea2bfd669c161",
+      "hash": "63b243bed823182ec7ce97bae097e3790d4194f155db93c1e41ea2bfd669c161",
+      "filename": "63b243bed823182ec7ce97bae097e3790d4194f155db93c1e41ea2bfd669c161.jpg",
+      "url": "/media/63b243bed823182ec7ce97bae097e3790d4194f155db93c1e41ea2bfd669c161.jpg",
+      "bytes": 16393,
+      "extension": ".jpg",
+      "mimeType": "image/jpeg",
+      "width": 660,
+      "height": 354,
+      "format": "jpeg",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/404.jpg"
+      ],
+      "references": [
+        {
+          "contentId": "media.e382c9665366e4ee",
+          "source": "content/media/media.e382c9665366e4ee.json",
+          "line": null,
+          "column": null,
+          "alt": "404.jpg"
+        }
+      ]
+    },
+    {
+      "id": "asset.67db186efe68dc7375c220213665d27538fece6b8af3afcf0a2885c40b39c77e",
+      "hash": "67db186efe68dc7375c220213665d27538fece6b8af3afcf0a2885c40b39c77e",
+      "filename": "67db186efe68dc7375c220213665d27538fece6b8af3afcf0a2885c40b39c77e.png",
+      "url": "/media/67db186efe68dc7375c220213665d27538fece6b8af3afcf0a2885c40b39c77e.png",
+      "bytes": 55302,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 1200,
+      "height": 400,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/temp_classify/1dcnns/train_curve.png"
+      ],
+      "references": [
+        {
+          "contentId": "article.8c00a73b042c64ee",
+          "source": "content/articles/article.8c00a73b042c64ee.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        },
+        {
+          "contentId": "media.10892468fba48589",
+          "source": "content/media/media.10892468fba48589.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        }
+      ]
+    },
+    {
+      "id": "asset.6a5f0b6788f8f85628d327fdcb81803dbd6a9bc77ec83a696015942674de4940",
+      "hash": "6a5f0b6788f8f85628d327fdcb81803dbd6a9bc77ec83a696015942674de4940",
+      "filename": "6a5f0b6788f8f85628d327fdcb81803dbd6a9bc77ec83a696015942674de4940.png",
+      "url": "/media/6a5f0b6788f8f85628d327fdcb81803dbd6a9bc77ec83a696015942674de4940.png",
+      "bytes": 2503016,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 1485,
+      "height": 1050,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/106924610_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.d108071612592a22",
+          "source": "content/media/media.d108071612592a22.json",
+          "line": null,
+          "column": null,
+          "alt": "106924610_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733",
+      "hash": "707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733",
+      "filename": "707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg",
+      "url": "/media/707c41aa8163bdd6a1f7d952738ae8dd2988dbc096816d39af1dded7ddab1733.svg",
+      "bytes": 910,
+      "extension": ".svg",
+      "mimeType": "image/svg+xml",
+      "width": 640,
+      "height": 240,
+      "format": "svg",
+      "rights": "original",
+      "source": "DAT Blog knowledge-site contract example",
+      "credit": null,
+      "sourcePaths": [
+        "examples/content-contract.svg"
+      ],
+      "references": [
+        {
+          "contentId": "site.examples.contract-introduction",
+          "source": "content/examples/contract-introduction.json",
+          "line": null,
+          "column": null,
+          "alt": "内容经过校验后生成站点数据"
+        },
+        {
+          "contentId": "site.hybrid-indexing.article",
+          "source": "content/s4/hybrid-indexing-article.json",
+          "line": null,
+          "column": null,
+          "alt": "混合索引对象与关系的静态派生图"
+        }
+      ]
+    },
+    {
+      "id": "asset.77f1c9cd1447660897cb10e3cfa49e2a6b06e07912447dc7e0f9ba7d77854c63",
+      "hash": "77f1c9cd1447660897cb10e3cfa49e2a6b06e07912447dc7e0f9ba7d77854c63",
+      "filename": "77f1c9cd1447660897cb10e3cfa49e2a6b06e07912447dc7e0f9ba7d77854c63.png",
+      "url": "/media/77f1c9cd1447660897cb10e3cfa49e2a6b06e07912447dc7e0f9ba7d77854c63.png",
+      "bytes": 3989275,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2100,
+      "height": 1177,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover2/108005337_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.e93a6633a9bcf163",
+          "source": "content/media/media.e93a6633a9bcf163.json",
+          "line": null,
+          "column": null,
+          "alt": "108005337_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.7c3fb2b888653a4d2a00013f6353198e2435a1e607a09658f8a7cf37e9569f98",
+      "hash": "7c3fb2b888653a4d2a00013f6353198e2435a1e607a09658f8a7cf37e9569f98",
+      "filename": "7c3fb2b888653a4d2a00013f6353198e2435a1e607a09658f8a7cf37e9569f98.png",
+      "url": "/media/7c3fb2b888653a4d2a00013f6353198e2435a1e607a09658f8a7cf37e9569f98.png",
+      "bytes": 2469479,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 1260,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/interlude_46.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.e15e5177e4d92178",
+          "source": "content/media/media.e15e5177e4d92178.json",
+          "line": null,
+          "column": null,
+          "alt": "interlude_46.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.8461671186e07bb632c25fe2bd292f34341124401aa8883a072506c9c7d6e2cd",
+      "hash": "8461671186e07bb632c25fe2bd292f34341124401aa8883a072506c9c7d6e2cd",
+      "filename": "8461671186e07bb632c25fe2bd292f34341124401aa8883a072506c9c7d6e2cd.png",
+      "url": "/media/8461671186e07bb632c25fe2bd292f34341124401aa8883a072506c9c7d6e2cd.png",
+      "bytes": 2667029,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 1657,
+      "height": 2200,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover2/108089862_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.aae82bafced5b6cd",
+          "source": "content/media/media.aae82bafced5b6cd.json",
+          "line": null,
+          "column": null,
+          "alt": "108089862_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.8d2f31359d2b36b327f85f2182adbe04d2ff0a7cb633fc8b264d8f54451f8bb3",
+      "hash": "8d2f31359d2b36b327f85f2182adbe04d2ff0a7cb633fc8b264d8f54451f8bb3",
+      "filename": "8d2f31359d2b36b327f85f2182adbe04d2ff0a7cb633fc8b264d8f54451f8bb3.png",
+      "url": "/media/8d2f31359d2b36b327f85f2182adbe04d2ff0a7cb633fc8b264d8f54451f8bb3.png",
+      "bytes": 565258,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 640,
+      "height": 640,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/nyaruko.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.43de66f78ff656d8",
+          "source": "content/media/media.43de66f78ff656d8.json",
+          "line": null,
+          "column": null,
+          "alt": "nyaruko.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.9c53cde795acd2fa653e135e68e83a909aefd56606ae21405fe55b178590be5c",
+      "hash": "9c53cde795acd2fa653e135e68e83a909aefd56606ae21405fe55b178590be5c",
+      "filename": "9c53cde795acd2fa653e135e68e83a909aefd56606ae21405fe55b178590be5c.png",
+      "url": "/media/9c53cde795acd2fa653e135e68e83a909aefd56606ae21405fe55b178590be5c.png",
+      "bytes": 47481,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 640,
+      "height": 480,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/temp_classify/1dcnns/m.png"
+      ],
+      "references": [
+        {
+          "contentId": "article.8c00a73b042c64ee",
+          "source": "content/articles/article.8c00a73b042c64ee.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        },
+        {
+          "contentId": "media.57f2b0e95c3aee83",
+          "source": "content/media/media.57f2b0e95c3aee83.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        }
+      ]
+    },
+    {
+      "id": "asset.a8b4947388c852488fd5fb33a68519d9faf029d6759148db249f830bf7b3c47a",
+      "hash": "a8b4947388c852488fd5fb33a68519d9faf029d6759148db249f830bf7b3c47a",
+      "filename": "a8b4947388c852488fd5fb33a68519d9faf029d6759148db249f830bf7b3c47a.png",
+      "url": "/media/a8b4947388c852488fd5fb33a68519d9faf029d6759148db249f830bf7b3c47a.png",
+      "bytes": 2598279,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2100,
+      "height": 1062,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover2/108152866_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.4b38d10530f0d4a7",
+          "source": "content/media/media.4b38d10530f0d4a7.json",
+          "line": null,
+          "column": null,
+          "alt": "108152866_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.ab08837b5bd7ad52021ecb341039a97b31caea2f70f0ea49955898be72d7f57b",
+      "hash": "ab08837b5bd7ad52021ecb341039a97b31caea2f70f0ea49955898be72d7f57b",
+      "filename": "ab08837b5bd7ad52021ecb341039a97b31caea2f70f0ea49955898be72d7f57b.png",
+      "url": "/media/ab08837b5bd7ad52021ecb341039a97b31caea2f70f0ea49955898be72d7f57b.png",
+      "bytes": 3630841,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 1260,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/interlude_50.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.99e8d897a471cb49",
+          "source": "content/media/media.99e8d897a471cb49.json",
+          "line": null,
+          "column": null,
+          "alt": "interlude_50.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68",
+      "hash": "b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68",
+      "filename": "b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68.gif",
+      "url": "/media/b318d5c673db6aac52aaa1b73e235d0a9d804306e0e4e29b1e27a94259c51b68.gif",
+      "bytes": 65097,
+      "extension": ".gif",
+      "mimeType": "image/gif",
+      "width": 256,
+      "height": 5888,
+      "format": "gif",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/friend_404.gif"
+      ],
+      "references": [
+        {
+          "contentId": "media.816efe45554283bf",
+          "source": "content/media/media.816efe45554283bf.json",
+          "line": null,
+          "column": null,
+          "alt": "friend_404.gif"
+        }
+      ]
+    },
+    {
+      "id": "asset.b3394ea41557ea498752cd669670ac0f3218bd483a669f0faa308779ca1c282d",
+      "hash": "b3394ea41557ea498752cd669670ac0f3218bd483a669f0faa308779ca1c282d",
+      "filename": "b3394ea41557ea498752cd669670ac0f3218bd483a669f0faa308779ca1c282d.jpg",
+      "url": "/media/b3394ea41557ea498752cd669670ac0f3218bd483a669f0faa308779ca1c282d.jpg",
+      "bytes": 5950754,
+      "extension": ".jpg",
+      "mimeType": "image/jpeg",
+      "width": 4180,
+      "height": 2786,
+      "format": "jpeg",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/2j20.jpg"
+      ],
+      "references": [
+        {
+          "contentId": "media.e77a898719051eb2",
+          "source": "content/media/media.e77a898719051eb2.json",
+          "line": null,
+          "column": null,
+          "alt": "2j20.jpg"
+        }
+      ]
+    },
+    {
+      "id": "asset.b67aceb78059b94bdfb1757940dedf1bc3ecb76cf4aaa56579677dbf08479057",
+      "hash": "b67aceb78059b94bdfb1757940dedf1bc3ecb76cf4aaa56579677dbf08479057",
+      "filename": "b67aceb78059b94bdfb1757940dedf1bc3ecb76cf4aaa56579677dbf08479057.jpg",
+      "url": "/media/b67aceb78059b94bdfb1757940dedf1bc3ecb76cf4aaa56579677dbf08479057.jpg",
+      "bytes": 1336627,
+      "extension": ".jpg",
+      "mimeType": "image/jpeg",
+      "width": 2393,
+      "height": 1596,
+      "format": "jpeg",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/j20.jpg"
+      ],
+      "references": [
+        {
+          "contentId": "media.27b279c11f179ec5",
+          "source": "content/media/media.27b279c11f179ec5.json",
+          "line": null,
+          "column": null,
+          "alt": "j20.jpg"
+        }
+      ]
+    },
+    {
+      "id": "asset.b93346de18dd52fcc6277e8b72e8b62fd83f42bb75e65e30607d5572d1c7a651",
+      "hash": "b93346de18dd52fcc6277e8b72e8b62fd83f42bb75e65e30607d5572d1c7a651",
+      "filename": "b93346de18dd52fcc6277e8b72e8b62fd83f42bb75e65e30607d5572d1c7a651.png",
+      "url": "/media/b93346de18dd52fcc6277e8b72e8b62fd83f42bb75e65e30607d5572d1c7a651.png",
+      "bytes": 24750,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 1409,
+      "height": 129,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/temp_classify/1dcnns/res.png"
+      ],
+      "references": [
+        {
+          "contentId": "article.8c00a73b042c64ee",
+          "source": "content/articles/article.8c00a73b042c64ee.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        },
+        {
+          "contentId": "media.e35aceab37c76250",
+          "source": "content/media/media.e35aceab37c76250.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        }
+      ]
+    },
+    {
+      "id": "asset.bc3799013e1c5e565db0789ab7a86f0fec0052ff71585bf72e2a4cea78354957",
+      "hash": "bc3799013e1c5e565db0789ab7a86f0fec0052ff71585bf72e2a4cea78354957",
+      "filename": "bc3799013e1c5e565db0789ab7a86f0fec0052ff71585bf72e2a4cea78354957.png",
+      "url": "/media/bc3799013e1c5e565db0789ab7a86f0fec0052ff71585bf72e2a4cea78354957.png",
+      "bytes": 2018290,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 1872,
+      "height": 1067,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/1.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.841c32a8db4c8be8",
+          "source": "content/media/media.841c32a8db4c8be8.json",
+          "line": null,
+          "column": null,
+          "alt": "1.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.bce86ad3c9a4ca3f2bc5f13d27d999dbf59e2da8dbd2939f07f44db064b21bcd",
+      "hash": "bce86ad3c9a4ca3f2bc5f13d27d999dbf59e2da8dbd2939f07f44db064b21bcd",
+      "filename": "bce86ad3c9a4ca3f2bc5f13d27d999dbf59e2da8dbd2939f07f44db064b21bcd.jpg",
+      "url": "/media/bce86ad3c9a4ca3f2bc5f13d27d999dbf59e2da8dbd2939f07f44db064b21bcd.jpg",
+      "bytes": 136254,
+      "extension": ".jpg",
+      "mimeType": "image/jpeg",
+      "width": 950,
+      "height": 1296,
+      "format": "jpeg",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/QRCode.jpg"
+      ],
+      "references": [
+        {
+          "contentId": "media.c148926975866e3b",
+          "source": "content/media/media.c148926975866e3b.json",
+          "line": null,
+          "column": null,
+          "alt": "QRCode.jpg"
+        }
+      ]
+    },
+    {
+      "id": "asset.ce713689a38b7070cd8764ca9965295f4befa6f6952bb9ac3955ad99f2dc9463",
+      "hash": "ce713689a38b7070cd8764ca9965295f4befa6f6952bb9ac3955ad99f2dc9463",
+      "filename": "ce713689a38b7070cd8764ca9965295f4befa6f6952bb9ac3955ad99f2dc9463.png",
+      "url": "/media/ce713689a38b7070cd8764ca9965295f4befa6f6952bb9ac3955ad99f2dc9463.png",
+      "bytes": 3441197,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2200,
+      "height": 1037,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/108121664_p0.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.b9f40954f52a3a1a",
+          "source": "content/media/media.b9f40954f52a3a1a.json",
+          "line": null,
+          "column": null,
+          "alt": "108121664_p0.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.d69c22151f31eac112e3c465a614e3ff56625a9258e71a14573fc082a7d9041f",
+      "hash": "d69c22151f31eac112e3c465a614e3ff56625a9258e71a14573fc082a7d9041f",
+      "filename": "d69c22151f31eac112e3c465a614e3ff56625a9258e71a14573fc082a7d9041f.jpg",
+      "url": "/media/d69c22151f31eac112e3c465a614e3ff56625a9258e71a14573fc082a7d9041f.jpg",
+      "bytes": 10672,
+      "extension": ".jpg",
+      "mimeType": "image/jpeg",
+      "width": 600,
+      "height": 500,
+      "format": "jpeg",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/temp_classify/1dcnns/test_acc.jpg"
+      ],
+      "references": [
+        {
+          "contentId": "article.8c00a73b042c64ee",
+          "source": "content/articles/article.8c00a73b042c64ee.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        },
+        {
+          "contentId": "media.752bec56764a61f6",
+          "source": "content/media/media.752bec56764a61f6.json",
+          "line": null,
+          "column": null,
+          "alt": "ClassificationSummary"
+        }
+      ]
+    },
+    {
+      "id": "asset.e0d4d43d93e391750bd94b5acffb4e7e144b33e51efda4601e595e3044e1f3f3",
+      "hash": "e0d4d43d93e391750bd94b5acffb4e7e144b33e51efda4601e595e3044e1f3f3",
+      "filename": "e0d4d43d93e391750bd94b5acffb4e7e144b33e51efda4601e595e3044e1f3f3.ico",
+      "url": "/media/e0d4d43d93e391750bd94b5acffb4e7e144b33e51efda4601e595e3044e1f3f3.ico",
+      "bytes": 36218,
+      "extension": ".ico",
+      "mimeType": "application/octet-stream",
+      "width": null,
+      "height": null,
+      "format": null,
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/coconut.ico"
+      ],
+      "references": [
+        {
+          "contentId": "media.a29e9133c24ea866",
+          "source": "content/media/media.a29e9133c24ea866.json",
+          "line": null,
+          "column": null,
+          "alt": "coconut.ico"
+        }
+      ]
+    },
+    {
+      "id": "asset.e1c565cfc01a09134649ccda1921fa042df53340c5b7e8e9fc134f22ec8dad03",
+      "hash": "e1c565cfc01a09134649ccda1921fa042df53340c5b7e8e9fc134f22ec8dad03",
+      "filename": "e1c565cfc01a09134649ccda1921fa042df53340c5b7e8e9fc134f22ec8dad03.png",
+      "url": "/media/e1c565cfc01a09134649ccda1921fa042df53340c5b7e8e9fc134f22ec8dad03.png",
+      "bytes": 3470277,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 1260,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/interlude_halloween4.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.36fbd553c5b99c81",
+          "source": "content/media/media.36fbd553c5b99c81.json",
+          "line": null,
+          "column": null,
+          "alt": "interlude_halloween4.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.f34480cb9965575341be051f5c666a1bb7c9b417c23bcf969e03c216c1f5afd7",
+      "hash": "f34480cb9965575341be051f5c666a1bb7c9b417c23bcf969e03c216c1f5afd7",
+      "filename": "f34480cb9965575341be051f5c666a1bb7c9b417c23bcf969e03c216c1f5afd7.png",
+      "url": "/media/f34480cb9965575341be051f5c666a1bb7c9b417c23bcf969e03c216c1f5afd7.png",
+      "bytes": 2277612,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 2048,
+      "height": 1260,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/cover/interlude_maimai.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.a71e394bd22d7131",
+          "source": "content/media/media.a71e394bd22d7131.json",
+          "line": null,
+          "column": null,
+          "alt": "interlude_maimai.png"
+        }
+      ]
+    },
+    {
+      "id": "asset.f89e1bc59b25ec8f54e7d3864f56b92bf6ceb6c25eadc1276958f42674bf1c1f",
+      "hash": "f89e1bc59b25ec8f54e7d3864f56b92bf6ceb6c25eadc1276958f42674bf1c1f",
+      "filename": "f89e1bc59b25ec8f54e7d3864f56b92bf6ceb6c25eadc1276958f42674bf1c1f.png",
+      "url": "/media/f89e1bc59b25ec8f54e7d3864f56b92bf6ceb6c25eadc1276958f42674bf1c1f.png",
+      "bytes": 323,
+      "extension": ".png",
+      "mimeType": "image/png",
+      "width": 32,
+      "height": 32,
+      "format": "png",
+      "rights": "source asset; provenance retained in source field",
+      "source": null,
+      "credit": null,
+      "sourcePaths": [
+        "migrated/img/favicon.png"
+      ],
+      "references": [
+        {
+          "contentId": "media.9d52ba89664d670e",
+          "source": "content/media/media.9d52ba89664d670e.json",
+          "line": null,
+          "column": null,
+          "alt": "favicon.png"
+        }
+      ]
+    }
+  ]
+}

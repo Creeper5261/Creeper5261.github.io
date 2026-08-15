@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "pulses": [
+    {
+      "id": "pulse.github-repositories",
+      "kind": "pulse",
+      "title": "GitHub 开源项目热点快照",
+      "status": "evergreen",
+      "publishedAt": "2026-08-02",
+      "updatedAt": "2026-08-02",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/2d/2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95.json",
+        "url": "/data/knowledge/objects/2d/2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95.json",
+        "hash": "2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95",
+        "bytes": 844
+      },
+      "source": "github-repositories",
+      "query": "stars:>10000 language:javascript",
+      "schedule": "daily",
+      "accessRules": "构建时通过官方 GitHub API 获取；浏览器只读取已发布快照。失败时保留最近一次有效快照。",
+      "snapshotStatus": "stored",
+      "fetchedAt": "2026-08-15T03:03:20.207Z",
+      "expiresAt": "2026-08-16T03:03:20.207Z",
+      "sortBasis": {
+        "field": "stars",
+        "direction": "descending"
+      },
+      "items": [
+        {
+          "id": "github:react/react",
+          "title": "react/react",
+          "url": "https://github.com/react/react",
+          "source": "github",
+          "summary": "The library for web and native user interfaces.",
+          "score": 247236
+        },
+        {
+          "id": "github:affaan-m/ECC",
+          "title": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "source": "github",
+          "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "score": 240163
+        },
+        {
+          "id": "github:trekhleb/javascript-algorithms",
+          "title": "trekhleb/javascript-algorithms",
+          "url": "https://github.com/trekhleb/javascript-algorithms",
+          "source": "github",
+          "summary": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+          "score": 196459
+        },
+        {
+          "id": "github:Snailclimb/JavaGuide",
+          "title": "Snailclimb/JavaGuide",
+          "url": "https://github.com/Snailclimb/JavaGuide",
+          "source": "github",
+          "summary": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+          "score": 157762
+        },
+        {
+          "id": "github:airbnb/javascript",
+          "title": "airbnb/javascript",
+          "url": "https://github.com/airbnb/javascript",
+          "source": "github",
+          "summary": "JavaScript Style Guide",
+          "score": 148135
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "object": {
+    "schemaVersion": 1,
+    "id": "article.33c2199c4ed7e747",
+    "kind": "article",
+    "title": "流水账",
+    "status": "archived",
+    "publishedAt": "2023-09-19T11:52:37.000Z",
+    "updatedAt": "2023-11-06T12:53:02.644Z",
+    "source": "content/articles/article.33c2199c4ed7e747.json",
+    "body": "<div class=\"timeline pink\"><div class=\"timeline-item headline\"><div class=\"timeline-item-title\"><div class=\"item-circle\"><p>记录</p>\n</div></div></div><div class=\"timeline-item\"><div class=\"timeline-item-title\"><div class=\"item-circle\"><p>2023-9-19 暑假做的工作</p>\n</div></div><div class=\"timeline-item-content\"><p>目标是利用参类的太赫兹光谱来对其进行产地年限分类。</p>\n<p>在小组其他成员在测数据的同时，我在学习深度学习的基础。在学了点深度学习的皮毛之后（至少看得懂名词了，fork别人的代码改改能跑），其他成员的数据也测完了。</p>\n<p>呵呵，当初第一个作业学的可认真了，可是后面发现，其实只要把所有的概念都过一遍就足以开搞了，反正目的不是真的深入学习，自己手撸又费时间质量还不咋高，还是在前人的开源代码上改改适配自己的数据集比较现实，啊！感谢开源。</p>\n<p>然后我对这些数据进行了简要的分析，发现对于同一种样品，可以获得十种左右的光学数据（吸收率，反射率，时域啥的），然后发现大部分的数据维度是(3,1049), 时域的数据维度是(3, 60000+)。然后又把这些图用plot画了画，发现前两轴Index和XAxis纯纯线性递增，所以可以不要，保留Result就行了。最后剔除数据前面的那些设备信息，然后把前两列给删了，同时不保留列名。这样数据集里头的数据都是一维的了。</p>\n<p>之后就是对这些数据进行一些预处理了，plot这些数据，发现好多那种”毛刺”，后来咨询专业人士(指光学专业学生)才知道因为咱的数据都是实测的，所以会出现很多噪声，所以还要现去噪。一开始先试了试小波去噪，效果还不赖，不过后面翻文献别人都爱用S-G去噪，所以后面也改成这种去噪方式。</p>\n<p>企划书里说的是用CTGAN增强数据，CNN来分类数据。不过CTGAN我去找了，是比较适合伪造图表式的假数据，比如户口信息，学生信息统计这类的，对于我这种一维连续信号数据只看到有一篇没有给出源码（没法抄了，难受）论文介绍了。最后发现还是用WGAN比较现实，去github上找到个大佬的WGAN-GP(GANs-for-1D-Signal)来对一维信号数据扩展的代码。直接进行一个光速的fork。</p>\n<p>不过他的模型是适配维度(1，2xxx)的数据，所以还得小改一生成器和鉴别器里部分网络层的内核数，步长，padding啥的，最后在一堆报错下终于刚好契合我的(1,1049)了。第一次训练直接拉满跑了一万次，不过后来看gif发现其实epoch到800左右就已经收敛了，毕竟只是一些一维数据。</p>\n<p>不过要知道，对于一种样品的一次测试数据有10+的不同的光谱数据呢，而为了不遗失每次测试的特征把每一个光谱数据都拿去训练出对应的模型是不现实。所以要考虑把这些10+的数据聚合起来。前面发现了TimeDomain的这条数据(1,60000+)，而其他的数据都是(1,1049)，所以把TimeDomain单独领出来，结果发现不同样本的时域可以说没啥差别…</p>\n<p>这下可以考虑两种聚合的方式，要么(n,1049)，要么(1, 1049*n)。不过前者对于模型的更改实在是太大了，所以毫不犹豫的选择后一种好吧。而且后者只需要简单的将不同的光谱数据拼接在一起就行了。</p>\n<p>然后就是把所有单次测试的数据按照顺序拼接起来。不过为了最后的训练效果，需要提前看看这些数据哪些的特征差异比较明显，把那些不明显的数据直接踢走。好了，现在就是卡在这里了。</p>\n<p>目前python上遇到的报错主要就是包没下，类型错误，参数不匹配，版本不匹配。下包，改参，改版本。最烦人的就是版本问题了，想开个TensorFlow的gpu加速结果因为cuda版本太高了，还得退回旧版本，结果退回去python的版本又不兼容了。最后全部搞完之后又出现了终端和解释器环境bug，导致我在终端里能跑的代码在解释器里跑不了，反之亦然。最后只能在终端里pip list，看看解释器里有哪些玩意和终端里不一样，然后一个个卸载，再重新安装。（不算什么大问题，但就是搞人心态，在这种细枝末节的地方浪费时间）一开始就是单纯的用pycharm的解释器，之后换成了conda。感觉conda也就改python版本方便，其他感觉没啥区别。</p>\n</div></div><div class=\"timeline-item\"><div class=\"timeline-item-title\"><div class=\"item-circle\"><p>2023-9-21 小插曲</p>\n</div></div><div class=\"timeline-item-content\"><p>这两天把收到了所有测量的完毕的数据，正在准备将背景噪声和对应数据相互抵消，然后再进行一些预处理。就可以开始进行扩充数据集了。结果发现13种光谱数据的命名极其不规范，所以得现去规范化命名。今天先用用Excel把规范命名标准和对应的日期的不规范命名对应起来，然后再用python写个脚本批量改名。因为所有数据的拼接都是按照命名顺序排列的，所以规范化的命名极其重要。</p>\n</div></div><div class=\"timeline-item\"><div class=\"timeline-item-title\"><div class=\"item-circle\"><p>2023-9-22 初步处理完成</p>\n</div></div><div class=\"timeline-item-content\"><p>今天把所有不规范的命名纠正完成，并且进行了去噪归一化和合并数据。还因为header = False这个参数忘记加引起了合并后长度偏小的问题（因为不false他会以为你csv的第一列是列名），不过好在最后顺利解决。而且今天发现又一神器—vscode insiders，之前用copilot只是能帮我补全一些代码，让我稍微轻松点，而insiders有copilot chat插件，可以直接让我选中代码让它解释和修改（虽然有点鸡肋），而且还能帮我生成对应文档，好方便啊。运行调试pycharm，不懂就insiders，爽死。</p>\n</div></div></div>",
+    "relations": [
+      {
+        "type": "references",
+        "target": "external.77ce7d644caa2704"
+      }
+    ],
+    "members": [],
+    "entries": [],
+    "entityType": null,
+    "provider": null,
+    "url": null,
+    "embedUrl": null,
+    "sourceUrl": null,
+    "slug": null,
+    "privacy": null,
+    "inputKinds": [],
+    "outputKinds": [],
+    "sourceName": "source/_posts/记录.md",
+    "query": null,
+    "schedule": null,
+    "knowledgeLinks": [],
+    "contentLinks": [],
+    "routeLinks": [],
+    "externalLinks": [],
+    "codeBlocks": [],
+    "assets": []
+  }
+}
