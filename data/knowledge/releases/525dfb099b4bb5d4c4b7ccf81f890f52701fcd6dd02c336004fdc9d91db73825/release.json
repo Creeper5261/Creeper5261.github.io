@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "buildHash": "6601f9d1a16490a07a40ab4d6fe2978440f262a80f81baadfbb5095fac3d32dd",
+  "buildHash": "525dfb099b4bb5d4c4b7ccf81f890f52701fcd6dd02c336004fdc9d91db73825",
   "compatibility": {
     "minimumReaderVersion": 1,
     "currentReaderVersion": 2,
@@ -16,14 +16,14 @@
     ]
   },
   "cache": {
-    "immutableReleasePath": "/data/knowledge/releases/6601f9d1a16490a07a40ab4d6fe2978440f262a80f81baadfbb5095fac3d32dd/",
+    "immutableReleasePath": "/data/knowledge/releases/525dfb099b4bb5d4c4b7ccf81f890f52701fcd6dd02c336004fdc9d91db73825/",
     "mutablePointer": "/data/knowledge/release.json",
     "immutableCacheControl": "public, max-age=31536000, immutable",
     "mutableCacheControl": "public, max-age=0, must-revalidate"
   },
   "rollback": {
     "strategy": "deploy-release-by-hash",
-    "release": "6601f9d1a16490a07a40ab4d6fe2978440f262a80f81baadfbb5095fac3d32dd",
+    "release": "525dfb099b4bb5d4c4b7ccf81f890f52701fcd6dd02c336004fdc9d91db73825",
     "requiresDeploymentArtifact": true
   },
   "files": [
@@ -34,8 +34,8 @@
     },
     {
       "file": "asset-map.json",
-      "hash": "7a4c346fba6463fb1b38fae5bdd66eda693d0887ab1c381208b54dd2a629f1ff",
-      "bytes": 18348
+      "hash": "d94a996eb840650ec812230c0623c4706d74df9bbe62c377790d1226f444ff90",
+      "bytes": 18384
     },
     {
       "file": "build-report.json",
@@ -44,13 +44,13 @@
     },
     {
       "file": "catalog/by-id/ids-0000.json",
-      "hash": "c4415e3c6c79f0c7554dc1b773b81bcdbba675a78c5b59f7190c9b04cb02b3b5",
-      "bytes": 66425
+      "hash": "af41ff259f24813cc3a43e81749b6dfbcea121f1e58967eaf24afbf8dd0b9977",
+      "bytes": 66920
     },
     {
       "file": "catalog/by-kind/article-0000.json",
-      "hash": "271b9b0dcf982e18e7dd3520ca68fc4d782a8142cd6abb8245f08c798194f696",
-      "bytes": 16104
+      "hash": "80e8464f853dfe907ca985758324ba6dd8b67ccdc110a785b3e3edf246f3b420",
+      "bytes": 16802
     },
     {
       "file": "catalog/by-kind/collection-0000.json",
@@ -94,18 +94,18 @@
     },
     {
       "file": "catalog/manifest.json",
-      "hash": "f81c7ab952c283c742f952e750dd602039238f926cfbaf5cb94d164554ee27a9",
-      "bytes": 3479
+      "hash": "6162325a5aa11d245512df61ef00bd4295274d005712820c8d1352f4c0b6a6a6",
+      "bytes": 3475
     },
     {
       "file": "content-index.json",
-      "hash": "03db21848f8e5a693104c7b102057c3fe48344b3b197a6e885721e4ca830e795",
-      "bytes": 92331
+      "hash": "3daf23fb74283f551db3fe4d8f936eea6c5ea444400661090c269b5e65d23ce0",
+      "bytes": 93029
     },
     {
       "file": "content-records.json",
-      "hash": "c32f646b7ad292968699cbeb0bef5fbc2b10a814feeb94e20a7e1f5d8f48385f",
-      "bytes": 793321
+      "hash": "895154bd41a5d611a1cb09b527230130c5b789e4dbcd65cd88ee5b82311ce5dd",
+      "bytes": 794313
     },
     {
       "file": "explain.json",
@@ -129,8 +129,8 @@
     },
     {
       "file": "navigation.json",
-      "hash": "b4bc2240eb11baf77dd9f307cea9c4ed0d9f06ece8b22ad47f50ae4ca7e6b735",
-      "bytes": 95124
+      "hash": "55d255a665e5540f390a30878f20403d75b5391f6d5bf58c620e7b51fff4f0bd",
+      "bytes": 95843
     },
     {
       "file": "objects/00/008447d64c30489974ac32e0dad65ba3e3cdafa64b638ebf4cfaa69db6cb5788.json",
@@ -156,6 +156,11 @@
       "file": "objects/0a/0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca.json",
       "hash": "0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca",
       "bytes": 916
+    },
+    {
+      "file": "objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+      "hash": "12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df",
+      "bytes": 963
     },
     {
       "file": "objects/16/16ed7e6ca873dbeeed89d45e00e23c0c0150844204a92d8f82ab1b53448fa2bd.json",
@@ -804,33 +809,33 @@
     },
     {
       "file": "pulses.json",
-      "hash": "b8eb14a35ec8872034fccc687fc94f0cd5856c50a5b88fcc5768169978e0e145",
+      "hash": "511149de99813361f5f5c2094d36ee3052f31a82b41f2b4024dc8aa9d177a9fd",
       "bytes": 2923
     },
     {
       "file": "relationship-graph.json",
-      "hash": "846135f994de52128dfe3cb3a1e79cb8e1025c5e8214b0c81327bb01da0357ac",
-      "bytes": 106090
+      "hash": "052dc585d7d8f59171fc607e4b48b31c7199062181ab9a455b890eff042cde9c",
+      "bytes": 106788
     },
     {
       "file": "relationships/manifest.json",
-      "hash": "12edbb41982dfae9258bdd79ab48e18174e7c727ff7939c4cd6b4b84940dbb2f",
+      "hash": "5e9f9788b8accec9b6baa38978205c83820f1f6b98a8b2244a65bab8cb9a9f33",
       "bytes": 389
     },
     {
       "file": "relationships/shards/adjacency-0000.json",
-      "hash": "25fd9a9ff6ff8324af904c3d5a15c212eeadbfd0621ea3507543c9ace992a7c3",
-      "bytes": 91614
+      "hash": "85f7292323cc7fdda5c8087387a04a37a383da82cab8e073d51a8a96337d21c9",
+      "bytes": 92128
     },
     {
       "file": "routes.json",
-      "hash": "12896e446bc21ae6edb2da99b60ee1664b5345458759e740d3096f6e2b61a168",
-      "bytes": 2088
+      "hash": "3d6f765b735aa5af5df4d9829ce209366d54261b30f9c5d34479a0db05426cd2",
+      "bytes": 2431
     },
     {
       "file": "search-source.json",
-      "hash": "a2f953ca62881cf6f48cc86274519fc93ca997a41cebfc91babeabc8569c2570",
-      "bytes": 653177
+      "hash": "bd8c41ae41c0aff3d456f48b22a5228032493308d750103615e56037a0be7774",
+      "bytes": 654009
     },
     {
       "file": "timeline-buckets/2026-08-0000.json",
@@ -849,8 +854,8 @@
     },
     {
       "file": "tool-manifests.json",
-      "hash": "3491958c032e923c20caa41eabc27d5f8a090876adaa14bc1c1f45deee61b07f",
-      "bytes": 4440
+      "hash": "3684e5f16cf35d08c3f7dc5ec972b958a9aa51b14e98564bb5a6e8626b716e89",
+      "bytes": 8185
     },
     {
       "file": "topics.json",

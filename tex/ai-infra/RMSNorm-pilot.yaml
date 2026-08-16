@@ -1,0 +1,19 @@
+id: RMSNorm
+title: 'RMSNorm：起一个稳压器的作用'
+date: '2026-08-15T12:00:00.000Z'
+updated: '2026-08-15T12:00:00.000Z'
+description: 'AI Infra 系列试点：RMSNorm 的原生 LaTeX 排版稿。'
+permalink: '/2026/08/15/RMSNorm/'
+renderFragment: 'source/content/renders/RMSNorm.html'
+cover: 'https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/cover/75509590_p1.webp'
+comments: true
+home: true
+carousel: true
+timeline: true
+categories:
+  - 学习
+tags:
+  - AI Infra
+  - Transformer
+  - RMSNorm
+  - LLM

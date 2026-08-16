@@ -389,11 +389,13 @@ for(var i = 0;i<arr.length;i++){
   else if (epage === cpage){
     butterfly_clock_anzhiyu_injector_config();
   }
-  </script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script><script defer src="/js/github-calendar.js"></script><script defer src="/js/comments-runtime.js"></script><script defer src="/js/stats-runtime.js"></script><script defer src="/js/service-fallbacks.js"></script></body><div id="web_bg"></div></html><script>
-  ;(() => {
-    const articlePath = '/2026/08/15/RMSNorm/'
+  </script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false});</script><script defer src="/js/github-calendar.js"></script><script defer src="/js/comments-runtime.js"></script><script defer src="/js/stats-runtime.js"></script><script defer src="/js/service-fallbacks.js"></script></body><div id="web_bg"></div></html><script>(function(){const publications = {"articles":[{"id":"RMSNorm","title":"RMSNorm：起一个稳压器的作用","date":"2026-08-15T12:00:00.000Z","updated":"2026-08-15T12:00:00.000Z","description":"AI Infra 系列试点：RMSNorm 的原生 LaTeX 排版稿。","permalink":"/2026/08/15/RMSNorm/","cover":"https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/cover/75509590_p1.webp","categories":["学习"],"tags":["AI Infra","Transformer","RMSNorm","LLM"],"home":true,"carousel":true,"timeline":true}]};
 
-    const addRmsNormToCarousel = () => {
+  ;(() => {
+    const articles = publications.articles || []
+    const addToCarousel = (article) => {
+      if (!article.carousel) return
+      const articlePath = article.permalink
       const wrapper = document.querySelector('#swiper_container .blog-slider__wrp')
       if (!wrapper || wrapper.querySelector(`[data-post-path="${articlePath}"]`)) return
 
@@ -401,19 +403,21 @@ for(var i = 0;i<arr.length;i++){
       slide.className = 'blog-slider__item swiper-slide'
       slide.dataset.postPath = articlePath
       slide.innerHTML = `
-        <a class="blog-slider__img" href="${articlePath}" aria-label="RMSNorm：起一个稳压器的作用">
-          <img width="48" height="48" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/cover/75509590_p1.webp" alt="RMSNorm：起一个稳压器的作用" onerror="this.onerror=null;this.src='/img/404.jpg'">
+        <a class="blog-slider__img" href="${articlePath}" aria-label="${article.title}">
+          <img width="48" height="48" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="${article.cover || ''}" alt="${article.title}" onerror="this.onerror=null;this.src='/img/404.jpg'">
         </a>
         <div class="blog-slider__content">
-          <span class="blog-slider__code">2026-08-15</span>
-          <a class="blog-slider__title" href="${articlePath}">RMSNorm：起一个稳压器的作用</a>
-          <div class="blog-slider__text">AI Infra 系列试点：RMSNorm 的原生 LaTeX 排版稿。</div>
+          <span class="blog-slider__code">${String(article.date).slice(0, 10)}</span>
+          <a class="blog-slider__title" href="${articlePath}">${article.title}</a>
+          <div class="blog-slider__text">${article.description}</div>
           <a class="blog-slider__button" href="${articlePath}">详情</a>
         </div>`
       wrapper.prepend(slide)
     }
 
-    const addRmsNormToPostList = () => {
+    const addToPostList = (article) => {
+      if (!article.home) return
+      const articlePath = article.permalink
       const postList = document.querySelector('#recent-posts')
       if (!postList || postList.querySelector(`[data-home-card-path="${articlePath}"]`)) return
 
@@ -434,33 +438,35 @@ for(var i = 0;i<arr.length;i++){
         if (title) node.setAttribute('title', title)
       }
 
-      const title = 'RMSNorm：起一个稳压器的作用'
-      const description = 'AI Infra 系列试点：RMSNorm 的原生 LaTeX 排版稿。'
+      const title = article.title
+      const description = article.description
       const image = card.querySelector('.article-cover')
       if (image) {
-        image.setAttribute('data-lazy-src', 'https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/cover/75509590_p1.webp')
+        image.setAttribute('data-lazy-src', article.cover || '')
         image.setAttribute('alt', title)
       }
       setLink('.article-title', articlePath, title)
       setText('.article-title-link', title)
       setLink('.article-content', articlePath, title)
       setText('.article-content-text', description)
-      setLink('.article-meta__categories', '/categories/%E5%AD%A6%E4%B9%A0/')
-      setText('.article-meta__categories', '学习')
-      setLink('.article-meta__tags', '/tags/RMSNorm/')
-      setText('.article-meta__tags', 'RMSNorm')
+      const category = article.categories?.[0] || ''
+      const tag = article.tags?.[0] || ''
+      setLink('.article-meta__categories', `/categories/${encodeURIComponent(category)}/`)
+      setText('.article-meta__categories', category)
+      setLink('.article-meta__tags', `/tags/${encodeURIComponent(tag)}/`)
+      setText('.article-meta__tags', tag)
 
       const created = card.querySelector('.post-meta-date-created')
       if (created) {
-        created.dateTime = '2026-08-15T12:00:00.000Z'
-        created.title = '发表于 2026-08-15 20:00:00'
-        created.textContent = '2026-08-15'
+        created.dateTime = article.date
+        created.title = `发表于 ${article.date}`
+        created.textContent = String(article.date).slice(0, 10)
       }
       const updated = card.querySelector('.post-meta-date-updated')
       if (updated) {
-        updated.dateTime = '2026-08-16T00:00:00.000Z'
-        updated.title = '更新于 2026-08-16 08:00:00'
-        updated.textContent = '2026-08-16'
+        updated.dateTime = article.updated || article.date
+        updated.title = `更新于 ${article.updated || article.date}`
+        updated.textContent = String(article.updated || article.date).slice(0, 10)
       }
 
       template.before(card)
@@ -472,11 +478,10 @@ for(var i = 0;i<arr.length;i++){
       })
     }
 
-    addRmsNormToCarousel()
-    addRmsNormToPostList()
+    const project = () => articles.forEach((article) => { addToCarousel(article); addToPostList(article) })
+    project()
     document.addEventListener('pjax:complete', () => {
-      addRmsNormToCarousel()
-      addRmsNormToPostList()
+      project()
     })
   })()
-</script>
+})();</script>

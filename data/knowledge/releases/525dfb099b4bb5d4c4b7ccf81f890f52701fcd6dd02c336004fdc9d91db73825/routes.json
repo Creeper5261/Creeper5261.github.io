@@ -72,9 +72,23 @@
       "source": "tool-manifest"
     },
     {
+      "id": "tool.document-converter",
+      "title": "文档转换",
+      "route": "/tools/converter/",
+      "kind": "tool",
+      "source": "tool-manifest"
+    },
+    {
       "id": "tool.image-compressor",
       "title": "图片压缩",
       "route": "/tools/image-compressor/",
+      "kind": "tool",
+      "source": "tool-manifest"
+    },
+    {
+      "id": "tool.latex-instant",
+      "title": "LaTeX 即时预览",
+      "route": "/tools/latex/",
       "kind": "tool",
       "source": "tool-manifest"
     },
