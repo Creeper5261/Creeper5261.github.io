@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nodes": [
+  "items": [
     {
       "id": "article.07c63b32081025d9",
       "kind": "article",
@@ -16,7 +16,8 @@
         "url": "/data/knowledge/objects/3c/3c59aa466a9eda879277781b2abae91f1039653ed4feeb0bdc4a7b113256ef72.json",
         "hash": "3c59aa466a9eda879277781b2abae91f1039653ed4feeb0bdc4a7b113256ef72",
         "bytes": 972
-      }
+      },
+      "route": null
     },
     {
       "id": "article.0c2e229dc4225dfe",
@@ -33,7 +34,8 @@
         "url": "/data/knowledge/objects/e4/e40800efe2c7967a4643686c9be95d6d090939fc8571f591ddccaeb1d566394e.json",
         "hash": "e40800efe2c7967a4643686c9be95d6d090939fc8571f591ddccaeb1d566394e",
         "bytes": 6764
-      }
+      },
+      "route": null
     },
     {
       "id": "article.133152a0f65e1425",
@@ -50,7 +52,8 @@
         "url": "/data/knowledge/objects/9a/9a0d4aa25b8915640af0686f95ce71e515ce08dbccece642da513cf356f1f571.json",
         "hash": "9a0d4aa25b8915640af0686f95ce71e515ce08dbccece642da513cf356f1f571",
         "bytes": 13206
-      }
+      },
+      "route": null
     },
     {
       "id": "article.266d5221212da77b",
@@ -67,7 +70,8 @@
         "url": "/data/knowledge/objects/68/68c46aa1597464faaaa8432ff04f1a6bef87d00e399921e2cfe0582f3ba83f93.json",
         "hash": "68c46aa1597464faaaa8432ff04f1a6bef87d00e399921e2cfe0582f3ba83f93",
         "bytes": 38990
-      }
+      },
+      "route": null
     },
     {
       "id": "article.33c2199c4ed7e747",
@@ -84,7 +88,8 @@
         "url": "/data/knowledge/objects/5a/5a8091a01c4907556fb7256f9a605648deffc834fe0b917592fb81de8047b359.json",
         "hash": "5a8091a01c4907556fb7256f9a605648deffc834fe0b917592fb81de8047b359",
         "bytes": 7063
-      }
+      },
+      "route": null
     },
     {
       "id": "article.382aa295f233c6ef",
@@ -101,7 +106,8 @@
         "url": "/data/knowledge/objects/ce/ceeaa3eb95bdc747a9cf3de13d603debcb1156bff2beb068885850b7cf05ad22.json",
         "hash": "ceeaa3eb95bdc747a9cf3de13d603debcb1156bff2beb068885850b7cf05ad22",
         "bytes": 3094
-      }
+      },
+      "route": null
     },
     {
       "id": "article.4045821cbd285d0c",
@@ -118,7 +124,8 @@
         "url": "/data/knowledge/objects/5e/5ea7735e0d18fc3f3c1bbb6b5ae26a30b56c01b626b2f89dc10b2f0f5b16093e.json",
         "hash": "5ea7735e0d18fc3f3c1bbb6b5ae26a30b56c01b626b2f89dc10b2f0f5b16093e",
         "bytes": 6839
-      }
+      },
+      "route": null
     },
     {
       "id": "article.4a29ad41bdc1517a",
@@ -135,7 +142,8 @@
         "url": "/data/knowledge/objects/02/02efcd182aaeafbb3a07afa13cd6bab62a0b8d844a25292e7a43ca1b1703e1df.json",
         "hash": "02efcd182aaeafbb3a07afa13cd6bab62a0b8d844a25292e7a43ca1b1703e1df",
         "bytes": 918
-      }
+      },
+      "route": null
     },
     {
       "id": "article.4a9bfdf4b1879400",
@@ -152,7 +160,8 @@
         "url": "/data/knowledge/objects/9a/9a63cd7afb9e973c26f3dc68505dbd1b1812fb677490bdd68bb005cfcf50a256.json",
         "hash": "9a63cd7afb9e973c26f3dc68505dbd1b1812fb677490bdd68bb005cfcf50a256",
         "bytes": 2974
-      }
+      },
+      "route": null
     },
     {
       "id": "article.60c8ff520d5e47e5",
@@ -169,7 +178,8 @@
         "url": "/data/knowledge/objects/7e/7ee95a8216ec429f05045266b7fd2668ba9a18541fe382245692e5b5a9733371.json",
         "hash": "7ee95a8216ec429f05045266b7fd2668ba9a18541fe382245692e5b5a9733371",
         "bytes": 4185
-      }
+      },
+      "route": null
     },
     {
       "id": "article.61449c1d937e215e",
@@ -186,7 +196,8 @@
         "url": "/data/knowledge/objects/81/814428fa637782f9209ec6c5b5afe2daf8773c0e7e6d5dc0e49eff86ed2cdbf6.json",
         "hash": "814428fa637782f9209ec6c5b5afe2daf8773c0e7e6d5dc0e49eff86ed2cdbf6",
         "bytes": 1320
-      }
+      },
+      "route": null
     },
     {
       "id": "article.6f286a32a5f9a7b9",
@@ -203,7 +214,8 @@
         "url": "/data/knowledge/objects/9e/9e814ee2c0c217b9bd896fe1b2267161a122a93d5cd43ffa0eb7297f9fdddd28.json",
         "hash": "9e814ee2c0c217b9bd896fe1b2267161a122a93d5cd43ffa0eb7297f9fdddd28",
         "bytes": 4069
-      }
+      },
+      "route": null
     },
     {
       "id": "article.7cd10f98b27ccb15",
@@ -220,7 +232,8 @@
         "url": "/data/knowledge/objects/d7/d7722370cbde7d881db6695ccebc2b5779f763d6888b0c616df1197917aad696.json",
         "hash": "d7722370cbde7d881db6695ccebc2b5779f763d6888b0c616df1197917aad696",
         "bytes": 101534
-      }
+      },
+      "route": null
     },
     {
       "id": "article.81fe81d4caaaeb13",
@@ -237,7 +250,8 @@
         "url": "/data/knowledge/objects/94/941337e3a8dd3de3d1db1ee9823caeb482d9ed5f3fa26fd89539e3381f43cb04.json",
         "hash": "941337e3a8dd3de3d1db1ee9823caeb482d9ed5f3fa26fd89539e3381f43cb04",
         "bytes": 27717
-      }
+      },
+      "route": null
     },
     {
       "id": "article.85daa21d1d225dba",
@@ -254,7 +268,8 @@
         "url": "/data/knowledge/objects/b1/b1353bd02094605cd37de6baa4e8d80a00f39990b10fde13705beaf790af990a.json",
         "hash": "b1353bd02094605cd37de6baa4e8d80a00f39990b10fde13705beaf790af990a",
         "bytes": 918
-      }
+      },
+      "route": null
     },
     {
       "id": "article.8c00a73b042c64ee",
@@ -277,7 +292,8 @@
         "url": "/data/knowledge/objects/f5/f50bb8b42f66debc6c5b70e59e6dabe5826b6e13d8df479d9f4fdb63362f6397.json",
         "hash": "f50bb8b42f66debc6c5b70e59e6dabe5826b6e13d8df479d9f4fdb63362f6397",
         "bytes": 137395
-      }
+      },
+      "route": null
     },
     {
       "id": "article.a0c807334ceb1bde",
@@ -294,7 +310,8 @@
         "url": "/data/knowledge/objects/4c/4c9bd34ee6cfdcce83255db7c1fe8bbdb37b767be092d0b8575021940030d1cb.json",
         "hash": "4c9bd34ee6cfdcce83255db7c1fe8bbdb37b767be092d0b8575021940030d1cb",
         "bytes": 4349
-      }
+      },
+      "route": null
     },
     {
       "id": "article.a57e4ec67d3a2850",
@@ -311,7 +328,8 @@
         "url": "/data/knowledge/objects/52/52d649eab71231908f623a5e7941f9e7b83c83bda02bbe00a304f56e320305f5.json",
         "hash": "52d649eab71231908f623a5e7941f9e7b83c83bda02bbe00a304f56e320305f5",
         "bytes": 303818
-      }
+      },
+      "route": null
     },
     {
       "id": "article.ba153078fc853907",
@@ -328,7 +346,8 @@
         "url": "/data/knowledge/objects/00/008447d64c30489974ac32e0dad65ba3e3cdafa64b638ebf4cfaa69db6cb5788.json",
         "hash": "008447d64c30489974ac32e0dad65ba3e3cdafa64b638ebf4cfaa69db6cb5788",
         "bytes": 4304
-      }
+      },
+      "route": null
     },
     {
       "id": "article.d11716eda43d8854",
@@ -345,7 +364,8 @@
         "url": "/data/knowledge/objects/51/516075df56c573fae9c3df18feaa0c1757b9a7b64537d5ddd6b41cfe2cc6f967.json",
         "hash": "516075df56c573fae9c3df18feaa0c1757b9a7b64537d5ddd6b41cfe2cc6f967",
         "bytes": 917
-      }
+      },
+      "route": null
     },
     {
       "id": "article.ddc4cf6f256a3ee5",
@@ -362,7 +382,8 @@
         "url": "/data/knowledge/objects/5d/5d690440ab31dde515b9e34475b990a5f4048ce69df71cfa0bf67558b73e16f1.json",
         "hash": "5d690440ab31dde515b9e34475b990a5f4048ce69df71cfa0bf67558b73e16f1",
         "bytes": 923
-      }
+      },
+      "route": null
     },
     {
       "id": "article.f3c73b6fe6e28283",
@@ -379,7 +400,26 @@
         "url": "/data/knowledge/objects/80/80be786af2e2f7e529b09dac5b96bab67db2553e5fd3c95f51243bc1354e3ab0.json",
         "hash": "80be786af2e2f7e529b09dac5b96bab67db2553e5fd3c95f51243bc1354e3ab0",
         "bytes": 4184
-      }
+      },
+      "route": null
+    },
+    {
+      "id": "article.f869188a60a35c6a",
+      "kind": "article",
+      "title": "RMSNorm：起一个稳压器的作用",
+      "status": "archived",
+      "publishedAt": "2026-08-15T12:00:00.000Z",
+      "updatedAt": "2026-08-15T12:00:00.000Z",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "url": "/data/knowledge/objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "hash": "12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df",
+        "bytes": 963
+      },
+      "route": null
     },
     {
       "id": "external.05a24ac9fe93aee8",
@@ -396,7 +436,8 @@
         "url": "/data/knowledge/objects/ae/ae0cd6f4aad5108d657c27ccd08155cfcf21e37db3bfe53cdb69abe970cd2501.json",
         "hash": "ae0cd6f4aad5108d657c27ccd08155cfcf21e37db3bfe53cdb69abe970cd2501",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.0a8b70af2b4e92c8",
@@ -413,7 +454,8 @@
         "url": "/data/knowledge/objects/6a/6a2389dec5449aae9aa6086ecf5c3a0942b1a1b26e584786466114e0def42b44.json",
         "hash": "6a2389dec5449aae9aa6086ecf5c3a0942b1a1b26e584786466114e0def42b44",
         "bytes": 981
-      }
+      },
+      "route": null
     },
     {
       "id": "external.0b0ac6224d75a086",
@@ -430,7 +472,8 @@
         "url": "/data/knowledge/objects/7f/7f651237fac3ec44ab54c41072fb3a71a338a2c0129bb4c90675f718c19e42af.json",
         "hash": "7f651237fac3ec44ab54c41072fb3a71a338a2c0129bb4c90675f718c19e42af",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.1284afbfa08774b7",
@@ -447,7 +490,8 @@
         "url": "/data/knowledge/objects/b6/b6b3d7cda9e043a55553e145d4e5ee4b7a7bd0b5d100ccb9854364d89ded5522.json",
         "hash": "b6b3d7cda9e043a55553e145d4e5ee4b7a7bd0b5d100ccb9854364d89ded5522",
         "bytes": 978
-      }
+      },
+      "route": null
     },
     {
       "id": "external.1be97847942d58e0",
@@ -464,7 +508,8 @@
         "url": "/data/knowledge/objects/c5/c59c9210964db6eda6cd7ca2d9580d93588f86c3025cb0ae57de8ada91826f81.json",
         "hash": "c59c9210964db6eda6cd7ca2d9580d93588f86c3025cb0ae57de8ada91826f81",
         "bytes": 893
-      }
+      },
+      "route": null
     },
     {
       "id": "external.205f64e47b036b76",
@@ -481,7 +526,8 @@
         "url": "/data/knowledge/objects/9d/9daa968f7c5890c1c30a27e33e709db4f8efc3a4de8f100a98b6ac60975522f2.json",
         "hash": "9daa968f7c5890c1c30a27e33e709db4f8efc3a4de8f100a98b6ac60975522f2",
         "bytes": 942
-      }
+      },
+      "route": null
     },
     {
       "id": "external.20d871765d8d83d7",
@@ -498,7 +544,8 @@
         "url": "/data/knowledge/objects/cc/cc070fb745fe9d933c842ca6831003aee432e9f995207039f80419b5522126a0.json",
         "hash": "cc070fb745fe9d933c842ca6831003aee432e9f995207039f80419b5522126a0",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.2434cdf8b4b8c4bf",
@@ -515,7 +562,8 @@
         "url": "/data/knowledge/objects/f9/f96ab2e8271ad35ce4dffa4a3ade897b788cf7e70cf9140989276636cc5b04c6.json",
         "hash": "f96ab2e8271ad35ce4dffa4a3ade897b788cf7e70cf9140989276636cc5b04c6",
         "bytes": 914
-      }
+      },
+      "route": null
     },
     {
       "id": "external.29edb3bdb2bc43e1",
@@ -532,7 +580,8 @@
         "url": "/data/knowledge/objects/2c/2c46d06662801e1bed47adf83de98529447d5b4e61e3abea62e754a85f3af603.json",
         "hash": "2c46d06662801e1bed47adf83de98529447d5b4e61e3abea62e754a85f3af603",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.2a2d69ab2e3fa957",
@@ -549,7 +598,8 @@
         "url": "/data/knowledge/objects/95/956dbc78f06814e144fb54d01c9b1ba8c95f729ef19e9bbc4a2243623565caa5.json",
         "hash": "956dbc78f06814e144fb54d01c9b1ba8c95f729ef19e9bbc4a2243623565caa5",
         "bytes": 845
-      }
+      },
+      "route": null
     },
     {
       "id": "external.2a60f771d67469ba",
@@ -566,7 +616,8 @@
         "url": "/data/knowledge/objects/b2/b2aa57e08fbdb4b29114293f1e1f4a96a9a0fbc0ccfcb016e8a7caba9d0d8164.json",
         "hash": "b2aa57e08fbdb4b29114293f1e1f4a96a9a0fbc0ccfcb016e8a7caba9d0d8164",
         "bytes": 981
-      }
+      },
+      "route": null
     },
     {
       "id": "external.380fe641fe9daa9c",
@@ -583,7 +634,8 @@
         "url": "/data/knowledge/objects/9e/9e7dfee46083695da49073e4dcbd3e296151c81c09505b898d500e276452b6ec.json",
         "hash": "9e7dfee46083695da49073e4dcbd3e296151c81c09505b898d500e276452b6ec",
         "bytes": 1003
-      }
+      },
+      "route": null
     },
     {
       "id": "external.38ce8f9f7fc11e64",
@@ -600,7 +652,8 @@
         "url": "/data/knowledge/objects/5c/5c23b00881195e157dcfddbb1b72ad5b92d2f0c3097d5bb6a8ea02afdf7652af.json",
         "hash": "5c23b00881195e157dcfddbb1b72ad5b92d2f0c3097d5bb6a8ea02afdf7652af",
         "bytes": 954
-      }
+      },
+      "route": null
     },
     {
       "id": "external.39eeabeb23c490c5",
@@ -617,7 +670,8 @@
         "url": "/data/knowledge/objects/40/405da9d2e459a78f42d3775a8ad293404d6a3b8f5a25ec9710b49de04913b954.json",
         "hash": "405da9d2e459a78f42d3775a8ad293404d6a3b8f5a25ec9710b49de04913b954",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.3b1980460362be6c",
@@ -634,7 +688,8 @@
         "url": "/data/knowledge/objects/9a/9ad19dacbd8c1fed44420a6e0066691ea51c09716d850145456d56c81d2a23cf.json",
         "hash": "9ad19dacbd8c1fed44420a6e0066691ea51c09716d850145456d56c81d2a23cf",
         "bytes": 950
-      }
+      },
+      "route": null
     },
     {
       "id": "external.3c0fe2f8c303854a",
@@ -651,7 +706,8 @@
         "url": "/data/knowledge/objects/b3/b3387309eaa0894902f28de60f182547e3a09712a3629c2e78aa0e36ad32000f.json",
         "hash": "b3387309eaa0894902f28de60f182547e3a09712a3629c2e78aa0e36ad32000f",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.3f4639c8dd5d1e71",
@@ -668,7 +724,8 @@
         "url": "/data/knowledge/objects/f4/f4ebaeaf0b57580fd5fca25f38f67561f50d99d6a43ae915c3ae7476a1d62c26.json",
         "hash": "f4ebaeaf0b57580fd5fca25f38f67561f50d99d6a43ae915c3ae7476a1d62c26",
         "bytes": 940
-      }
+      },
+      "route": null
     },
     {
       "id": "external.449bb6970ec0ff0a",
@@ -685,7 +742,8 @@
         "url": "/data/knowledge/objects/e5/e51c984cb4b1c4b474e31694f2da4778bc6df0a1a3ccfcb4a98dbead948a7a35.json",
         "hash": "e51c984cb4b1c4b474e31694f2da4778bc6df0a1a3ccfcb4a98dbead948a7a35",
         "bytes": 926
-      }
+      },
+      "route": null
     },
     {
       "id": "external.4f21cf871ed09dcd",
@@ -702,7 +760,8 @@
         "url": "/data/knowledge/objects/ef/ef644ac8a2326e8cb381d948448a9a21e32f44b4bcdf0f0d3d70b3859d1ce8c1.json",
         "hash": "ef644ac8a2326e8cb381d948448a9a21e32f44b4bcdf0f0d3d70b3859d1ce8c1",
         "bytes": 958
-      }
+      },
+      "route": null
     },
     {
       "id": "external.542a878fa6466e0c",
@@ -719,7 +778,8 @@
         "url": "/data/knowledge/objects/db/dbb1dc05a17a8cdcafbb6df373cd95bc18ce7338233d44bd762e7631f4f68943.json",
         "hash": "dbb1dc05a17a8cdcafbb6df373cd95bc18ce7338233d44bd762e7631f4f68943",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.54e98fd330750a6c",
@@ -736,7 +796,8 @@
         "url": "/data/knowledge/objects/f3/f3dbc1a9c83a6494fe2711bf5380277aae2194f3e561d8634b18f274e323d292.json",
         "hash": "f3dbc1a9c83a6494fe2711bf5380277aae2194f3e561d8634b18f274e323d292",
         "bytes": 912
-      }
+      },
+      "route": null
     },
     {
       "id": "external.5682404ab9ba5e5c",
@@ -753,7 +814,8 @@
         "url": "/data/knowledge/objects/e9/e9b4c80516d83696dfd010201757bfa94444dc2d1f7980c58592172197495052.json",
         "hash": "e9b4c80516d83696dfd010201757bfa94444dc2d1f7980c58592172197495052",
         "bytes": 959
-      }
+      },
+      "route": null
     },
     {
       "id": "external.5806f56d5f84cb55",
@@ -770,7 +832,8 @@
         "url": "/data/knowledge/objects/fe/fef3d611794b61ada33bd0cd87e53ca0e974fca3fdb3d4082a8177469131dbd2.json",
         "hash": "fef3d611794b61ada33bd0cd87e53ca0e974fca3fdb3d4082a8177469131dbd2",
         "bytes": 932
-      }
+      },
+      "route": null
     },
     {
       "id": "external.588958b21996a7b7",
@@ -787,7 +850,8 @@
         "url": "/data/knowledge/objects/d0/d0a33f22dd522bebf28ab909765016c24f10043cecce54913fff84ee35bf5139.json",
         "hash": "d0a33f22dd522bebf28ab909765016c24f10043cecce54913fff84ee35bf5139",
         "bytes": 916
-      }
+      },
+      "route": null
     },
     {
       "id": "external.5932a896098b76e3",
@@ -804,7 +868,8 @@
         "url": "/data/knowledge/objects/d0/d08ee8e990c29f3845ab9728b5e4b0d5c5580716ed395e27e53834982bcccd6c.json",
         "hash": "d08ee8e990c29f3845ab9728b5e4b0d5c5580716ed395e27e53834982bcccd6c",
         "bytes": 852
-      }
+      },
+      "route": null
     },
     {
       "id": "external.5aabc10c5e2517f8",
@@ -821,7 +886,8 @@
         "url": "/data/knowledge/objects/4f/4fc747d870976bffb2a26749c6968507fde74fa6fb1b907665660cae63ad48d1.json",
         "hash": "4fc747d870976bffb2a26749c6968507fde74fa6fb1b907665660cae63ad48d1",
         "bytes": 908
-      }
+      },
+      "route": null
     },
     {
       "id": "external.5ea86f6fbc7adc75",
@@ -838,7 +904,8 @@
         "url": "/data/knowledge/objects/e9/e930dce5ea87592af1e58747332b79426b55cd00d9c5ffc8a58ac36e34e15336.json",
         "hash": "e930dce5ea87592af1e58747332b79426b55cd00d9c5ffc8a58ac36e34e15336",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.5fe38e307c43f178",
@@ -855,7 +922,8 @@
         "url": "/data/knowledge/objects/85/85e865cff35292f814b9739bb4be761d2cdf31d525770b1d89aa173c4a9ab9b7.json",
         "hash": "85e865cff35292f814b9739bb4be761d2cdf31d525770b1d89aa173c4a9ab9b7",
         "bytes": 873
-      }
+      },
+      "route": null
     },
     {
       "id": "external.63c32c4aeee1dc01",
@@ -872,7 +940,8 @@
         "url": "/data/knowledge/objects/c7/c736b1c487784fe7c3bfbd71a6cf205cc960c9e4e401099fd2b523f9f6a1ae5d.json",
         "hash": "c736b1c487784fe7c3bfbd71a6cf205cc960c9e4e401099fd2b523f9f6a1ae5d",
         "bytes": 952
-      }
+      },
+      "route": null
     },
     {
       "id": "external.6719405c166c09a1",
@@ -889,7 +958,8 @@
         "url": "/data/knowledge/objects/c5/c5e1eb1147625b42aebce3fa37ffa659810c5db57ecdfa62425e55634c54a994.json",
         "hash": "c5e1eb1147625b42aebce3fa37ffa659810c5db57ecdfa62425e55634c54a994",
         "bytes": 954
-      }
+      },
+      "route": null
     },
     {
       "id": "external.6822178bc371c1f7",
@@ -906,7 +976,8 @@
         "url": "/data/knowledge/objects/fa/fafd29827fababe351ed308f513d9501f19b780dd8cdc13758b77ff85b455e00.json",
         "hash": "fafd29827fababe351ed308f513d9501f19b780dd8cdc13758b77ff85b455e00",
         "bytes": 983
-      }
+      },
+      "route": null
     },
     {
       "id": "external.68553b129e11db64",
@@ -923,7 +994,8 @@
         "url": "/data/knowledge/objects/66/66a66f0e609b4b1add6cfc042f20102bd00b86da55932903f246f851c4578003.json",
         "hash": "66a66f0e609b4b1add6cfc042f20102bd00b86da55932903f246f851c4578003",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.687cfb74ce3f2028",
@@ -940,7 +1012,8 @@
         "url": "/data/knowledge/objects/22/2215246303c96038e56167eaf8e7f6cc887b2acec6e25bea127a42fc818c4c8a.json",
         "hash": "2215246303c96038e56167eaf8e7f6cc887b2acec6e25bea127a42fc818c4c8a",
         "bytes": 891
-      }
+      },
+      "route": null
     },
     {
       "id": "external.6bc77aa3fddcda17",
@@ -957,7 +1030,8 @@
         "url": "/data/knowledge/objects/57/5742f9a76ccf17840072b4788bf4ee8776d432eaa32d84fe0696f55ea9ac0be5.json",
         "hash": "5742f9a76ccf17840072b4788bf4ee8776d432eaa32d84fe0696f55ea9ac0be5",
         "bytes": 988
-      }
+      },
+      "route": null
     },
     {
       "id": "external.6ed57be559b06a06",
@@ -974,7 +1048,8 @@
         "url": "/data/knowledge/objects/18/18ecb7597db3b69291e68769012a1b651bdc61c070e7341e988ec436e6f25245.json",
         "hash": "18ecb7597db3b69291e68769012a1b651bdc61c070e7341e988ec436e6f25245",
         "bytes": 836
-      }
+      },
+      "route": null
     },
     {
       "id": "external.6f8e3628c777bee7",
@@ -991,7 +1066,8 @@
         "url": "/data/knowledge/objects/a8/a8869e3615c60715e8393f43ad2322f80d0ddd69534f66ad22515df1685592fb.json",
         "hash": "a8869e3615c60715e8393f43ad2322f80d0ddd69534f66ad22515df1685592fb",
         "bytes": 851
-      }
+      },
+      "route": null
     },
     {
       "id": "external.72d0ea4998cc5c89",
@@ -1008,7 +1084,8 @@
         "url": "/data/knowledge/objects/85/85948d6b87f8afc934d4f11243695fe6f66ca072e5f16917a91ff01bbb44675d.json",
         "hash": "85948d6b87f8afc934d4f11243695fe6f66ca072e5f16917a91ff01bbb44675d",
         "bytes": 958
-      }
+      },
+      "route": null
     },
     {
       "id": "external.7317a3f065511043",
@@ -1025,7 +1102,8 @@
         "url": "/data/knowledge/objects/95/950cd15ab9bea1786ed031ea8efdc4b676eac31797e5634efec144edfaf796a9.json",
         "hash": "950cd15ab9bea1786ed031ea8efdc4b676eac31797e5634efec144edfaf796a9",
         "bytes": 918
-      }
+      },
+      "route": null
     },
     {
       "id": "external.77ce7d644caa2704",
@@ -1042,7 +1120,8 @@
         "url": "/data/knowledge/objects/e3/e3a1c9dd71a4c14013378d896d81e19b7ac103d38b6b5f076f1499f1198b8da0.json",
         "hash": "e3a1c9dd71a4c14013378d896d81e19b7ac103d38b6b5f076f1499f1198b8da0",
         "bytes": 971
-      }
+      },
+      "route": null
     },
     {
       "id": "external.7f1ad8943cfdd130",
@@ -1059,7 +1138,8 @@
         "url": "/data/knowledge/objects/19/19408d3d5ac02605b4903f54387f9a7478e1a1d3b43cd94d84d0800add2d05f6.json",
         "hash": "19408d3d5ac02605b4903f54387f9a7478e1a1d3b43cd94d84d0800add2d05f6",
         "bytes": 981
-      }
+      },
+      "route": null
     },
     {
       "id": "external.7fb83f814637aeb7",
@@ -1076,7 +1156,8 @@
         "url": "/data/knowledge/objects/52/52a43e4d80b46029aed709f03c17ca77605bfaa0cc6cab121e6abc20c7dacff3.json",
         "hash": "52a43e4d80b46029aed709f03c17ca77605bfaa0cc6cab121e6abc20c7dacff3",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.8157402b7bc0e73e",
@@ -1093,7 +1174,8 @@
         "url": "/data/knowledge/objects/6c/6cd6f213fa161d75a11f09946d482c42ebe3b2814740ed7918ee58cd5d9de57b.json",
         "hash": "6cd6f213fa161d75a11f09946d482c42ebe3b2814740ed7918ee58cd5d9de57b",
         "bytes": 956
-      }
+      },
+      "route": null
     },
     {
       "id": "external.8b09fd0ba9c70e58",
@@ -1110,7 +1192,8 @@
         "url": "/data/knowledge/objects/67/67fc0b300207e039a253c8dfcee55937b7cc5fbe08291c4d1c8ebc0ee92e58a0.json",
         "hash": "67fc0b300207e039a253c8dfcee55937b7cc5fbe08291c4d1c8ebc0ee92e58a0",
         "bytes": 971
-      }
+      },
+      "route": null
     },
     {
       "id": "external.8d06a48aa81cc9a6",
@@ -1127,7 +1210,8 @@
         "url": "/data/knowledge/objects/cc/cc1b32b83f92088a6d4913480bbba69fe6c512a073ff372b734b44199522ba5c.json",
         "hash": "cc1b32b83f92088a6d4913480bbba69fe6c512a073ff372b734b44199522ba5c",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.92d07bf8d2d18eae",
@@ -1144,7 +1228,8 @@
         "url": "/data/knowledge/objects/da/da6b82706f67a54e503650bbc766e53d9f22c37ae33b922f2a4df28fb98892cc.json",
         "hash": "da6b82706f67a54e503650bbc766e53d9f22c37ae33b922f2a4df28fb98892cc",
         "bytes": 881
-      }
+      },
+      "route": null
     },
     {
       "id": "external.93bcef729d3708fb",
@@ -1161,7 +1246,8 @@
         "url": "/data/knowledge/objects/66/667cc2d30e32a85e5de2c4e6173b411f5e66fb72ac32debac22de418e6a67f61.json",
         "hash": "667cc2d30e32a85e5de2c4e6173b411f5e66fb72ac32debac22de418e6a67f61",
         "bytes": 981
-      }
+      },
+      "route": null
     },
     {
       "id": "external.948491ada34f5075",
@@ -1178,7 +1264,8 @@
         "url": "/data/knowledge/objects/39/39acf92bbc15a68e89bebc995ad444e797ced26debbad3bd36974eff5acaecc0.json",
         "hash": "39acf92bbc15a68e89bebc995ad444e797ced26debbad3bd36974eff5acaecc0",
         "bytes": 909
-      }
+      },
+      "route": null
     },
     {
       "id": "external.99f36c2b0e922400",
@@ -1195,7 +1282,8 @@
         "url": "/data/knowledge/objects/77/7758c7bdbc435d3368b97a487d27f9ec6cd72151a9c397adcbdf078948c3fc07.json",
         "hash": "7758c7bdbc435d3368b97a487d27f9ec6cd72151a9c397adcbdf078948c3fc07",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.9c45dc909c5ccebc",
@@ -1212,7 +1300,8 @@
         "url": "/data/knowledge/objects/93/934267565ad06c218ac34d7c73c9e77f0d796566a69fad492948453ba4babd06.json",
         "hash": "934267565ad06c218ac34d7c73c9e77f0d796566a69fad492948453ba4babd06",
         "bytes": 958
-      }
+      },
+      "route": null
     },
     {
       "id": "external.9e872f3ca23cb0cb",
@@ -1229,7 +1318,8 @@
         "url": "/data/knowledge/objects/bd/bdf5de70d054f2c9836cbf5102f22ca1b85a7ab9d4426084ed6c21a73300fa33.json",
         "hash": "bdf5de70d054f2c9836cbf5102f22ca1b85a7ab9d4426084ed6c21a73300fa33",
         "bytes": 970
-      }
+      },
+      "route": null
     },
     {
       "id": "external.a0b25559ddbb6000",
@@ -1246,7 +1336,8 @@
         "url": "/data/knowledge/objects/c2/c28be750d3fd8d01d08504daaf8ec0167f3d07b2b53522b23e471a56a53de4ae.json",
         "hash": "c28be750d3fd8d01d08504daaf8ec0167f3d07b2b53522b23e471a56a53de4ae",
         "bytes": 912
-      }
+      },
+      "route": null
     },
     {
       "id": "external.a3516771d2cb53e9",
@@ -1263,7 +1354,8 @@
         "url": "/data/knowledge/objects/e7/e7d7ba85175dc81772aca35078cef39020d31e985f21393e245fdcbebe10d625.json",
         "hash": "e7d7ba85175dc81772aca35078cef39020d31e985f21393e245fdcbebe10d625",
         "bytes": 859
-      }
+      },
+      "route": null
     },
     {
       "id": "external.a4425ace2dc89349",
@@ -1280,7 +1372,8 @@
         "url": "/data/knowledge/objects/5e/5e5f799a3413d1df3ff12462750e18ea7a0e256e791c3f6d78516eecb453d268.json",
         "hash": "5e5f799a3413d1df3ff12462750e18ea7a0e256e791c3f6d78516eecb453d268",
         "bytes": 932
-      }
+      },
+      "route": null
     },
     {
       "id": "external.a77908165d180797",
@@ -1297,7 +1390,8 @@
         "url": "/data/knowledge/objects/8d/8d466ce0ccf57b6ef222a92af0086e7c4528044446a6d58af362c36fb4a23b67.json",
         "hash": "8d466ce0ccf57b6ef222a92af0086e7c4528044446a6d58af362c36fb4a23b67",
         "bytes": 914
-      }
+      },
+      "route": null
     },
     {
       "id": "external.ad6fb0ce17b81587",
@@ -1314,7 +1408,8 @@
         "url": "/data/knowledge/objects/84/845002d58f41c07e7d0f26f783dd956d066703b3daa00326546024b1de76a394.json",
         "hash": "845002d58f41c07e7d0f26f783dd956d066703b3daa00326546024b1de76a394",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.af44d40537a6eec3",
@@ -1331,7 +1426,8 @@
         "url": "/data/knowledge/objects/3a/3aa60532a7a93100a226fabdb2023afd184a4c78fc0c0a074e63b7a480a01c93.json",
         "hash": "3aa60532a7a93100a226fabdb2023afd184a4c78fc0c0a074e63b7a480a01c93",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.b12964d8c1b1053a",
@@ -1348,7 +1444,8 @@
         "url": "/data/knowledge/objects/5b/5b34c403af372cae242caa5b256b59e5024d93f9fa84257820efff7554590ae6.json",
         "hash": "5b34c403af372cae242caa5b256b59e5024d93f9fa84257820efff7554590ae6",
         "bytes": 864
-      }
+      },
+      "route": null
     },
     {
       "id": "external.b2f78c8e8ddf7a05",
@@ -1365,7 +1462,8 @@
         "url": "/data/knowledge/objects/09/098a553595b68a278e11a1eb73c53183c3aab185a561d6622b2f0a7171efa2ee.json",
         "hash": "098a553595b68a278e11a1eb73c53183c3aab185a561d6622b2f0a7171efa2ee",
         "bytes": 930
-      }
+      },
+      "route": null
     },
     {
       "id": "external.b6de9d51f6f65b93",
@@ -1382,7 +1480,8 @@
         "url": "/data/knowledge/objects/8f/8ff79b63d5185ffcdb3f6632d744c6e51367f8d391dd4c924ea8247e14acebe9.json",
         "hash": "8ff79b63d5185ffcdb3f6632d744c6e51367f8d391dd4c924ea8247e14acebe9",
         "bytes": 926
-      }
+      },
+      "route": null
     },
     {
       "id": "external.b8d0a597ff7fefcf",
@@ -1399,7 +1498,8 @@
         "url": "/data/knowledge/objects/c3/c3ead64b40b97b2a5ebfae869783cbd84b766cd7cc85523e45f1ab93d1055923.json",
         "hash": "c3ead64b40b97b2a5ebfae869783cbd84b766cd7cc85523e45f1ab93d1055923",
         "bytes": 977
-      }
+      },
+      "route": null
     },
     {
       "id": "external.c1379d5224da100b",
@@ -1416,7 +1516,8 @@
         "url": "/data/knowledge/objects/b8/b8b36eeced8b4d8d1ed435e05f15393db7562a78bd4724a8efba4357baf80b83.json",
         "hash": "b8b36eeced8b4d8d1ed435e05f15393db7562a78bd4724a8efba4357baf80b83",
         "bytes": 920
-      }
+      },
+      "route": null
     },
     {
       "id": "external.c1acf232f588b024",
@@ -1433,7 +1534,8 @@
         "url": "/data/knowledge/objects/dd/ddf2ddfbac0e0dacff4d2ae3fd6bb45832647a839f0fca31458553015cbf944b.json",
         "hash": "ddf2ddfbac0e0dacff4d2ae3fd6bb45832647a839f0fca31458553015cbf944b",
         "bytes": 998
-      }
+      },
+      "route": null
     },
     {
       "id": "external.c284e28ca7ba27ea",
@@ -1450,7 +1552,8 @@
         "url": "/data/knowledge/objects/93/93044530f66c6223a8647cb300658865f435e1e786c0e3526ae37320f8cea025.json",
         "hash": "93044530f66c6223a8647cb300658865f435e1e786c0e3526ae37320f8cea025",
         "bytes": 835
-      }
+      },
+      "route": null
     },
     {
       "id": "external.c9042bcec4649d63",
@@ -1467,7 +1570,8 @@
         "url": "/data/knowledge/objects/76/76d16d3b1c46590f78205f6d5caa9e7d807169df62885172cd5966da4189ff54.json",
         "hash": "76d16d3b1c46590f78205f6d5caa9e7d807169df62885172cd5966da4189ff54",
         "bytes": 841
-      }
+      },
+      "route": null
     },
     {
       "id": "external.ca9dda46a94e499e",
@@ -1484,7 +1588,8 @@
         "url": "/data/knowledge/objects/90/90b93328ddfa750c9323a1e3d6467271bf5d198ef645fd2b1161b8030831deeb.json",
         "hash": "90b93328ddfa750c9323a1e3d6467271bf5d198ef645fd2b1161b8030831deeb",
         "bytes": 970
-      }
+      },
+      "route": null
     },
     {
       "id": "external.cc937d73fddfd257",
@@ -1501,7 +1606,8 @@
         "url": "/data/knowledge/objects/2b/2be9d3f4babb347bf88102605d903b002b8cb69cb501579b2ab33181eda6ecee.json",
         "hash": "2be9d3f4babb347bf88102605d903b002b8cb69cb501579b2ab33181eda6ecee",
         "bytes": 968
-      }
+      },
+      "route": null
     },
     {
       "id": "external.d6521e4f2a92924a",
@@ -1518,7 +1624,8 @@
         "url": "/data/knowledge/objects/aa/aa34f7e1125ea89c7a35c9cf69f819ec80692b070decdd40b31332d84ede6a29.json",
         "hash": "aa34f7e1125ea89c7a35c9cf69f819ec80692b070decdd40b31332d84ede6a29",
         "bytes": 980
-      }
+      },
+      "route": null
     },
     {
       "id": "external.d9d6454af4a0a610",
@@ -1535,7 +1642,8 @@
         "url": "/data/knowledge/objects/3a/3abc66a86471c9ac249e475c4f6f196f17be20816a786081221a1d7ad914ac28.json",
         "hash": "3abc66a86471c9ac249e475c4f6f196f17be20816a786081221a1d7ad914ac28",
         "bytes": 875
-      }
+      },
+      "route": null
     },
     {
       "id": "external.deaab2217f6af496",
@@ -1552,7 +1660,8 @@
         "url": "/data/knowledge/objects/ea/ea84c3f75f02c36cb3ec28b4cc8c56f71e2decaf4d2b46aff60d7c220dfe8e91.json",
         "hash": "ea84c3f75f02c36cb3ec28b4cc8c56f71e2decaf4d2b46aff60d7c220dfe8e91",
         "bytes": 960
-      }
+      },
+      "route": null
     },
     {
       "id": "external.e3428c44c41a6631",
@@ -1569,7 +1678,8 @@
         "url": "/data/knowledge/objects/ee/ee64f261f9defe4a43e4378ef7c9795319082a09a6a308aea4959fdc1bffb5a8.json",
         "hash": "ee64f261f9defe4a43e4378ef7c9795319082a09a6a308aea4959fdc1bffb5a8",
         "bytes": 905
-      }
+      },
+      "route": null
     },
     {
       "id": "external.e93790bebe1dc0e5",
@@ -1586,7 +1696,8 @@
         "url": "/data/knowledge/objects/ec/ec925989c58db547494a9c87b969391740a77b4915d35ee198b7ac85123b503d.json",
         "hash": "ec925989c58db547494a9c87b969391740a77b4915d35ee198b7ac85123b503d",
         "bytes": 928
-      }
+      },
+      "route": null
     },
     {
       "id": "external.ea0447bcb5e0e3a7",
@@ -1603,7 +1714,8 @@
         "url": "/data/knowledge/objects/65/65ae3418ef03ddcca4305c04910aae39471ca91817fc42721577b972681b0c76.json",
         "hash": "65ae3418ef03ddcca4305c04910aae39471ca91817fc42721577b972681b0c76",
         "bytes": 846
-      }
+      },
+      "route": null
     },
     {
       "id": "external.edb876b26e41f0d6",
@@ -1620,7 +1732,8 @@
         "url": "/data/knowledge/objects/b4/b47e4502fd87c27a0155315029a4ad60f23c66be869fc51c3c8eb5ace99ea7b2.json",
         "hash": "b47e4502fd87c27a0155315029a4ad60f23c66be869fc51c3c8eb5ace99ea7b2",
         "bytes": 906
-      }
+      },
+      "route": null
     },
     {
       "id": "external.f584d3041353f598",
@@ -1637,7 +1750,8 @@
         "url": "/data/knowledge/objects/62/62ddfabc9d95cc39a4b7c06d1ac06fc69f858f49733ab1deebbfd087cf78d090.json",
         "hash": "62ddfabc9d95cc39a4b7c06d1ac06fc69f858f49733ab1deebbfd087cf78d090",
         "bytes": 982
-      }
+      },
+      "route": null
     },
     {
       "id": "external.ffa3f469e371f5f9",
@@ -1654,7 +1768,8 @@
         "url": "/data/knowledge/objects/de/de2ec3544837100ce1d0b24d5b5344364842ef49f0db3f4380f6a001416677c5.json",
         "hash": "de2ec3544837100ce1d0b24d5b5344364842ef49f0db3f4380f6a001416677c5",
         "bytes": 883
-      }
+      },
+      "route": null
     },
     {
       "id": "media.093945eeb2e7c495",
@@ -1673,7 +1788,8 @@
         "url": "/data/knowledge/objects/7e/7e9e1a6163b89037d013c6ef7f73f65fb0d1be68f652d9977b4b223a85526f74.json",
         "hash": "7e9e1a6163b89037d013c6ef7f73f65fb0d1be68f652d9977b4b223a85526f74",
         "bytes": 1191
-      }
+      },
+      "route": null
     },
     {
       "id": "media.10892468fba48589",
@@ -1692,7 +1808,8 @@
         "url": "/data/knowledge/objects/bd/bd3204841fcdbdf0ad150bb160ef70c3853a18e9800fe640f341c91c5d43db9a.json",
         "hash": "bd3204841fcdbdf0ad150bb160ef70c3853a18e9800fe640f341c91c5d43db9a",
         "bytes": 1225
-      }
+      },
+      "route": null
     },
     {
       "id": "media.1e4702bddd167ce4",
@@ -1711,7 +1828,8 @@
         "url": "/data/knowledge/objects/ba/ba2d859fbd14a7b23eda33b10ccdcf02f03551a877114ed1ff389bc6441f86e0.json",
         "hash": "ba2d859fbd14a7b23eda33b10ccdcf02f03551a877114ed1ff389bc6441f86e0",
         "bytes": 1173
-      }
+      },
+      "route": null
     },
     {
       "id": "media.27b279c11f179ec5",
@@ -1730,7 +1848,8 @@
         "url": "/data/knowledge/objects/3c/3c687b0cfde3550144f134562feec5219126a9bf91cf82cf6024542393d73afe.json",
         "hash": "3c687b0cfde3550144f134562feec5219126a9bf91cf82cf6024542393d73afe",
         "bytes": 1146
-      }
+      },
+      "route": null
     },
     {
       "id": "media.36fbd553c5b99c81",
@@ -1749,7 +1868,8 @@
         "url": "/data/knowledge/objects/1f/1f07cd8837d7451a33f5c1ab76d6dec1b931b5847f426f97dabd7264b54678d6.json",
         "hash": "1f07cd8837d7451a33f5c1ab76d6dec1b931b5847f426f97dabd7264b54678d6",
         "bytes": 1231
-      }
+      },
+      "route": null
     },
     {
       "id": "media.4218466f1234c00e",
@@ -1768,7 +1888,8 @@
         "url": "/data/knowledge/objects/b0/b07062121e87d648b3b20c6309ab73251ce79bbe92e8deec729fec212d6e849b.json",
         "hash": "b07062121e87d648b3b20c6309ab73251ce79bbe92e8deec729fec212d6e849b",
         "bytes": 1194
-      }
+      },
+      "route": null
     },
     {
       "id": "media.43de66f78ff656d8",
@@ -1787,7 +1908,8 @@
         "url": "/data/knowledge/objects/72/72e0637eb3386d8ab3ac7183e5b9e81a96659c2ac9845f735dd6a4092b09f141.json",
         "hash": "72e0637eb3386d8ab3ac7183e5b9e81a96659c2ac9845f735dd6a4092b09f141",
         "bytes": 1148
-      }
+      },
+      "route": null
     },
     {
       "id": "media.4b38d10530f0d4a7",
@@ -1806,7 +1928,8 @@
         "url": "/data/knowledge/objects/29/293907dc1072880911cd917f355a5a043a3d1bd3f4ed5c9d433222d6902eae4f.json",
         "hash": "293907dc1072880911cd917f355a5a043a3d1bd3f4ed5c9d433222d6902eae4f",
         "bytes": 1194
-      }
+      },
+      "route": null
     },
     {
       "id": "media.57f2b0e95c3aee83",
@@ -1825,7 +1948,8 @@
         "url": "/data/knowledge/objects/a3/a324f6a3dcf6602cdbea03273b91828eba07906e253e4911de5900ecca4b8b60.json",
         "hash": "a324f6a3dcf6602cdbea03273b91828eba07906e253e4911de5900ecca4b8b60",
         "bytes": 1185
-      }
+      },
+      "route": null
     },
     {
       "id": "media.752bec56764a61f6",
@@ -1844,7 +1968,8 @@
         "url": "/data/knowledge/objects/31/31cb8d6574d3bc6d5079a8afaa16948853032fd0e4cca158548e3f55e4a1f1b7.json",
         "hash": "31cb8d6574d3bc6d5079a8afaa16948853032fd0e4cca158548e3f55e4a1f1b7",
         "bytes": 1213
-      }
+      },
+      "route": null
     },
     {
       "id": "media.816efe45554283bf",
@@ -1863,7 +1988,8 @@
         "url": "/data/knowledge/objects/ec/ec0e6a45777ffe3f65a5ce0bcefab218991d640ad10a198573f1521a0385f1ec.json",
         "hash": "ec0e6a45777ffe3f65a5ce0bcefab218991d640ad10a198573f1521a0385f1ec",
         "bytes": 1163
-      }
+      },
+      "route": null
     },
     {
       "id": "media.841c32a8db4c8be8",
@@ -1882,7 +2008,8 @@
         "url": "/data/knowledge/objects/88/8867b3ff64810be855404c331a267fa77381ee6bc8d8448421fca3d024eab463.json",
         "hash": "8867b3ff64810be855404c331a267fa77381ee6bc8d8448421fca3d024eab463",
         "bytes": 1136
-      }
+      },
+      "route": null
     },
     {
       "id": "media.97e6454e1c0d1ce3",
@@ -1901,7 +2028,8 @@
         "url": "/data/knowledge/objects/d2/d2a5614ae5966b06201a75fdcc1641a18161ae04d99d7b42dd1a2db922c7e3af.json",
         "hash": "d2a5614ae5966b06201a75fdcc1641a18161ae04d99d7b42dd1a2db922c7e3af",
         "bytes": 1205
-      }
+      },
+      "route": null
     },
     {
       "id": "media.99e8d897a471cb49",
@@ -1920,7 +2048,8 @@
         "url": "/data/knowledge/objects/50/505261553b535fdae62476f4c630cb9e8ab3c3f620c74ce7acf08c65bfab2ce8.json",
         "hash": "505261553b535fdae62476f4c630cb9e8ab3c3f620c74ce7acf08c65bfab2ce8",
         "bytes": 1191
-      }
+      },
+      "route": null
     },
     {
       "id": "media.9d52ba89664d670e",
@@ -1939,7 +2068,8 @@
         "url": "/data/knowledge/objects/60/60fe4bf9bc44e830346c3acc47917456ad8025e3450b31f601a20a808d98050f.json",
         "hash": "60fe4bf9bc44e830346c3acc47917456ad8025e3450b31f601a20a808d98050f",
         "bytes": 1148
-      }
+      },
+      "route": null
     },
     {
       "id": "media.a29e9133c24ea866",
@@ -1958,7 +2088,8 @@
         "url": "/data/knowledge/objects/b6/b6b5b480f9ed39756eb3c05e5fe26f8b60bbc38ce8c133f8d93f7021d5914cff.json",
         "hash": "b6b5b480f9ed39756eb3c05e5fe26f8b60bbc38ce8c133f8d93f7021d5914cff",
         "bytes": 1147
-      }
+      },
+      "route": null
     },
     {
       "id": "media.a71e394bd22d7131",
@@ -1977,7 +2108,8 @@
         "url": "/data/knowledge/objects/16/16ed7e6ca873dbeeed89d45e00e23c0c0150844204a92d8f82ab1b53448fa2bd.json",
         "hash": "16ed7e6ca873dbeeed89d45e00e23c0c0150844204a92d8f82ab1b53448fa2bd",
         "bytes": 1211
-      }
+      },
+      "route": null
     },
     {
       "id": "media.aa0545c637b773c4",
@@ -1996,7 +2128,8 @@
         "url": "/data/knowledge/objects/78/788a4bbdf11ffeca7ded300d112311609239e161b0f0d388e05dcaf9bf01bf7b.json",
         "hash": "788a4bbdf11ffeca7ded300d112311609239e161b0f0d388e05dcaf9bf01bf7b",
         "bytes": 1194
-      }
+      },
+      "route": null
     },
     {
       "id": "media.aae82bafced5b6cd",
@@ -2015,7 +2148,8 @@
         "url": "/data/knowledge/objects/c9/c92b9053b8634243b0bd22ab2ef230dac131832d3ec5aeb81ab6020ea60e4350.json",
         "hash": "c92b9053b8634243b0bd22ab2ef230dac131832d3ec5aeb81ab6020ea60e4350",
         "bytes": 1194
-      }
+      },
+      "route": null
     },
     {
       "id": "media.b9f40954f52a3a1a",
@@ -2034,7 +2168,8 @@
         "url": "/data/knowledge/objects/fd/fd53187d4e3edeb2ea44a229216bfa66f71704154dd08f30cef986974697a72a.json",
         "hash": "fd53187d4e3edeb2ea44a229216bfa66f71704154dd08f30cef986974697a72a",
         "bytes": 1173
-      }
+      },
+      "route": null
     },
     {
       "id": "media.c148926975866e3b",
@@ -2053,7 +2188,8 @@
         "url": "/data/knowledge/objects/3f/3f35b5915b26111b6a187f3327a958d27023887a697192487fc3971cd6aad9f0.json",
         "hash": "3f35b5915b26111b6a187f3327a958d27023887a697192487fc3971cd6aad9f0",
         "bytes": 1143
-      }
+      },
+      "route": null
     },
     {
       "id": "media.d108071612592a22",
@@ -2072,7 +2208,8 @@
         "url": "/data/knowledge/objects/39/3984bbb3ace3633c8e95e67e0cce35066ec2d766c499b10fdddca7bac368821e.json",
         "hash": "3984bbb3ace3633c8e95e67e0cce35066ec2d766c499b10fdddca7bac368821e",
         "bytes": 1173
-      }
+      },
+      "route": null
     },
     {
       "id": "media.e15e5177e4d92178",
@@ -2091,7 +2228,8 @@
         "url": "/data/knowledge/objects/b2/b2dbca2bab0dc0ca5eb0e1b42d6e1e1652b14d04d2349d69e861a89fcbefc83e.json",
         "hash": "b2dbca2bab0dc0ca5eb0e1b42d6e1e1652b14d04d2349d69e861a89fcbefc83e",
         "bytes": 1191
-      }
+      },
+      "route": null
     },
     {
       "id": "media.e35aceab37c76250",
@@ -2110,7 +2248,8 @@
         "url": "/data/knowledge/objects/9c/9c485c4f6217c8b07ab8cceb81cdcf44518ccfebcae77e1da6ba794377b37dc5.json",
         "hash": "9c485c4f6217c8b07ab8cceb81cdcf44518ccfebcae77e1da6ba794377b37dc5",
         "bytes": 1193
-      }
+      },
+      "route": null
     },
     {
       "id": "media.e382c9665366e4ee",
@@ -2129,7 +2268,8 @@
         "url": "/data/knowledge/objects/af/af0a4e15dd902bdb950a0f5514c58529d4a8d359d2757d1bed5d9c191e969c72.json",
         "hash": "af0a4e15dd902bdb950a0f5514c58529d4a8d359d2757d1bed5d9c191e969c72",
         "bytes": 1128
-      }
+      },
+      "route": null
     },
     {
       "id": "media.e77a898719051eb2",
@@ -2148,7 +2288,8 @@
         "url": "/data/knowledge/objects/a4/a47936accd190f852ccddc162de82e90c62c2a778cea1afe99050a83b5301585.json",
         "hash": "a47936accd190f852ccddc162de82e90c62c2a778cea1afe99050a83b5301585",
         "bytes": 1151
-      }
+      },
+      "route": null
     },
     {
       "id": "media.e93a6633a9bcf163",
@@ -2167,7 +2308,8 @@
         "url": "/data/knowledge/objects/6f/6f8cb9745fd64476f47db4e7f651a0c29faa2265283f8621246e3fcdbe8ea365.json",
         "hash": "6f8cb9745fd64476f47db4e7f651a0c29faa2265283f8621246e3fcdbe8ea365",
         "bytes": 1194
-      }
+      },
+      "route": null
     },
     {
       "id": "pulse.github-repositories",
@@ -2184,7 +2326,8 @@
         "url": "/data/knowledge/objects/2d/2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95.json",
         "hash": "2dfab184afe0de8ef49452372c9fc439f0d76b47bfd207a4bb09aad55f00ad95",
         "bytes": 844
-      }
+      },
+      "route": null
     },
     {
       "id": "site.examples.contract-introduction",
@@ -2203,7 +2346,8 @@
         "url": "/data/knowledge/objects/72/7247c7ebe96d8fb62f5cc5aa08e1016cfa67256a7176f01e80e8edcecfdfa2b5.json",
         "hash": "7247c7ebe96d8fb62f5cc5aa08e1016cfa67256a7176f01e80e8edcecfdfa2b5",
         "bytes": 1280
-      }
+      },
+      "route": null
     },
     {
       "id": "site.hybrid-indexing.article",
@@ -2222,7 +2366,8 @@
         "url": "/data/knowledge/objects/e0/e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314.json",
         "hash": "e06bc108623f796f8e3dc3a9f717765e653691b405a1664f00443ebbcbcfa314",
         "bytes": 1499
-      }
+      },
+      "route": null
     },
     {
       "id": "site.hybrid-indexing.collection",
@@ -2239,7 +2384,8 @@
         "url": "/data/knowledge/objects/ae/aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4.json",
         "hash": "aedaa81c509d82525dbc8448892fe32e539ab8be47a31e62ce1e62f0d5aa45b4",
         "bytes": 880
-      }
+      },
+      "route": null
     },
     {
       "id": "site.hybrid-indexing.entity",
@@ -2256,7 +2402,8 @@
         "url": "/data/knowledge/objects/fa/fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0.json",
         "hash": "fafb2e4f3ff1ca52e3926176a12b9cc66e90726d598144917093e296782b71e0",
         "bytes": 988
-      }
+      },
+      "route": null
     },
     {
       "id": "site.hybrid-indexing.timeline",
@@ -2273,7 +2420,8 @@
         "url": "/data/knowledge/objects/d9/d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed.json",
         "hash": "d9e44425e20c3d530b82c1a40d2580f14632bb8fef809a3dcd6da408168210ed",
         "bytes": 1085
-      }
+      },
+      "route": null
     },
     {
       "id": "tool.codec",
@@ -2290,7 +2438,8 @@
         "url": "/data/knowledge/objects/6b/6bf13c77f0f969dd955203966998b752502d40648aaf1d23adf467c6bf0ef06d.json",
         "hash": "6bf13c77f0f969dd955203966998b752502d40648aaf1d23adf467c6bf0ef06d",
         "bytes": 929
-      }
+      },
+      "route": null
     },
     {
       "id": "tool.image-compressor",
@@ -2307,7 +2456,8 @@
         "url": "/data/knowledge/objects/0a/0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca.json",
         "hash": "0aaf7c5ec8b4d146fcfdf5123220058252ba591222739b8146ef91ffbda9dcca",
         "bytes": 916
-      }
+      },
+      "route": null
     },
     {
       "id": "tool.markdown-editor",
@@ -2324,566 +2474,8 @@
         "url": "/data/knowledge/objects/05/05923ecb4c56bdee81ff8d4d0ff8bb4c944e6beb746676305c5c6bda640ff1ae.json",
         "hash": "05923ecb4c56bdee81ff8d4d0ff8bb4c944e6beb746676305c5c6bda640ff1ae",
         "bytes": 876
-      }
-    }
-  ],
-  "edges": [
-    {
-      "from": "article.07c63b32081025d9",
-      "to": "external.b8d0a597ff7fefcf",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.0b0ac6224d75a086",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.29edb3bdb2bc43e1",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.39eeabeb23c490c5",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.3c0fe2f8c303854a",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.4f21cf871ed09dcd",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.5682404ab9ba5e5c",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.72d0ea4998cc5c89",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.9c45dc909c5ccebc",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.af44d40537a6eec3",
-      "type": "references"
-    },
-    {
-      "from": "article.0c2e229dc4225dfe",
-      "to": "external.deaab2217f6af496",
-      "type": "references"
-    },
-    {
-      "from": "article.133152a0f65e1425",
-      "to": "external.1be97847942d58e0",
-      "type": "references"
-    },
-    {
-      "from": "article.133152a0f65e1425",
-      "to": "external.3b1980460362be6c",
-      "type": "references"
-    },
-    {
-      "from": "article.133152a0f65e1425",
-      "to": "external.9e872f3ca23cb0cb",
-      "type": "references"
-    },
-    {
-      "from": "article.133152a0f65e1425",
-      "to": "external.b12964d8c1b1053a",
-      "type": "references"
-    },
-    {
-      "from": "article.266d5221212da77b",
-      "to": "external.8b09fd0ba9c70e58",
-      "type": "references"
-    },
-    {
-      "from": "article.266d5221212da77b",
-      "to": "external.b6de9d51f6f65b93",
-      "type": "references"
-    },
-    {
-      "from": "article.33c2199c4ed7e747",
-      "to": "external.77ce7d644caa2704",
-      "type": "references"
-    },
-    {
-      "from": "article.382aa295f233c6ef",
-      "to": "external.63c32c4aeee1dc01",
-      "type": "references"
-    },
-    {
-      "from": "article.382aa295f233c6ef",
-      "to": "external.6719405c166c09a1",
-      "type": "references"
-    },
-    {
-      "from": "article.382aa295f233c6ef",
-      "to": "external.9e872f3ca23cb0cb",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.0b0ac6224d75a086",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.29edb3bdb2bc43e1",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.39eeabeb23c490c5",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.3c0fe2f8c303854a",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.4f21cf871ed09dcd",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.5682404ab9ba5e5c",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.63c32c4aeee1dc01",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.6719405c166c09a1",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.72d0ea4998cc5c89",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.9c45dc909c5ccebc",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.9e872f3ca23cb0cb",
-      "type": "references"
-    },
-    {
-      "from": "article.4045821cbd285d0c",
-      "to": "external.af44d40537a6eec3",
-      "type": "references"
-    },
-    {
-      "from": "article.4a29ad41bdc1517a",
-      "to": "external.9e872f3ca23cb0cb",
-      "type": "references"
-    },
-    {
-      "from": "article.4a9bfdf4b1879400",
-      "to": "external.0a8b70af2b4e92c8",
-      "type": "references"
-    },
-    {
-      "from": "article.4a9bfdf4b1879400",
-      "to": "external.2a60f771d67469ba",
-      "type": "references"
-    },
-    {
-      "from": "article.4a9bfdf4b1879400",
-      "to": "external.380fe641fe9daa9c",
-      "type": "references"
-    },
-    {
-      "from": "article.4a9bfdf4b1879400",
-      "to": "external.7f1ad8943cfdd130",
-      "type": "references"
-    },
-    {
-      "from": "article.4a9bfdf4b1879400",
-      "to": "external.93bcef729d3708fb",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.2434cdf8b4b8c4bf",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.2434cdf8b4b8c4bf",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.2434cdf8b4b8c4bf",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.54e98fd330750a6c",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.5aabc10c5e2517f8",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.7317a3f065511043",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.a0b25559ddbb6000",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.a77908165d180797",
-      "type": "references"
-    },
-    {
-      "from": "article.60c8ff520d5e47e5",
-      "to": "external.d6521e4f2a92924a",
-      "type": "references"
-    },
-    {
-      "from": "article.61449c1d937e215e",
-      "to": "external.ca9dda46a94e499e",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.205f64e47b036b76",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.2a2d69ab2e3fa957",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.380fe641fe9daa9c",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.3f4639c8dd5d1e71",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.6bc77aa3fddcda17",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.a3516771d2cb53e9",
-      "type": "references"
-    },
-    {
-      "from": "article.6f286a32a5f9a7b9",
-      "to": "external.c284e28ca7ba27ea",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.20d871765d8d83d7",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.542a878fa6466e0c",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.5ea86f6fbc7adc75",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.6822178bc371c1f7",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.68553b129e11db64",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.7fb83f814637aeb7",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.8d06a48aa81cc9a6",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.948491ada34f5075",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.99f36c2b0e922400",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.ad6fb0ce17b81587",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.b8d0a597ff7fefcf",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.cc937d73fddfd257",
-      "type": "references"
-    },
-    {
-      "from": "article.7cd10f98b27ccb15",
-      "to": "external.f584d3041353f598",
-      "type": "references"
-    },
-    {
-      "from": "article.81fe81d4caaaeb13",
-      "to": "external.d6521e4f2a92924a",
-      "type": "references"
-    },
-    {
-      "from": "article.85daa21d1d225dba",
-      "to": "external.9e872f3ca23cb0cb",
-      "type": "references"
-    },
-    {
-      "from": "article.8c00a73b042c64ee",
-      "to": "external.05a24ac9fe93aee8",
-      "type": "references"
-    },
-    {
-      "from": "article.8c00a73b042c64ee",
-      "to": "media.10892468fba48589",
-      "type": "references"
-    },
-    {
-      "from": "article.8c00a73b042c64ee",
-      "to": "media.57f2b0e95c3aee83",
-      "type": "references"
-    },
-    {
-      "from": "article.8c00a73b042c64ee",
-      "to": "media.752bec56764a61f6",
-      "type": "references"
-    },
-    {
-      "from": "article.8c00a73b042c64ee",
-      "to": "media.97e6454e1c0d1ce3",
-      "type": "references"
-    },
-    {
-      "from": "article.8c00a73b042c64ee",
-      "to": "media.e35aceab37c76250",
-      "type": "references"
-    },
-    {
-      "from": "article.a0c807334ceb1bde",
-      "to": "external.3b1980460362be6c",
-      "type": "references"
-    },
-    {
-      "from": "article.a0c807334ceb1bde",
-      "to": "external.5806f56d5f84cb55",
-      "type": "references"
-    },
-    {
-      "from": "article.a0c807334ceb1bde",
-      "to": "external.a4425ace2dc89349",
-      "type": "references"
-    },
-    {
-      "from": "article.a0c807334ceb1bde",
-      "to": "external.b2f78c8e8ddf7a05",
-      "type": "references"
-    },
-    {
-      "from": "article.a0c807334ceb1bde",
-      "to": "external.e93790bebe1dc0e5",
-      "type": "references"
-    },
-    {
-      "from": "article.a57e4ec67d3a2850",
-      "to": "external.77ce7d644caa2704",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.5fe38e307c43f178",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.687cfb74ce3f2028",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.6f8e3628c777bee7",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.8157402b7bc0e73e",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.92d07bf8d2d18eae",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.c9042bcec4649d63",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.d9d6454af4a0a610",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.e3428c44c41a6631",
-      "type": "references"
-    },
-    {
-      "from": "article.ba153078fc853907",
-      "to": "external.ffa3f469e371f5f9",
-      "type": "references"
-    },
-    {
-      "from": "article.d11716eda43d8854",
-      "to": "external.ca9dda46a94e499e",
-      "type": "references"
-    },
-    {
-      "from": "article.ddc4cf6f256a3ee5",
-      "to": "external.05a24ac9fe93aee8",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.1284afbfa08774b7",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.380fe641fe9daa9c",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.38ce8f9f7fc11e64",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.449bb6970ec0ff0a",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.588958b21996a7b7",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.5932a896098b76e3",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.6ed57be559b06a06",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.c1379d5224da100b",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.c1acf232f588b024",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.ea0447bcb5e0e3a7",
-      "type": "references"
-    },
-    {
-      "from": "article.f3c73b6fe6e28283",
-      "to": "external.edb876b26e41f0d6",
-      "type": "references"
-    },
-    {
-      "from": "site.hybrid-indexing.article",
-      "to": "site.hybrid-indexing.entity",
-      "type": "explains"
-    },
-    {
-      "from": "site.hybrid-indexing.collection",
-      "to": "site.hybrid-indexing.article",
-      "type": "contains"
-    },
-    {
-      "from": "site.hybrid-indexing.collection",
-      "to": "site.hybrid-indexing.entity",
-      "type": "contains"
-    },
-    {
-      "from": "site.hybrid-indexing.entity",
-      "to": "site.hybrid-indexing.article",
-      "type": "illustrated-by"
-    },
-    {
-      "from": "site.hybrid-indexing.timeline",
-      "to": "site.hybrid-indexing.article",
-      "type": "timeline-entry",
-      "at": "2026-08-02"
-    },
-    {
-      "from": "site.hybrid-indexing.timeline",
-      "to": "site.hybrid-indexing.entity",
-      "type": "timeline-entry",
-      "at": "2026-08-01"
+      },
+      "route": null
     }
   ]
 }

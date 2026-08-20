@@ -5,6 +5,7 @@ updated: '2026-08-15T12:00:00.000Z'
 description: 'AI Infra 系列试点：RMSNorm 的原生 LaTeX 排版稿。'
 permalink: '/2026/08/15/RMSNorm/'
 renderFragment: 'source/content/renders/RMSNorm.html'
+renderSourceHash: '9339b98723eba7328aca06273bb6b7cb29ec78eb51445cf3fc47c4ba953fd444'
 cover: 'https://cdn.jsdelivr.net/gh/Creeper5261/picbed@main/img/cover/75509590_p1.webp'
 comments: true
 home: true

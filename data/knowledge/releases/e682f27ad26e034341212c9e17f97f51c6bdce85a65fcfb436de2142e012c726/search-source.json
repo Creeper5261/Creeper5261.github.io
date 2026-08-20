@@ -404,6 +404,24 @@
       "text": "百宝箱 <div class=\"tip info\"><p>常用工具放这里方便下载</p> </div> <h2 id=\"梯子\"><a href=\"#梯子\" class=\"headerlink\" title=\"梯子\"></a>梯子</h2><div class=\"note simple\"><p>为了愉快的用上newbing和chatgpt，梯子肯定是少不了的（虽然我的网站已经部署了chatgpt，不过newbing还是要用的嘛）</p> </div> <p><a target=\"_blank\" rel=\"noopener\" href=\"https://ikuuu.eu/\">iKuuu VPN 官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://npm.elemecdn.com/cfw-win64@0.0.4/Clash.for.Windows-0.20.16-ikuuu.zip\">Clash For Windows 安装包</a></p> <h2 id=\"浏览器\"><a href=\"#浏览器\" class=\"headerlink\" title=\"浏览器\"></a>浏览器</h2><div class=\"note simple\"><p>为了用上newbing，edge也是少不了的</p> </div> <p><a target=\"_blank\" rel=\"noopener\" href=\"https://www.microsoft.com/zh-cn/edge/download?form=MA13FJ\">Edge 下载官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://go.microsoft.com/fwlink/?linkid=2109047&amp;Channel=Stable&amp;language=zh-cn&amp;Consent=1&amp;brand=M100\">Edge Windows 7/8/8.1 安装包</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://go.microsoft.com/fwlink/?linkid=2109047&amp;Channel=Stable&amp;language=zh-cn&amp;brand=M100\">Edge Windows 10/11 安装包</a></p> <h2 id=\"QQ\"><a href=\"#QQ\" class=\"headerlink\" title=\"QQ\"></a>QQ</h2><div class=\"note simple\"><p>传个实验报告啥的，总得用QQ吧</p> </div> <p><a target=\"_blank\" rel=\"noopener\" href=\"https://im.qq.com/pcqq\">QQ 官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://dldir1.qq.com/qqfile/qq/PCQQ9.7.8/QQ9.7.8.29019.exe\">QQ 安装包</a></p> <h2 id=\"微信\"><a href=\"#微信\" class=\"headerlink\" title=\"微信\"></a>微信</h2><p><del>垃圾微信，要不是用的人多，狗都不用</del>~<br><a target=\"_blank\" rel=\"noopener\" href=\"https://pc.weixin.qq.com/\">微信 官网</a><br><a target=\"_blank\" rel=\"noopener\" href=\"https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe\">微信 安装包</a></p> <h2 id=\"Google-Play\"><a href=\"#Google-Play\" class=\"headerlink\" title=\"Google Play\"></a>Google Play</h2><p><a target=\"_blank\" rel=\"noopener\" href=\"https://d.apkpure.com/b/APK/com.android.vending?version=latest\">Google Play 安装包</a></p>"
     },
     {
+      "id": "article.f869188a60a35c6a",
+      "kind": "article",
+      "title": "RMSNorm：起一个稳压器的作用",
+      "status": "archived",
+      "publishedAt": "2026-08-15T12:00:00.000Z",
+      "updatedAt": "2026-08-15T12:00:00.000Z",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "url": "/data/knowledge/objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "hash": "12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df",
+        "bytes": 963
+      },
+      "text": "RMSNorm：起一个稳压器的作用 <div class=\"latex-document-rendered\" data-render-fragment=\"RMSNorm\"></div>"
+    },
+    {
       "id": "site.examples.contract-introduction",
       "kind": "note",
       "title": "知识站内容契约示例",

@@ -5,22 +5,22 @@
   "byId": [
     {
       "file": "catalog/by-id/ids-0000.json",
-      "hash": "c4415e3c6c79f0c7554dc1b773b81bcdbba675a78c5b59f7190c9b04cb02b3b5",
-      "bytes": 66425,
+      "hash": "af41ff259f24813cc3a43e81749b6dfbcea121f1e58967eaf24afbf8dd0b9977",
+      "bytes": 66920,
       "firstId": "article.07c63b32081025d9",
       "lastId": "tool.markdown-editor",
-      "count": 133
+      "count": 134
     }
   ],
   "byKind": {
     "article": [
       {
         "file": "catalog/by-kind/article-0000.json",
-        "hash": "271b9b0dcf982e18e7dd3520ca68fc4d782a8142cd6abb8245f08c798194f696",
-        "bytes": 16104,
+        "hash": "80e8464f853dfe907ca985758324ba6dd8b67ccdc110a785b3e3edf246f3b420",
+        "bytes": 16802,
         "kind": "article",
-        "count": 23,
-        "firstId": "site.hybrid-indexing.article",
+        "count": 24,
+        "firstId": "article.f869188a60a35c6a",
         "lastId": "article.a0c807334ceb1bde"
       }
     ],

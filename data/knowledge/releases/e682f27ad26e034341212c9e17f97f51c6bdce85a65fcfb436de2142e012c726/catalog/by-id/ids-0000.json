@@ -266,6 +266,18 @@
       }
     },
     {
+      "id": "article.f869188a60a35c6a",
+      "kind": "article",
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "url": "/data/knowledge/objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "hash": "12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df",
+        "bytes": 963
+      }
+    },
+    {
       "id": "external.05a24ac9fe93aee8",
       "kind": "external-embed",
       "locator": {
