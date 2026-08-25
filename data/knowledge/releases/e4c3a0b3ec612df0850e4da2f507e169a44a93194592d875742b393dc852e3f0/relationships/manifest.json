@@ -5,11 +5,11 @@
   "shards": [
     {
       "file": "relationships/shards/adjacency-0000.json",
-      "hash": "25fd9a9ff6ff8324af904c3d5a15c212eeadbfd0621ea3507543c9ace992a7c3",
-      "bytes": 91614,
+      "hash": "85f7292323cc7fdda5c8087387a04a37a383da82cab8e073d51a8a96337d21c9",
+      "bytes": 92128,
       "firstId": "article.07c63b32081025d9",
       "lastId": "tool.markdown-editor",
-      "count": 133
+      "count": 134
     }
   ]
 }

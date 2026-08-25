@@ -310,5 +310,15 @@ const btf = {
       ...window.themeChange,
       [name]: fn
     }
+  },
+
+  // Compatibility with older Butterfly extensions that register a named
+  // callback through btf.addGlobalFn(name, callback, key).
+  addGlobalFn: (name, fn, key = name) => {
+    if (!name || typeof fn !== 'function') return
+    window[name] = {
+      ...(window[name] || {}),
+      [key]: fn
+    }
   }
 }

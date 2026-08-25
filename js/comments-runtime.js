@@ -1,6 +1,6 @@
 (function () {
     const services = window.DAT_PUBLIC_SERVICES || {};
-    const targetSelector = '#twikoo-wrap';
+    const targetSelector = '#giscus-wrap, #twikoo-wrap';
 
     function ready(fn) {
         if (document.readyState === 'loading') {

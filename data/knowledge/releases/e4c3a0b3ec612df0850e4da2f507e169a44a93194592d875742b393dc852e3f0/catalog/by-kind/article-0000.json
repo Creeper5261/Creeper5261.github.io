@@ -2,6 +2,23 @@
   "schemaVersion": 1,
   "items": [
     {
+      "id": "article.f869188a60a35c6a",
+      "kind": "article",
+      "title": "RMSNorm：起一个稳压器的作用",
+      "status": "archived",
+      "publishedAt": "2026-08-15T12:00:00.000Z",
+      "updatedAt": "2026-08-15T12:00:00.000Z",
+      "assetUrls": [],
+      "locator": {
+        "strategy": "content-addressed",
+        "base": "site-data",
+        "file": "objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "url": "/data/knowledge/objects/12/12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df.json",
+        "hash": "12ce0161d221eb2703da325b42a34f7935846b07073b9480ccb531e6c065f2df",
+        "bytes": 963
+      }
+    },
+    {
       "id": "site.hybrid-indexing.article",
       "kind": "article",
       "title": "混合索引如何让主题关系保持可读",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "buildHash": "e682f27ad26e034341212c9e17f97f51c6bdce85a65fcfb436de2142e012c726",
+  "buildHash": "e4c3a0b3ec612df0850e4da2f507e169a44a93194592d875742b393dc852e3f0",
   "compatibility": {
     "minimumReaderVersion": 1,
     "currentReaderVersion": 2,
@@ -16,14 +16,14 @@
     ]
   },
   "cache": {
-    "immutableReleasePath": "/data/knowledge/releases/e682f27ad26e034341212c9e17f97f51c6bdce85a65fcfb436de2142e012c726/",
+    "immutableReleasePath": "/data/knowledge/releases/e4c3a0b3ec612df0850e4da2f507e169a44a93194592d875742b393dc852e3f0/",
     "mutablePointer": "/data/knowledge/release.json",
     "immutableCacheControl": "public, max-age=31536000, immutable",
     "mutableCacheControl": "public, max-age=0, must-revalidate"
   },
   "rollback": {
     "strategy": "deploy-release-by-hash",
-    "release": "e682f27ad26e034341212c9e17f97f51c6bdce85a65fcfb436de2142e012c726",
+    "release": "e4c3a0b3ec612df0850e4da2f507e169a44a93194592d875742b393dc852e3f0",
     "requiresDeploymentArtifact": true
   },
   "files": [
@@ -809,7 +809,7 @@
     },
     {
       "file": "pulses.json",
-      "hash": "9ff9d252194fdfd2b62525a6575f4f68efc022bf4e2a0887d2493c0771e753c5",
+      "hash": "3bf59426f52e0245a9ca70ed0c7060362d78a9911b5410a98548d16ce71a4a2c",
       "bytes": 2923
     },
     {
